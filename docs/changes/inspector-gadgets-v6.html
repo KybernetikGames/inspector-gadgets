@@ -58,6 +58,7 @@
                         <ul class="nav navbar-nav">                            
                                     <li class="active"><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
         <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.0</a></li>
+        <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:KybernetikGames@gmail.com?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="http://u3d.as/Kbg"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
         <li><a href="http://u3d.as/Kg3"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Buy</a></li>
@@ -152,7 +153,6 @@
 </ul>
 <h2 id="major-features">Major Features</h2>
 <ul>
-<li>Dropped support for Unity 5.6.</li>
 <li>Inspector Gadgets Pro is now delivered as regular scripts instead of a pre-compiled DLL to make it easier to view and modify the source code. Also reorganized the namespaces.</li>
 </ul>
 <blockquote class="blockquote">
@@ -199,6 +199,7 @@
 </ul>
 <h2 id="changes">Changes</h2>
 <ul>
+<li>Dropped support for Unity 5.6.</li>
 <li>The <code>Show Position Labels</code> setting is now disabled by default. Feedback indicates that they aren't particularly useful, but the option is still there.</li>
 <li>Flipped <code>true</code>/<code>false</code> order on the label array in the <code>Toolbar</code> attribute constructor to be consistent with boolean logic. Label <code>0</code> is now <code>false</code> and <code>1</code> is <code>true</code>.</li>
 <li>Removed editor event attributes <code>[OnWillUnloadAssemblies]</code> and <code>[OnEditorQuit]</code> as Unity already has events for them: <code>AssemblyReloadEvents.beforeAssemblyReload</code> and <code>EditorApplication.quitting</code> respectively.</li>
@@ -208,6 +209,7 @@
 </ul>
 <h2 id="fixes">Fixes</h2>
 <ul>
+<li>Fixed errors in Unity 2018.3+ caused by the obfuscation in the Lite DLLs. They were harmless and didn't actually stop anything from working, they were simply annoying.</li>
 <li>Fixed undoing a script type change to not cause GUI errors.</li>
 <li>Fixed <code>[Inspectable]</code> attribute to catch exceptions while drawing.</li>
 <li>Fixed <code>TransformEditor.HandleOffset</code> to get a field instead of a property (as changed in Unity 2017.1).</li>
