@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<id>https://kybernetikgames.github.io/inspector-gadgets</id>
+	<title>Inspector Gadgets</title>
+	<link rel="self" href="https://kybernetikgames.github.io/inspector-gadgets" />
+	<rights>2019</rights>
+	<updated>2019-06-08T02:22:44Z</updated>
+</feed>
