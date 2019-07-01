@@ -90,7 +90,6 @@
 
                 <li><a href="/inspector-gadgets/docs/features">Features</a></li>
                 <li><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
-                <li><a href="/inspector-gadgets/docs/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
                 <li class="treeview active">
                     <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
@@ -101,7 +100,7 @@
                 <li><a href="/inspector-gadgets/docs/script-inspector/decorator-attributes">Decorator Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/inspectable-attributes">Inspectable Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/shader-attributes">Shader Attributes</a></li>
-                <li><a href="/inspector-gadgets/docs/script-inspector/inspector-events">Inspector Events</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/event-messages">Event Messages</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/custom-inspectors">Custom Inspectors</a></li>
                 <li class="selected"><a href="/inspector-gadgets/docs/script-inspector/missing-scripts">Missing Scripts</a></li>
 
@@ -111,8 +110,8 @@
                     <a href="/inspector-gadgets/docs/misc">Misc</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/inspector-gadgets/docs/misc/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/comments">Comments</a></li>
-                <li><a href="/inspector-gadgets/docs/misc/set-hide-flags">Set Hide Flags</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/auto-prefs">Auto Prefs</a></li>
 
                     </ul>
@@ -147,8 +146,14 @@
 		</section>
 	<section class="content">
 		<p>Inspector Gadgets improves the Inspector for missing scripts by adding a button to easily remove the component in question as well as one to open a window that will search through all assets and scenes to find any more missing scripts. This window can also be opened from the <code>Edit/Preferences/Inspector Gadgets</code> window.</p>
-<p>The <code>Scripty Hunter</code> window tries to suggest other possible alternatives for each missing script based on its name and the names and types of each of its serialized fields. Unfortunately, Unity tends to lose this data after scripts go missing so it isn't always possible to offer any suggestions.</p>
+<p>The <code>Missing Script Window</code> tries to suggest other possible alternatives for each missing script based on its name and the names and types of each of its serialized fields. Unfortunately, Unity tends to lose this data after scripts go missing so it isn't always possible to offer any suggestions.</p>
 <p><img src="missing-script.png" class="img-responsive"></p>
+<p>The window itself has a Context Menu Function to <code>Destroy All Missing Scripts</code> which will go through all assets and scenes and remove everything with a missing script in one go.</p>
+<p>This system has several limitations due to the way Unity handles missing scripts:</p>
+<ul>
+<li>The only known way to actually get a reference to a missing script (and determine its name and serialized fields) is via a custom Inspector which needs each object to be selected in turn. If anyone knows of a better way to do it, please email <a href="mailto:KybernetikGames&#64;gmail.com?subject=InspectorGadgets">KybernetikGames&#64;gmail.com</a>.</li>
+<li>Unlike missing components where the prefab asset still exists, other types of missing assets (such as <code>ScriptableObject</code>s) do not have any way for a reference to be obtained so they cannot be automatically selected in order to show its Inspector so they are shown in a separate list. Clicking on the asset path will select the asset, or you can simply use the <code>Delete</code> button to delete the file directly.</li>
+</ul>
 
 	</section>
                 

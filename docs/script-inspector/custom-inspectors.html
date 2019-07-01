@@ -90,7 +90,6 @@
 
                 <li><a href="/inspector-gadgets/docs/features">Features</a></li>
                 <li><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
-                <li><a href="/inspector-gadgets/docs/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
                 <li class="treeview active">
                     <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
@@ -101,7 +100,7 @@
                 <li><a href="/inspector-gadgets/docs/script-inspector/decorator-attributes">Decorator Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/inspectable-attributes">Inspectable Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/shader-attributes">Shader Attributes</a></li>
-                <li><a href="/inspector-gadgets/docs/script-inspector/inspector-events">Inspector Events</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/event-messages">Event Messages</a></li>
                 <li class="selected"><a href="/inspector-gadgets/docs/script-inspector/custom-inspectors">Custom Inspectors</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/missing-scripts">Missing Scripts</a></li>
 
@@ -111,8 +110,8 @@
                     <a href="/inspector-gadgets/docs/misc">Misc</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/inspector-gadgets/docs/misc/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/comments">Comments</a></li>
-                <li><a href="/inspector-gadgets/docs/misc/set-hide-flags">Set Hide Flags</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/auto-prefs">Auto Prefs</a></li>
 
                     </ul>
@@ -146,8 +145,11 @@
 			<h1>Custom Inspectors</h1>
 		</section>
 	<section class="content">
-		<p>If you require more customisation than you can achieve using the available <a href="decorator-attributes">Decorator Attributes</a>, <a href="inspectable-attributes">Inspectable Attributes</a>, and <a href="inspector-events">Inspector Events</a>, you will need to create your own custom editor class. You can do this quickly using <code>Ctrl + Middle Click</code> in the target script's Inspector or using the <code>Create Editor Script</code> context menu function.</p>
-<p>By inheriting from <code>InspectorGadgets.Editor&lt;T&gt;</code> instead of <code>UnityEditor.Editor</code> your custom editor will inherit the features described in previous sections (<a href="script-field">hide Script field</a>, <a href="script-field">Middle Click to open script</a>, support for <a href="inspectable-attributes">Inspectable Attributes</a> and <a href="inspector-events">Inspector Events</a>). You will also be able to access the inspected objects directly using the <code>Target</code> and <code>Targets</code> properties (note the capitalisation) rather than needing to type-cast the regular <code>target</code> and <code>targets</code> properties yourself.</p>
+		<blockquote class="blockquote">
+<p><em>This feature is only available in <a href="../../features">Inspector Gadgets Pro</a>.</em></p>
+</blockquote>
+<p>If you require more customisation than you can achieve using the available <a href="decorator-attributes">Decorator Attributes</a>, <a href="inspectable-attributes">Inspectable Attributes</a>, and <a href="event-messages">Event Messages</a>, you will need to create your own custom editor class. You can do this quickly using <code>Ctrl + Middle Click</code> in the target script's Inspector or using the <code>Create Editor Script</code> context menu function.</p>
+<p>By inheriting from <code>InspectorGadgets.Editor&lt;T&gt;</code> instead of <code>UnityEditor.Editor</code> your custom editor will inherit the features described in previous sections (<a href="script-field">hide Script field</a>, <a href="script-field">Middle Click to open script</a>, support for <a href="inspectable-attributes">Inspectable Attributes</a> and <a href="event-messages">Event Messages</a>). You will also be able to access the inspected objects directly using the <code>Target</code> and <code>Targets</code> properties (note the capitalisation) rather than needing to type-cast the regular <code>target</code> and <code>targets</code> properties yourself.</p>
 
 	</section>
                 

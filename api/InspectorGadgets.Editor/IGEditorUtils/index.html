@@ -76,7 +76,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Syntax">Syntax</a></p>
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
+<p><a href="#Syntax">Syntax</a></p>
 <p><a href="#fields">Fields</a></p>
 <p><a href="#Properties">Properties</a></p>
 <p><a href="#Methods">Methods</a></p>
@@ -150,9 +151,11 @@
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1">Editor<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow">Float<wbr>Visualiser<wbr>Window</a></li>
 				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache">MethodCache</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache_1">MethodCache<wbr>&lt;TDelegate&gt;<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues">PersistentValues</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyVisualiserWindow">Property<wbr>Visualiser<wbr>Window</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference">Serialized<wbr>Object<wbr>Reference</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyAccessor">Serialized<wbr>Property<wbr>Accessor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference">Serialized<wbr>Property<wbr>Reference</a></li>
@@ -177,7 +180,11 @@
 <section class="content">
 	
 	
-	
+		<h1 id="Summary">Summary</h1>
+	<div class="lead">[Editor-Only]
+    Various utility methods used by <code class="cs">InspectorGadgets</code>.
+    </div>
+
 		<div class="panel panel-default">
   			<div class="panel-body">
 				<div class="row">
@@ -236,10 +243,26 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/9B0F403B">PrefsKeyPrefix</a></td>
-								<td>InspectorGadgets.</td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/2CD9199E">AnyAccessBindings</a></td>
+								<td>60</td>
 								<td>
-									<div></div>
+									<div>Commonly used <code class="cs">System.Reflection.BindingFlags</code>.</div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/6ECB6AD3">InstanceBindings</a></td>
+								<td>52</td>
+								<td>
+									<div>Commonly used <code class="cs">System.Reflection.BindingFlags</code>.</div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/0A6BD413">StaticBindings</a></td>
+								<td>56</td>
+								<td>
+									<div>Commonly used <code class="cs">System.Reflection.BindingFlags</code>.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -260,6 +283,26 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/FE6ABE6F">DontExpandWidth</a></td>
+								<td>GUILayoutOption[]</td>
+								<td>
+									<div>
+    A single <code class="cs">UnityEngine.GUILayoutOption</code> created by passing <code class="cs">false</code> into <code class="cs">UnityEngine.GUILayout.ExpandWidth(System.Boolean)</code>.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/D4FAAE96">IndentSize</a></td>
+								<td>float</td>
+								<td>
+									<div>
+    The number of pixels of indentation for each <code class="cs">UnityEditor.EditorGUI.indentLevel</code> increment.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/11F3F6FA">MoveSnapVector</a></td>
 								<td>Vector3</td>
 								<td>
@@ -323,6 +366,14 @@ class Type type-node
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/13D51816">Spacing</a></td>
+								<td>float</td>
+								<td>
+									<div><code class="cs">UnityEditor.EditorGUIUtility.standardVerticalSpacing</code>. This value is 2 in Unity 2018.</div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
 					</tbody></table>
 				</div>
 			</div>
@@ -366,6 +417,38 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/1F69D506">AreSameProperty<wbr>(<wbr>Serialized<wbr>Property, <wbr>SerializedProperty)<wbr></a></td>
+								<td>bool</td>
+								<td>
+									<div>
+    Indicates whether both properties refer to the same underlying field.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/C02C590C">CalculateWidth<wbr>(GUIStyle, <wbr>GUIContent)<wbr></a></td>
+								<td>float</td>
+								<td>
+									<div>
+    Calls <code class="cs">UnityEngine.GUIStyle.CalcMinMaxWidth(UnityEngine.GUIContent,System.Single@,System.Single@)</code> and returns the max width.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/32718D08">CalculateWidth<wbr>(GUIStyle, <wbr>string)<wbr></a></td>
+								<td>float</td>
+								<td>
+									<div>
+    Calls <code class="cs">UnityEngine.GUIStyle.CalcMinMaxWidth(UnityEngine.GUIContent,System.Single@,System.Single@)</code> and returns the max width.
+    <p></p>
+    This method uses the <code class="cs">InspectorGadgets.Editor.IGEditorUtils.TempContent(System.String,System.String)</code>.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/59173186">ColorToHex<wbr>(Color32)<wbr></a></td>
 								<td>string</td>
 								<td>
@@ -389,16 +472,6 @@ class Type type-node
 								<td>
 									<div>[Editor-Only]
     Draw the target and name of the specified <code class="cs">System.Delegate</code>.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/DF19387E">Equals<wbr>(<wbr>Serialized<wbr>Property, <wbr>SerializedProperty)<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-    Indicates whether both properties refer to the same underlying field.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -438,11 +511,34 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/C8893E4A">GetCachedStyle<wbr>(Func<wbr>&lt;GUIStyle&gt;<wbr>)<wbr></a></td>
+								<td>GUIStyle</td>
+								<td>
+									<div>
+    Creates a <code class="cs">UnityEngine.GUIStyle</code> using the provided delegate and caches it so the same style can be
+    returned when this method is called again for the same delegate.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/DAA73952">Get<wbr>Serialized<wbr>Property<wbr>Context<wbr>(SerializedProperty)<wbr></a></td>
 								<td>IDisposable</td>
 								<td>
 									<div>
     Returns a disposable context that will allow copy and paste commands to be executed on the 'property'.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/6C1193E8">GroupedInvoke<wbr>(MenuCommand, <wbr>Action<wbr>&lt;List<wbr>&lt;Object&gt;<wbr>&gt;<wbr>)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+    When a context menu function is executed with multiple objects selected, it calls the method once for each
+    object. Passing each 'command' into this method will group them all into a list and invoke the specified
+    'method' once they have all been gathered.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -534,6 +630,61 @@ class Type type-node
 								<td>Vector3</td>
 								<td>
 									<div>[Editor-Only] Snaps the given 'scale' to the nearest snap increment on the specified axis (as specified in Edit/Snap Settings).</div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/EA49E8C8">StealFromLeft<wbr>(Rect, <wbr>float)<wbr></a></td>
+								<td>Rect</td>
+								<td>
+									<div>
+    Subtracts the 'width' from the left side of the 'area' and returns a new <code class="cs">UnityEngine.Rect</code> occupying the
+    removed section.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/18560467">StealFromLeft<wbr>(Rect, <wbr>float, <wbr>RectOffset)<wbr></a></td>
+								<td>Rect</td>
+								<td>
+									<div>
+    Subtracts the 'width' from the left side of the 'area' and returns a new <code class="cs">UnityEngine.Rect</code> occupying the
+    removed section.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/13F3D9C0">StealFromRight<wbr>(Rect, <wbr>float)<wbr></a></td>
+								<td>Rect</td>
+								<td>
+									<div>
+    Subtracts the 'width' from the right side of the 'area' and returns a new <code class="cs">UnityEngine.Rect</code> occupying the
+    removed section.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/BB4ABCD6">StealFromRight<wbr>(Rect, <wbr>float, <wbr>RectOffset)<wbr></a></td>
+								<td>Rect</td>
+								<td>
+									<div>
+    Subtracts the 'width' from the right side of the 'area' and returns a new <code class="cs">UnityEngine.Rect</code> occupying the
+    removed section.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/127BCCDC">TempContent<wbr>(string, <wbr>string)<wbr></a></td>
+								<td>GUIContent</td>
+								<td>
+									<div>
+    Creates and returns a <code class="cs">UnityEngine.GUIContent</code> with the specified parameters on the first call and then
+    simply returns the same one with new parameters on each subsequent call.
+    </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>

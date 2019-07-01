@@ -150,9 +150,11 @@
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1">Editor<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow">Float<wbr>Visualiser<wbr>Window</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache">MethodCache</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache_1">MethodCache<wbr>&lt;TDelegate&gt;<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues">PersistentValues</a></li>
 				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyVisualiserWindow">Property<wbr>Visualiser<wbr>Window</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference">Serialized<wbr>Object<wbr>Reference</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyAccessor">Serialized<wbr>Property<wbr>Accessor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference">Serialized<wbr>Property<wbr>Reference</a></li>
@@ -178,10 +180,8 @@
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">
+	<div class="lead">[Editor-Only]
     Base class for editor windows that help visualise the value of a <code class="cs">UnityEditor.SerializedProperty</code>.
-    <p></p>
-    Use <code class="cs">InspectorGadgets.Editor.PropertyVisualiserWindow.Visualise``1(UnityEditor.SerializedProperty)</code> to open a window or <code class="cs">InspectorGadgets.Editor.PropertyVisualiserWindow.AddVisualiseItem``1(UnityEditor.GenericMenu,UnityEditor.SerializedProperty)</code> to add a menu item that does so.
     </div>
 
 		<div class="panel panel-default">
@@ -207,8 +207,8 @@
 								<dd>
 									<ul class="list-unstyled">
 											<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Vector2VisualiserWindow">Vector2<wbr>Visualiser<wbr>Window</a></li>								
-											<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Vector3VisualiserWindow">Vector3<wbr>Visualiser<wbr>Window</a></li>								
 											<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow">Float<wbr>Visualiser<wbr>Window</a></li>								
+											<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Vector3VisualiserWindow">Vector3<wbr>Visualiser<wbr>Window</a></li>								
 									</ul>
 								</dd>			
 							
@@ -222,10 +222,10 @@
 class Type type-node
 	Derived0["Vector2VisualiserWindow"]--&gt;Type
 	click Derived0 "/inspector-gadgets/api/InspectorGadgets.Editor/Vector2VisualiserWindow"
-	Derived1["Vector3VisualiserWindow"]--&gt;Type
-	click Derived1 "/inspector-gadgets/api/InspectorGadgets.Editor/Vector3VisualiserWindow"
-	Derived2["FloatVisualiserWindow"]--&gt;Type
-	click Derived2 "/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow"
+	Derived1["FloatVisualiserWindow"]--&gt;Type
+	click Derived1 "/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow"
+	Derived2["Vector3VisualiserWindow"]--&gt;Type
+	click Derived2 "/inspector-gadgets/api/InspectorGadgets.Editor/Vector3VisualiserWindow"
 
 						</div>
 					</div>

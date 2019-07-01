@@ -153,9 +153,11 @@
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1">Editor<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow">Float<wbr>Visualiser<wbr>Window</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache">MethodCache</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache_1">MethodCache<wbr>&lt;TDelegate&gt;<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues">PersistentValues</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyVisualiserWindow">Property<wbr>Visualiser<wbr>Window</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></li>
 				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference">Serialized<wbr>Object<wbr>Reference</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyAccessor">Serialized<wbr>Property<wbr>Accessor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference">Serialized<wbr>Property<wbr>Reference</a></li>
@@ -313,10 +315,22 @@ public sealed class SerializedObjectReference</code></pre>
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/4B5D9898">AreSameObjects<wbr>(<wbr>Serialized<wbr>Object<wbr>Reference[], <wbr>Object[])<wbr></a></td>
+								<td>bool</td>
+								<td>
+									<div>
+    Indicates whether both arrays refer to the same set of objects.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/72A00494">Convert<wbr>(Object[])<wbr></a></td>
 								<td>Serialized<wbr>Object<wbr>Reference[]</td>
 								<td>
-									<div></div>
+									<div>
+    Creates a new array of <code class="cs">InspectorGadgets.Editor.SerializedObjectReference</code>s representing the 'objects'.
+    </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -324,7 +338,10 @@ public sealed class SerializedObjectReference</code></pre>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/668FB5DD">Convert<wbr>(<wbr>Serialized<wbr>Object<wbr>Reference[])<wbr></a></td>
 								<td>Object[]</td>
 								<td>
-									<div></div>
+									<div>
+    Creates a new array of <code class="cs">UnityEngine.Object</code>s containing the target <code class="cs">InspectorGadgets.Editor.SerializedObjectReference.Object</code> of each
+    of the 'references'.
+    </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -332,7 +349,7 @@ public sealed class SerializedObjectReference</code></pre>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/443C45C2">ToString<wbr>()<wbr></a></td>
 								<td>string</td>
 								<td>
-									<div></div>
+									<div>Returns a string describing this object.</div>
 								</td>
 							</tr>
 					</tbody></table>

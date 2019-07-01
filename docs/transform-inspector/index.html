@@ -78,10 +78,10 @@
                     	
     <div id="infobar-headings"><h6>On This Page</h6><p><a href="#local-world">Local / World</a></p>
 <p><a href="#freeze-children">Freeze Children</a></p>
-<p><a href="#draw-all-gizmos-pro-only">Draw All Gizmos [Pro-Only]</a></p>
+<p><a href="#draw-all-gizmos">Draw All Gizmos</a></p>
 <p><a href="#uniform-scale">Uniform Scale</a></p>
 <p><a href="#utility-buttons">Utility Buttons</a></p>
-<p><a href="#movement-guides-pro-only">Movement Guides [Pro-Only]</a></p>
+<p><a href="#movement-guides">Movement Guides</a></p>
 <p><a href="#other-pro-only-features">Other Pro-Only Features</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -96,7 +96,6 @@
 
                 <li><a href="/inspector-gadgets/docs/features">Features</a></li>
                 <li class="selected"><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
-                <li><a href="/inspector-gadgets/docs/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
                 <li class="treeview">
                     <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
@@ -107,7 +106,7 @@
                 <li><a href="/inspector-gadgets/docs/script-inspector/decorator-attributes">Decorator Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/inspectable-attributes">Inspectable Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/shader-attributes">Shader Attributes</a></li>
-                <li><a href="/inspector-gadgets/docs/script-inspector/inspector-events">Inspector Events</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/event-messages">Event Messages</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/custom-inspectors">Custom Inspectors</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/missing-scripts">Missing Scripts</a></li>
 
@@ -117,8 +116,8 @@
                     <a href="/inspector-gadgets/docs/misc">Misc</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/inspector-gadgets/docs/misc/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/comments">Comments</a></li>
-                <li><a href="/inspector-gadgets/docs/misc/set-hide-flags">Set Hide Flags</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/auto-prefs">Auto Prefs</a></li>
 
                     </ul>
@@ -152,46 +151,19 @@
 			<h1>Transform Inspector</h1>
 		</section>
 	<section class="content">
-		<p>Unity's <code>Transform</code> Inspector gives you a very simple interface for viewing and editing the Position, Rotation, and Scale of objects:</p>
+		<p>Unity's default <code>Transform</code> Inspector gives you a very simple interface for viewing and editing the Position, Rotation, and Scale of objects:</p>
 <p><img src="default-transform-inspector.png" class="img-responsive"></p>
 <p>Inspector Gadgets adds several useful enhancements to it:</p>
 <p><img src="transform-inspector-labelled.png" class="img-responsive"></p>
 <h1 id="local-world">Local / World</h1>
 <p>The default Inspector only shows the Local values relative to the parent object while Inspector Gadgets allows you to toggle between <code>[L]</code> local space and <code>[W]</code> world space.</p>
 <h1 id="freeze-children">Freeze Children</h1>
-<table class="table">
-  <thead><tr>
-    <th style="width:50%">Normal</th>
-    <th style="width:50%">Freeze Children</th>
-  </tr></thead>
-  <tbody>
-  <tr>
-    <td>Moving the parent moves the children as well.</td>
-    <td>Moving the parent won’t affect the children.</td>
-  </tr>
-  <tr>
-    <td><img src="unfreeze-children.png" class="img-responsive"></td>
-    <td><img src="freeze-children.png" class="img-responsive"></td>
-  </tr>
-  </tbody>
-</table>
-<h1 id="draw-all-gizmos-pro-only">Draw All Gizmos [Pro-Only]</h1>
-<table class="table">
-  <thead><tr>
-    <th style="width:50%">Normal</th>
-    <th style="width:50%">Draw All Gizmos</th>
-  </tr></thead>
-  <tbody>
-  <tr>
-    <td>One gizmo controls all selected objects.</td>
-    <td>Each selected object gets its own gizmo.</td>
-  </tr>
-  <tr>
-    <td><img src="draw-one-gizmo.png" class="img-responsive"></td>
-    <td><img src="draw-all-gizmos.png" class="img-responsive"></td>
-  </tr>
-  </tbody>
-</table>
+<p>The <code>[F]</code> button allows you to prevent changes you make to a parent object from affecting its children. Note that this is only for the Scene and Inspector controls, it won't affect the way things work at runtime.</p>
+<p><img src="freeze-children.gif" class="img-responsive"></p>
+<h1 id="draw-all-gizmos">Draw All Gizmos</h1>
+<p><em>This feature is only available in <a href="../features">Inspector Gadgets Pro</a>.</em></p>
+<p>Normally Unity only draws one scene gizmo which manipulates all selected objects at once, but the <code>[G]</code> button gives each object its own gizmo so you can move them individually without changing your selection all the time.</p>
+<p><img src="draw-all-gizmos.gif" class="img-responsive"></p>
 <h1 id="uniform-scale">Uniform Scale</h1>
 <p>Most of the time when you scale an object you want to do so on all axes so that its proportions remain the same. When the object's scale is uniform (same value on all axes) it will be shown as a single value so you don’t need to enter the same value multiple times.</p>
 <ul>
@@ -206,17 +178,18 @@
 <li>You can Right Click the <strong>C</strong>opy button to log a message containing the field’s current value.</li>
 <li>The <strong>S</strong>nap buttons use Unity's own snap settings which can be opened by right clicking the button (or via <code>Edit/Snap Settings</code>).</li>
 <li>These buttons are greyed out when they would do nothing. I.E. <strong>C</strong>opy and <strong>P</strong>aste are greyed out if the clipboard contains the same values as the selected object, and <strong>S</strong>nap is disabled if the object is already aligned to the grid.</li>
+<li>You can also <strong>Middle Click</strong> on any <code>Transform</code> field to reset it to its default value.</li>
 </ul>
-<h1 id="movement-guides-pro-only">Movement Guides [Pro-Only]</h1>
+<h1 id="movement-guides">Movement Guides</h1>
+<p><em>This feature is only available in <a href="../features">Inspector Gadgets Pro</a>.</em></p>
 <p>While you are moving an object in the scene, Inspector Gadgets will indicate the position you are moving the object from and the distance you have moved it. This feature can be disabled in the <code>Edit/Preferences/Inspector Gadgets</code> menu.</p>
 <p><img src="movement-guides.gif" class="img-responsive"></p>
 <h1 id="other-pro-only-features">Other Pro-Only Features</h1>
-<p>Inspector Gadgets Pro includes various additional features which are not available in the Lite version:</p>
+<p><em><a href="../features">Inspector Gadgets Pro</a></em> includes various additional features which are not available in the Lite version:</p>
 <ul>
 <li>Multi-object editing (the Lite version reverts to the default <code>Transform</code> Inspector when multiple objects are selected).</li>
 <li><code>Transform</code> fields which aren’t at their default value will have a thicker border for emphasis.</li>
 <li><code>Transform</code> fields which aren’t a multiple of the snap value will be shown in italics.</li>
-<li>The <code>Edit/Selection/New Locked Inspector (Ctrl + Alt + S)</code> menu function item opens an Inspector window locked to the current selection so you can easily compare and copy values between different selection sets.</li>
 </ul>
 
 	</section>

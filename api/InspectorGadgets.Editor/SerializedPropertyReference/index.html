@@ -153,9 +153,11 @@
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1">Editor<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow">Float<wbr>Visualiser<wbr>Window</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache">MethodCache</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache_1">MethodCache<wbr>&lt;TDelegate&gt;<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues">PersistentValues</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyVisualiserWindow">Property<wbr>Visualiser<wbr>Window</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference">Serialized<wbr>Object<wbr>Reference</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyAccessor">Serialized<wbr>Property<wbr>Accessor</a></li>
 				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference">Serialized<wbr>Property<wbr>Reference</a></li>
@@ -296,6 +298,15 @@ public sealed class SerializedPropertyReference</code></pre>
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference/A216838B">TargetExists</a></td>
+								<td>bool</td>
+								<td>
+									<div>
+    Returns true if the target property and all its target objects still exist.
+    </div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference/FEDBB191">TargetObject</a></td>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference">Serialized<wbr>Object<wbr>Reference</a></td>
 								<td>
@@ -326,16 +337,25 @@ public sealed class SerializedPropertyReference</code></pre>
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference/D96EC6AB">DoGUI<wbr>(Rect)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference/FD158434">DoPropertyGUI<wbr>(Rect)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>
-    Draws the target property within the specified 'rect'.
+    Draws the target property within the specified 'area'.
     </div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference/57EC5B43">GetHeight<wbr>()<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference/33D82BAA">DoTargetGUI<wbr>(Rect)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+    Draws the target object within the specified 'area'.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference/3A7C99E7">GetPropertyHeight<wbr>()<wbr></a></td>
 								<td>float</td>
 								<td>
 									<div>
@@ -353,19 +373,10 @@ public sealed class SerializedPropertyReference</code></pre>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference/CDAFDF59">TargetExists<wbr>()<wbr></a></td>
-								<td>bool</td>
-								<td>
-									<div>
-    Returns true if the target property and all its target objects still exist.
-    </div>
-								</td>
-							</tr>
-							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference/4B8DE099">ToString<wbr>()<wbr></a></td>
 								<td>string</td>
 								<td>
-									<div></div>
+									<div>Returns a string describing this object.</div>
 								</td>
 							</tr>
 					</tbody></table>

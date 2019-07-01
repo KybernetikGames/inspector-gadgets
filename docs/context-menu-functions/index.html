@@ -76,7 +76,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#persist-after-play-mode">Persist After Play Mode</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#new-locked-inspector">New Locked Inspector</a></p>
+<p><a href="#persist-after-play-mode">Persist After Play Mode</a></p>
 <p><a href="#visualise">Visualise</a></p>
 <p><a href="#watch">Watch</a></p>
 <hr class="infobar-hidden">
@@ -92,7 +93,6 @@
 
                 <li><a href="/inspector-gadgets/docs/features">Features</a></li>
                 <li><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
-                <li><a href="/inspector-gadgets/docs/auto-hide-ui">Auto Hide UI</a></li>
                 <li class="selected"><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
                 <li class="treeview">
                     <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
@@ -103,7 +103,7 @@
                 <li><a href="/inspector-gadgets/docs/script-inspector/decorator-attributes">Decorator Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/inspectable-attributes">Inspectable Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/shader-attributes">Shader Attributes</a></li>
-                <li><a href="/inspector-gadgets/docs/script-inspector/inspector-events">Inspector Events</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/event-messages">Event Messages</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/custom-inspectors">Custom Inspectors</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/missing-scripts">Missing Scripts</a></li>
 
@@ -113,8 +113,8 @@
                     <a href="/inspector-gadgets/docs/misc">Misc</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/inspector-gadgets/docs/misc/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/comments">Comments</a></li>
-                <li><a href="/inspector-gadgets/docs/misc/set-hide-flags">Set Hide Flags</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/auto-prefs">Auto Prefs</a></li>
 
                     </ul>
@@ -148,9 +148,9 @@
 			<h1>Context Menu Functions</h1>
 		</section>
 	<section class="content">
-		<p>Inspector Gadgets adds various useful functions to the context menu (right click menu) of each field in the Inspector based on its type.</p>
+		<p>Inspector Gadgets also adds various useful functions to the context menu (right click menu) of each field in the Inspector based on its type.</p>
 <ul>
-<li>These functions all support multi-object selection, but the Lite version disables them while multiple objects are selected.</li>
+<li>These functions only support multi-object selection in <a href="../features">Inspector Gadgets Pro</a>.</li>
 <li>Most types have <code>Copy</code> and <code>Paste</code> functions which allow you to copy values between fields in Unity as well as to and from other programs.</li>
 <li>The fields in the <code>Transform</code> Inspector have functions to snap them to the grid, raycast down and snap to the ground, and rotate to look at another object.</li>
 <li>The fields in the <code>RectTransform</code> Inspector have functions to square them (set the height equal to the width or vice versa) and to snap them to the edges of its siblings in a particular direction (Right/Up/Left/Down).</li>
@@ -165,7 +165,11 @@
 <li><code>String</code> to lower or upper case.</li>
 <li><code>Log</code> current value.</li>
 </ul>
+<h1 id="new-locked-inspector">New Locked Inspector</h1>
+<p><em>This feature is only available in <a href="../features">Inspector Gadgets Pro</a>.</em></p>
+<p>The <code>Edit/Selection/New Locked Inspector (Ctrl + Alt + I)</code> menu function item opens a new Inspector window locked to the current selection so you can easily compare and copy values between different objects.</p>
 <h1 id="persist-after-play-mode">Persist After Play Mode</h1>
+<p><em>This feature is only available in <a href="../features">Inspector Gadgets Pro</a>.</em></p>
 <p>While in Play Mode, every <code>Component</code> and Inspector field gets a <code>Persist After Play Mode</code> context menu function to allow their values to be retained once you leave Play Mode instead of being reset to their previous value.</p>
 <p><img src="persist-after-play-mode.gif" class="img-responsive"></p>
 <h1 id="visualise">Visualise</h1>
@@ -173,8 +177,8 @@
 <p><img src="visualise-float.png" class="img-responsive"></p>
 <p><img src="visualise-vector3.png" class="img-responsive"></p>
 <h1 id="watch">Watch</h1>
-<p>Opens an editor window that displays a list of all fields you have used the function on so you can view (and edit) them all at the same time.</p>
-<p>The Lite version only allows you to watch up to 3 fields at a time.</p>
+<p>Opens an editor window that displays a list of all fields you have used the function on so you can view (and edit) them all at the same time. You can use this function on individual fields as well as entire <code>Component</code>s.</p>
+<p><em>The <a href="../features">Lite version</a> only allows you to watch up to 3 fields at a time.</em></p>
 <p><img src="watcher.png" class="img-responsive"></p>
 
 	</section>

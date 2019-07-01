@@ -90,7 +90,6 @@
 
                 <li><a href="/inspector-gadgets/docs/features">Features</a></li>
                 <li><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
-                <li><a href="/inspector-gadgets/docs/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
                 <li class="treeview">
                     <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
@@ -101,7 +100,7 @@
                 <li><a href="/inspector-gadgets/docs/script-inspector/decorator-attributes">Decorator Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/inspectable-attributes">Inspectable Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/shader-attributes">Shader Attributes</a></li>
-                <li><a href="/inspector-gadgets/docs/script-inspector/inspector-events">Inspector Events</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/event-messages">Event Messages</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/custom-inspectors">Custom Inspectors</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/missing-scripts">Missing Scripts</a></li>
 
@@ -111,8 +110,8 @@
                     <a href="/inspector-gadgets/docs/misc">Misc</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/inspector-gadgets/docs/misc/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/comments">Comments</a></li>
-                <li><a href="/inspector-gadgets/docs/misc/set-hide-flags">Set Hide Flags</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/auto-prefs">Auto Prefs</a></li>
 
                     </ul>
@@ -147,7 +146,6 @@
 		</section>
 	<section class="content">
 		<h1 id="inspector-gadgets-v6.0">Inspector Gadgets v6.0</h1>
-<?-- got repo changes on 2019-06-07 --?>
 <ul>
 <li>2019-??-??.</li>
 </ul>
@@ -156,10 +154,10 @@
 <li>Inspector Gadgets Pro is now delivered as regular scripts instead of a pre-compiled DLL to make it easier to view and modify the source code. Also reorganized the namespaces.</li>
 </ul>
 <blockquote class="blockquote">
-<p><strong>Warning</strong>: when upgrading from an earlier version you must delete the old version before importing the new one. This will also cause any Inspector Gadgets components (such as <code>Comment</code> or <code>SetHideFlags</code>) in your project to go missing so you will need to set them all up again. This is an unfortunate side effect of the way Unity handles references to scripts inside a DLL compared to regular script files.</p>
+<p><strong>Warning</strong>: when upgrading from an earlier version you must delete the old version before importing the new one. This will also cause any Inspector Gadgets components (such as <code>Comment</code>) in your project to go missing so you will need to set them all up again. This is an unfortunate side effect of the way Unity handles references to scripts inside a DLL compared to regular script files.</p>
 </blockquote>
 <ul>
-<li>Added <code>Persist After Play Mode</code> context menu function to all serialized properties.</li>
+<li>Added <a href="../context-menu-functions#persist-after-play-mode">Persist After Play Mode</a> context menu function to all serialized properties.</li>
 <li>Added <code>[OnOpenAsset]</code> functions which are triggered when you hold certain modifier keys and Double Click on an asset in the Project window:
 <ul>
 <li><code>Alt + Double Click</code> on a prefab to <code>Instantiate</code> it in the scene.</li>
@@ -167,11 +165,11 @@
 <li><code>Ctrl + Shift + Alt + Double Click</code> any asset to open its folder in your OS file explorer.</li>
 </ul>
 </li>
-<li>Added context menu handler for <code>AnimationCurve</code> properties with several functions: <code>Smooth Tangents</code>, <code>Flip Horizontal</code>, <code>Flip Vertical</code>, <code>EnforceHorizontalSymmetry</code>, <code>ExtendMirrorred</code>.</li>
+<li>Added context menu handler for <code>AnimationCurve</code> properties with several functions: <code>Smooth Tangents</code>, <code>Flip Horizontal</code>, <code>Flip Vertical</code>, <code>Enforce Horizontal Symmetry</code>, <code>Extend Mirrorred</code>.</li>
 </ul>
 <h2 id="minor-features">Minor Features</h2>
 <ul>
-<li>Added <code>AutoHideUI.ToggleEnabled</code> context menu function for <code>UIBehaviour</code> scripts.</li>
+<li>Added <code>AutoHideUI.ToggleEnabled</code> context menu function for <code>RectTransform</code>, <code>Canvas</code>, and <code>UIBehaviour</code> components.</li>
 <li>Added preferences to modify the <code>Transform</code> Inspector field colors.</li>
 <li>Added <code>Assets/Create/Shortcut</code> function to create an asset which creates a quick link to another folder in the project similar to a Windows Shortcut. Simply assign a <code>Target</code> in the Inspector then you can double click the asset to go to the <code>Target</code>.</li>
 <li>Added <code>BlendShapeViewer</code> - Whenever you select a <code>SkinnedMeshRenderer</code> which has any Blend Shapes it will automatically add a <code>BlendShapeViewer</code> component to display them as user-friendly sliders. That <code>Component</code> will be automatically removed when you deselect the object and will not be saved in the scene.</li>
@@ -180,9 +178,14 @@
 <li>Added <code>IGUtils.DoInspectableGUI</code> so custom Inspectors that don't inherit from <code>InspectorGadgets.Editor&lt;T&gt;</code> can still use inspectable attributes (for OdinInspector compatability).</li>
 <li>Added <code>AutoPref&lt;T&gt;.OnValueChanged</code> callback.</li>
 <li>Added <code>IGUtils.CollapseAllComponents</code> context menu function on <code>Transforms</code> to collapse or expand all components at once.</li>
+<li>Added <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache">MethodCache</a></code> for easily retrieving methods with a specific signature from any provided object.</li>
+<li>Added an <code>OverridePropertyGUI</code> event for altering the GUI of specific properties.</li>
+<li>Added <code>OnPropertyContextMenu</code> event for adding extra functions to the context menu of a property.</li>
+<li>Added a context menu function to <code>ScriptyHunterWindow</code> to destroy all missing scripts.</li>
 </ul>
 <h2 id="improvements">Improvements</h2>
 <ul>
+<li>Improved the layout of <code>WatcherWindow</code> and added the ability to watch entire objects as well as individual fields.</li>
 <li><code>IGEditorUtils.FindAssetOfType</code> can now find <code>Component</code>s on the root of a prefab instead of never finding anything for them.</li>
 <li>Added an optional background to the Scene view distance moved labels so they are easier to read.</li>
 <li>Scene view distance moved labels now show the distance on each individual axis as well (with an option to disable).</li>
@@ -196,24 +199,33 @@
 </li>
 <li><code>IGEditorUtils.ForEachTarget</code> will now always record an <code>Undo</code>.</li>
 <li>The <code>Transform</code> Inspector paste button tooltip will now be updated in response to changes in the system copy buffer.</li>
+<li><code>ScriptyHunterWindow</code> can now find and destroy non-prefab assets.</li>
+<li>Changed <code>Validator Attributes</code> to use <code>long</code>s and <code>double</code>s instead of <code>int</code>s and <code>float</code>s.</li>
 </ul>
 <h2 id="changes">Changes</h2>
 <ul>
 <li>Dropped support for Unity 5.6.</li>
+<li>Changed <code>New Locked Inspector</code> keyboard shortcut to <code>Ctrl + Alt + I</code>.</li>
+<li>Changed the <code>Auto Hide UI</code> show condition to check for any non-world-space <code>Canvas</code> on the object or a parent instead of looking for <code>UIBehaviour</code>s in parents and children.</li>
 <li>The <code>Show Position Labels</code> setting is now disabled by default. Feedback indicates that they aren't particularly useful, but the option is still there.</li>
 <li>Flipped <code>true</code>/<code>false</code> order on the label array in the <code>Toolbar</code> attribute constructor to be consistent with boolean logic. Label <code>0</code> is now <code>false</code> and <code>1</code> is <code>true</code>.</li>
-<li>Removed editor event attributes <code>[OnWillUnloadAssemblies]</code> and <code>[OnEditorQuit]</code> as Unity already has events for them: <code>AssemblyReloadEvents.beforeAssemblyReload</code> and <code>EditorApplication.quitting</code> respectively.</li>
 <li>Changing any <code>AutoPref</code> will now repaint all GUI views.</li>
 <li>The Nested Object Drawer now excludes <code>AudioClip</code>s since it doesn't work for them.</li>
-<li>Moved <code>Component/Find References</code> context menu items to <code>MonoBehaviour</code> and grouped them as a sub menu.</li>
+<li>Moved most string constants into <code>Constants</code>.</li>
+<li>Removed the <code>SetHideFlags</code> script because you can just set the <code>EditorOnly</code> tag to achieve the same thing.</li>
+<li>Removed <code>MonoBehaviour/Find References</code> menu items because they weren't really that useful.</li>
+<li>Removed editor event attributes <code>[OnWillUnloadAssemblies]</code> and <code>[OnEditorQuit]</code> as Unity already has events for them: <code>AssemblyReloadEvents.beforeAssemblyReload</code> and <code>EditorApplication.quitting</code> respectively.</li>
+<li>The <code>Watch</code> and <code>Persist After Play Mode</code> commands now work properly when multiple objects are selected.</li>
 </ul>
 <h2 id="fixes">Fixes</h2>
 <ul>
 <li>Fixed errors in Unity 2018.3+ caused by the obfuscation in the Lite DLLs. They were harmless and didn't actually stop anything from working, they were simply annoying.</li>
 <li>Fixed undoing a script type change to not cause GUI errors.</li>
+<li>Fixed <code>TransformEditor</code> layout when drawn outside the Inspector (such as in the <code>WatcherWindow</code> and nested object drawers).</li>
 <li>Fixed <code>[Inspectable]</code> attribute to catch exceptions while drawing.</li>
 <li>Fixed <code>TransformEditor.HandleOffset</code> to get a field instead of a property (as changed in Unity 2017.1).</li>
 <li>Fixed incorrect constructor parameters in <code><a href="/inspector-gadgets/api/InspectorGadgets/EditorVector2">AutoPrefs.EditorVector2</a></code>.</li>
+<li><code>ScriptyHunterEditor</code> can now destroy sub assets properly.</li>
 </ul>
 
 	</section>

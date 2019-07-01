@@ -99,7 +99,6 @@
 
                 <li><a href="/inspector-gadgets/docs/features">Features</a></li>
                 <li><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
-                <li><a href="/inspector-gadgets/docs/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
                 <li class="treeview active">
                     <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
@@ -110,7 +109,7 @@
                 <li class="selected"><a href="/inspector-gadgets/docs/script-inspector/decorator-attributes">Decorator Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/inspectable-attributes">Inspectable Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/shader-attributes">Shader Attributes</a></li>
-                <li><a href="/inspector-gadgets/docs/script-inspector/inspector-events">Inspector Events</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/event-messages">Event Messages</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/custom-inspectors">Custom Inspectors</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/missing-scripts">Missing Scripts</a></li>
 
@@ -120,8 +119,8 @@
                     <a href="/inspector-gadgets/docs/misc">Misc</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/inspector-gadgets/docs/misc/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/comments">Comments</a></li>
-                <li><a href="/inspector-gadgets/docs/misc/set-hide-flags">Set Hide Flags</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/auto-prefs">Auto Prefs</a></li>
 
                     </ul>
@@ -156,6 +155,9 @@
 		</section>
 	<section class="content">
 		<p>Unity has several attributes which can be used to easily customise the appearance of the Inspector without needing to write a custom Inspector class: <a href="https://docs.unity3d.com/ScriptReference/HeaderAttribute.html">Header</a>, <a href="https://docs.unity3d.com/ScriptReference/HideInInspector.html">HideInInspector</a>, <a href="https://docs.unity3d.com/ScriptReference/MultilineAttribute.html">Multiline</a>, <a href="https://docs.unity3d.com/ScriptReference/RangeAttribute.html">Range</a>, <a href="https://docs.unity3d.com/ScriptReference/SerializeField.html">SerializeField</a>, <a href="https://docs.unity3d.com/ScriptReference/SpaceAttribute.html">Space</a>, <a href="https://docs.unity3d.com/ScriptReference/TextAreaAttribute.html">TextArea</a>, <a href="https://docs.unity3d.com/ScriptReference/TooltipAttribute.html">Tooltip</a>. The <code>InspectorGadgets</code> namespace contains some additional attributes to allow for even greater customisation (see the links on the right for the full list).</p>
+<blockquote class="blockquote">
+<p><em>The following features are only available in <a href="../../features">Inspector Gadgets Pro</a>.</em></p>
+</blockquote>
 <h1 id="color">Color</h1>
 <p>The <code>[Color]</code> attribute simply changes the color of a field, allowing you to highlight it or group multiple fields together visually.</p>
 <pre><code class="language-cs">[InspectorGadgets.Color(1, 0.5f, 0.5f)]

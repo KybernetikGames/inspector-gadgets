@@ -181,7 +181,7 @@
 						</thead>
 							<tbody><tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/AutoHideUI">AutoHideUI</a></td>
-									<td>
+									<td>[Editor-Only]
      Automatically hides the UI layer inside the Editor so it doesn't get in the way of 3D objects in scene view.
     <p></p>
      When any object is selected that is on the UI layer, the layer will be shown and the camera changed to 2D orthographic and zoomed to the current selection.
@@ -191,17 +191,19 @@
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/CommentEditor">CommentEditor</a></td>
-									<td></td>
+									<td>[Editor-Only]
+    Custom Inspector for <code class="cs">InspectorGadgets.IComment</code>s.
+    </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/DynamicInspector">DynamicInspector</a></td>
-									<td>[Experimental]
+									<td>[Editor-Conditional] [Experimental]
     Contains various utilities for dynamically modifying the inspector.
     </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1">Editor</a><wbr>&lt;<a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1#typeparam-T">T</a>&gt;<wbr></td>
-									<td>[Pro-Only]
+									<td>[Pro-Only] [Editor-Only]
     Base class to derive custom editors from, with a bunch of additional features on top of Unity's base
     <code class="cs">UnityEditor.Editor</code> class.
     <p></p>
@@ -216,33 +218,46 @@
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow">Float<wbr>Visualiser<wbr>Window</a></td>
-									<td>
+									<td>[Editor-Only]
     The "Visualise" command in the context menu of a <code class="cs"><a href="/inspector-gadgets">float</a></code> property can be used to open this window
     which visualises the property's value in the scene.
     </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></td>
-									<td></td>
+									<td>[Editor-Only]
+    Various utility methods used by <code class="cs">InspectorGadgets</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache">MethodCache</a></td>
+									<td>[Pro-Only] [Editor-Only]
+    <code class="cs">InspectorGadgets.Editor.MethodCache`1</code>s for custom event messages added by Inspector Gadgets.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache_1">MethodCache</a><wbr>&lt;<a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache_1#typeparam-TDelegate">TDelegate</a>&gt;<wbr></td>
+									<td>[Pro-Only] [Editor-Only]
+    Retrieves and caches methods that match a specified signature.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></td>
+									<td>[Editor-Only]
+    A custom Inspector for <code class="cs">UnityEngine.MonoBehaviour</code> but not its children, so it should only ever get used on
+    missing scripts.
+    </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues">PersistentValues</a></td>
-									<td>[Editor-Only]
+									<td>[Pro-Only] [Editor-Only]
     Manages values that need to persist after leaving Play Mode.
     </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyVisualiserWindow">Property<wbr>Visualiser<wbr>Window</a></td>
-									<td>
-    Base class for editor windows that help visualise the value of a <code class="cs">UnityEditor.SerializedProperty</code>.
-    <p></p>
-    Use <code class="cs">InspectorGadgets.Editor.PropertyVisualiserWindow.Visualise``1(UnityEditor.SerializedProperty)</code> to open a window or <code class="cs">InspectorGadgets.Editor.PropertyVisualiserWindow.AddVisualiseItem``1(UnityEditor.GenericMenu,UnityEditor.SerializedProperty)</code> to add a menu item that does so.
-    </td>
-							</tr>
-							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></td>
 									<td>[Editor-Only]
-    Custom inspector for MonoBehaviour but not children, so it should only ever get used on missing scripts.
+    Base class for editor windows that help visualise the value of a <code class="cs">UnityEditor.SerializedProperty</code>.
     </td>
 							</tr>
 							<tr>
@@ -265,14 +280,14 @@
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Vector2VisualiserWindow">Vector2<wbr>Visualiser<wbr>Window</a></td>
-									<td>
+									<td>[Editor-Only]
     The "Visualise" command in the context menu of a <code class="cs">UnityEngine.Vector2</code> property can be used to open this window
     which visualises the property's value in the scene.
     </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Vector3VisualiserWindow">Vector3<wbr>Visualiser<wbr>Window</a></td>
-									<td>
+									<td>[Editor-Only]
     The "Visualise" command in the context menu of a <code class="cs">UnityEngine.Vector3</code> property can be used to open this window
     which visualises the property's value in the scene.
     </td>

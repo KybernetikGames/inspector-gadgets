@@ -92,7 +92,6 @@
 
                 <li><a href="/inspector-gadgets/docs/features">Features</a></li>
                 <li><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
-                <li><a href="/inspector-gadgets/docs/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
                 <li class="treeview active">
                     <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
@@ -103,7 +102,7 @@
                 <li><a href="/inspector-gadgets/docs/script-inspector/decorator-attributes">Decorator Attributes</a></li>
                 <li class="selected"><a href="/inspector-gadgets/docs/script-inspector/inspectable-attributes">Inspectable Attributes</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/shader-attributes">Shader Attributes</a></li>
-                <li><a href="/inspector-gadgets/docs/script-inspector/inspector-events">Inspector Events</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/event-messages">Event Messages</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/custom-inspectors">Custom Inspectors</a></li>
                 <li><a href="/inspector-gadgets/docs/script-inspector/missing-scripts">Missing Scripts</a></li>
 
@@ -113,8 +112,8 @@
                     <a href="/inspector-gadgets/docs/misc">Misc</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/inspector-gadgets/docs/misc/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/comments">Comments</a></li>
-                <li><a href="/inspector-gadgets/docs/misc/set-hide-flags">Set Hide Flags</a></li>
                 <li><a href="/inspector-gadgets/docs/misc/auto-prefs">Auto Prefs</a></li>
 
                     </ul>
@@ -148,7 +147,10 @@
 			<h1>Inspectable Attributes</h1>
 		</section>
 	<section class="content">
-		<p>Unlike the <a href="../decorator-attributes">Decorator Attributes</a> which inherit from <code>PropertyAttribute</code> and alter the way Unity shows a serialized field in the Inspector, the following attributes inherit from <code><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute">InspectableAttribute</a></code> and add extra elements at the bottom of the Inspector (see the links on the right for the full list).</p>
+		<blockquote class="blockquote">
+<p><em>This feature is only available in <a href="../../features">Inspector Gadgets Pro</a>.</em></p>
+</blockquote>
+<p>Unlike the <a href="../decorator-attributes">Decorator Attributes</a> which inherit from <code>PropertyAttribute</code> and alter the way Unity shows a serialized field in the Inspector, the following attributes inherit from <code><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute">InspectableAttribute</a></code> and add extra elements at the bottom of the Inspector (see the links on the right for the full list).</p>
 <p>These attributes have several properties which can be set in the constructor:</p>
 <ul>
 <li><code>Label</code> and <code>Tooltip</code> - the text and tooltip to show in the Inspector.</li>

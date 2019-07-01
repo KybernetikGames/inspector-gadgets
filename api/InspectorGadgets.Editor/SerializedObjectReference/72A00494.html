@@ -76,7 +76,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Syntax">Syntax</a></p>
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
+<p><a href="#Syntax">Syntax</a></p>
 <p><a href="#Parameters">Parameters</a></p>
 <p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
@@ -150,6 +151,7 @@
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/D9D67659">InstanceID</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/F28840B3">Object</a></li>
 			<li class="header">Method Members</li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/4B5D9898">AreSameObjects<wbr>(<wbr>Serialized<wbr>Object<wbr>Reference[], <wbr>Object[])<wbr></a></li>
 				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/72A00494">Convert<wbr>(Object[])<wbr></a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/668FB5DD">Convert<wbr>(<wbr>Serialized<wbr>Object<wbr>Reference[])<wbr></a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference/443C45C2">ToString<wbr>()<wbr></a></li>
@@ -173,7 +175,11 @@
 <section class="content">
 	
 	
-	
+		<h1 id="Summary">Summary</h1>
+	<div class="lead">
+    Creates a new array of <code class="cs">InspectorGadgets.Editor.SerializedObjectReference</code>s representing the 'objects'.
+    </div>
+
 		<div class="panel panel-default">
   			<div class="panel-body">	
 				<dl class="dl-horizontal">	
@@ -191,7 +197,7 @@
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public static SerializedObjectReference[] Convert(Object[] objects)</code></pre>
+	<pre><code>public static SerializedObjectReference[] Convert(params Object[] objects)</code></pre>
 
 
 

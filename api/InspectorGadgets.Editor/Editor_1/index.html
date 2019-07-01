@@ -151,9 +151,11 @@
 				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1">Editor<wbr>&lt;T&gt;<wbr></a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow">Float<wbr>Visualiser<wbr>Window</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache">MethodCache</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache_1">MethodCache<wbr>&lt;TDelegate&gt;<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues">PersistentValues</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyVisualiserWindow">Property<wbr>Visualiser<wbr>Window</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedObjectReference">Serialized<wbr>Object<wbr>Reference</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyAccessor">Serialized<wbr>Property<wbr>Accessor</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/SerializedPropertyReference">Serialized<wbr>Property<wbr>Reference</a></li>
@@ -179,7 +181,7 @@
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">[Pro-Only]
+	<div class="lead">[Pro-Only] [Editor-Only]
     Base class to derive custom editors from, with a bunch of additional features on top of Unity's base
     <code class="cs">UnityEditor.Editor</code> class.
     <p></p>
@@ -208,7 +210,7 @@
 								<dd>
 									<ul class="list-unstyled">										
 											<li>Editor</li>								
-											<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></li>								
+											<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></li>								
 									</ul>
 								</dd>				
 							
@@ -218,8 +220,8 @@
 					<div class="col-md-6">
 						<div class="mermaid">
 							graph BT
-	Type--&gt;Base0["ScriptyHunterEditor"]
-	click Base0 "/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor"
+	Type--&gt;Base0["MissingScriptEditor"]
+	click Base0 "/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor"
 	Base0--&gt;Base1["Editor"]
 	Type["Editor&lt;T&gt;"]
 class Type type-node
@@ -231,7 +233,7 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public abstract class Editor&lt;T&gt; : ScriptyHunterEditor where T : class</code></pre>
+	<pre><code>public abstract class Editor&lt;T&gt; : MissingScriptEditor where T : class</code></pre>
 
 
 
@@ -295,19 +297,19 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor/E2884B61">OtherProperties</a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor/F912F203">OtherProperties</a></td>
 								<td>List<wbr>&lt;SerializedProperty&gt;<wbr></td>
 								<td>
 									<div>All of the target's properties other than "m_Script".</div>
-											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></em></small></div>
+											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor/DECB0758">ScriptProperty</a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor/820F803C">ScriptProperty</a></td>
 								<td>SerializedProperty</td>
 								<td>
 									<div>The target's "m_Script" property.</div>
-											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></em></small></div>
+											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></em></small></div>
 								</td>
 							</tr>
 							<tr>
@@ -351,6 +353,17 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor/024E0862">DestroyProperly<wbr>(Object, <wbr>bool)<wbr></a></td>
+								<td>void</td>
+								<td>
+									<div>
+    Destroys the 'target' object. If it is an asset, a dialogue box asks the user if they are sure first.
+    </div>
+											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></em></small></div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1/5319BDEC">DoAllInspectables<wbr>()<wbr></a></td>
 								<td>void</td>
 								<td>
@@ -379,13 +392,13 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor/F2A95266">OnDisable<wbr>()<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor/987874F2">OnDisable<wbr>()<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>
-    Indicates to the <code class="cs">InspectorGadgets.Editor.ScriptyHunterWindow</code> that the target has been deselected.
+    Indicates to the <code class="cs">InspectorGadgets.Editor.MissingScriptWindow</code> that the target has been deselected.
     </div>
-											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Editor/ScriptyHunterEditor">ScriptyHunterEditor</a></em></small></div>
+											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></em></small></div>
 								</td>
 							</tr>
 							<tr>
