@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
-        <title>Inspector Gadgets - API - IGEditorUtils.GetSerializedPropertyContext(SerializedProperty) Method</title>
+        <title>Inspector Gadgets - API - IComment.TextFieldName Property</title>
         <link href="/inspector-gadgets/assets/css/highlight.css" rel="stylesheet">
         <link href="/inspector-gadgets/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/inspector-gadgets/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -57,11 +57,11 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.0</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.2</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
-        <li><a href="https://assetstore.unity.com/packages/tools/gui/inspector-gadgets-lite-82896?aid=1100l8ah5"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
-        <li><a href="https://assetstore.unity.com/packages/tools/gui/inspector-gadgets-pro-83013?aid=1100l8ah5"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Buy</a></li>
+        <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
+        <li><a href="/inspector-gadgets/pro"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Buy</a></li>
         <li><a href="https://kybernetik.com.au/kailas-dierk/unity-assets"><img src="/inspector-gadgets/images/kybernetik.png" height="20" style="position:relative; left:-2px; top:-1px;"> Other Assets</a></li>
  
                         </ul>       
@@ -78,8 +78,7 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Parameters">Parameters</a></p>
-<p><a href="#ReturnValue">Return Value</a></p>
+<p><a href="#Value">Value</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -141,58 +140,14 @@
 			<li class="header">Assembly</li>
 		<li><a href="/inspector-gadgets/api/InspectorGadgets.dll">InspectorGadgets<wbr>.dll</a></li>
 		<li class="header">Namespace</li>
-		<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor">InspectorGadgets<wbr>.Editor</a></li>
+		<li><a href="/inspector-gadgets/api/InspectorGadgets">InspectorGadgets</a></li>
 		<li class="header">Type</li>
-		<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></li>
+		<li><a href="/inspector-gadgets/api/InspectorGadgets/IComment">IComment</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Field Members</li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/2CD9199E">AnyAccessBindings</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/6ECB6AD3">InstanceBindings</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/0A6BD413">StaticBindings</a></li>
-			<li class="header">Method Members</li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/70DE3D8D">AllBackslashes<wbr>(string)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/8C4DAA0B">AppendColorTag<wbr>(StringBuilder, <wbr>Color32, <wbr>string)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/CA2881CC">AppendColorToHex<wbr>(StringBuilder, <wbr>Color32)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/1F69D506">AreSameProperty<wbr>(<wbr>Serialized<wbr>Property, <wbr>SerializedProperty)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/C02C590C">CalculateWidth<wbr>(GUIStyle, <wbr>GUIContent)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/32718D08">CalculateWidth<wbr>(GUIStyle, <wbr>string)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/59173186">ColorToHex<wbr>(Color32)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/0D2150B3">DoInspectableGUI<wbr>(Object[])<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/DAC3EB9C">DrawDelegate<wbr>(Rect, <wbr>Delegate)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/295B83EC">FindAssetOfType<wbr>(Type, <wbr>string)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/DAB95207">ForEachProperty<wbr>(SerializedObject, <wbr>bool, <wbr>Action<wbr>&lt;<wbr>Serialized<wbr>Property&gt;<wbr>)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/FEB48CC3">ForEachTarget<wbr>(<wbr>Serialized<wbr>Property, <wbr>Action<wbr>&lt;<wbr>Serialized<wbr>Property&gt;<wbr>, <wbr>string)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/C8893E4A">GetCachedStyle<wbr>(Func<wbr>&lt;GUIStyle&gt;<wbr>)<wbr></a></li>
-				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/DAA73952">Get<wbr>Serialized<wbr>Property<wbr>Context<wbr>(SerializedProperty)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/6C1193E8">GroupedInvoke<wbr>(MenuCommand, <wbr>Action<wbr>&lt;List<wbr>&lt;Object&gt;<wbr>&gt;<wbr>)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/F0F8213C">IsSnapped<wbr>(float, <wbr>float)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/1B29FA24">LayerMaskField<wbr>(Rect, <wbr>GUIContent, <wbr>int)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/87CB697B">Snap<wbr>(float, <wbr>float)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/C3DE4061">SnapPosition<wbr>(Vector3)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/D390A442">SnapPosition<wbr>(Vector3, <wbr>int)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/B107B320">SnapRotation<wbr>(Vector3)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/923B4038">SnapRotation<wbr>(Vector3, <wbr>int)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/58DB3703">SnapRotation<wbr>(Quaternion)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/9048A82B">SnapRotation<wbr>(Quaternion, <wbr>int)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/1F96F7B6">SnapScale<wbr>(Vector3)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/7005EC8C">SnapScale<wbr>(Vector3, <wbr>int)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/EA49E8C8">StealFromLeft<wbr>(Rect, <wbr>float)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/18560467">StealFromLeft<wbr>(Rect, <wbr>float, <wbr>RectOffset)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/13F3D9C0">StealFromRight<wbr>(Rect, <wbr>float)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/BB4ABCD6">StealFromRight<wbr>(Rect, <wbr>float, <wbr>RectOffset)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/127BCCDC">TempContent<wbr>(string, <wbr>string)<wbr></a></li>
 			<li class="header">Property Members</li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/FE6ABE6F">DontExpandWidth</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/D4FAAE96">IndentSize</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/11F3F6FA">MoveSnapVector</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/B2E4A5C6">MoveSnapX</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/24D4A2B1">MoveSnapY</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/9E85AB28">MoveSnapZ</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/3A36C5E8">RotationSnap</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/ACBB2071">RotationSnapVector</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/1B3A6E31">ScaleSnap</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/85101260">ScaleSnapVector</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/13D51816">Spacing</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets/IComment/FCDE7556">IncludeInBuild</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets/IComment/732A415F">Text</a></li>
+				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets/IComment/18E3462F">TextFieldName</a></li>
 
 
                     </ul>
@@ -207,61 +162,39 @@
 
 
 <section class="content-header">
-			<h3><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a>.</h3>
-	<h1>Get<wbr>Serialized<wbr>Property<wbr>Context<wbr>(SerializedProperty)<wbr> <small>Method</small></h1>
+			<h3><a href="/inspector-gadgets/api/InspectorGadgets/IComment">IComment</a>.</h3>
+	<h1>TextFieldName <small>Property</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">
-    Returns a disposable context that will allow copy and paste commands to be executed on the 'property'.
-    </div>
+	<div class="lead">[Editor-Only] The name of the serialized backing field of the <code class="cs">InspectorGadgets.IComment.Text</code> property.</div>
 
 		<div class="panel panel-default">
-  			<div class="panel-body">	
+  			<div class="panel-body">
 				<dl class="dl-horizontal">	
 						<dt>Assembly</dt>
 						<dd><a href="/inspector-gadgets/api/InspectorGadgets.dll">InspectorGadgets<wbr>.dll</a></dd>
 						
 						<dt>Namespace</dt>
-						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Editor">InspectorGadgets<wbr>.Editor</a></dd>
+						<dd><a href="/inspector-gadgets/api/InspectorGadgets">InspectorGadgets</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></dd>		
+						<dd><a href="/inspector-gadgets/api/InspectorGadgets/IComment">IComment</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public static IDisposable GetSerializedPropertyContext(SerializedProperty property)</code></pre>
+	<pre><code>string TextFieldName { get; }</code></pre>
 
 
 
 
 
-	<h1 id="Parameters">Parameters</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover three-cols">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-					<tbody><tr>
-						<td>property</td>
-						<td>SerializedProperty</td>
-						<td></td>
-					</tr>
-			</tbody></table>
-		</div>
-	</div>	
-
-	<h1 id="ReturnValue">Return Value</h1>
+	<h1 id="Value">Value</h1>
 	<div class="box">
 		<div class="box-body no-padding table-responsive">
 			<table class="table table-striped table-hover two-cols">
@@ -272,7 +205,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>IDisposable</td>
+					<td>string</td>
 					<td></td>
 				</tr>
 			</tbody></table>

@@ -57,11 +57,11 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.0</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.2</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
-        <li><a href="https://assetstore.unity.com/packages/tools/gui/inspector-gadgets-lite-82896?aid=1100l8ah5"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
-        <li><a href="https://assetstore.unity.com/packages/tools/gui/inspector-gadgets-pro-83013?aid=1100l8ah5"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Buy</a></li>
+        <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
+        <li><a href="/inspector-gadgets/pro"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Buy</a></li>
         <li><a href="https://kybernetik.com.au/kailas-dierk/unity-assets"><img src="/inspector-gadgets/images/kybernetik.png" height="20" style="position:relative; left:-2px; top:-1px;"> Other Assets</a></li>
  
                         </ul>       
@@ -244,7 +244,7 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/9E841899">AppendDeepToString<wbr>(StringBuilder, <wbr>IEnumerator, <wbr>string)<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>Each element returned by 'enumerator' is appended to 'text'.</div>
+									<div>Each element returned by `enumerator` is appended to `text`.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -253,7 +253,7 @@ class Type type-node
 								<td>int</td>
 								<td>
 									<div>
-    Appends the generic arguments of 'type' (after skipping the specified number).
+    Appends the generic arguments of `type` (after skipping the specified number).
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -263,17 +263,17 @@ class Type type-node
 								<td>StringBuilder</td>
 								<td>
 									<div>
-    Appends the full name of a 'member' as it would appear in C# code.
+    Appends the full name of a `member` as it would appear in C# code.
     <p></p>
     For example, passing this method info in as its own parameter would append "<code class="cs">InspectorGadgets.IGUtils</code>.AppendName".
     <p></p>
-    Note that when 'member' is a <code class="cs">System.Type</code>, this method calls <code class="cs">InspectorGadgets.IGUtils.GetNameCS(System.Type,System.Boolean)</code> instead.
+    Note that when `member` is a <code class="cs">System.Type</code>, this method calls <code class="cs">InspectorGadgets.IGUtils.GetNameCS(System.Type,System.Boolean)</code> instead.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/86922BF4">AppendTransformPath<wbr>(StringBuilder, <wbr>Transform)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/135E4637">AppendTransformPath<wbr>(StringBuilder, <wbr>Transform)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>
@@ -287,7 +287,7 @@ class Type type-node
 								<td>int</td>
 								<td>
 									<div>
-    Calculate the number of removals, inserts, and replacements needed to turn 'a' into 'b'.
+    Calculate the number of removals, inserts, and replacements needed to turn `a` into `b`.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -297,7 +297,7 @@ class Type type-node
 								<td>string</td>
 								<td>
 									<div>
-    Adds spaces to 'camelCase' before each uppercase letter.
+    Adds spaces to `camelCase` before each uppercase letter.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -307,7 +307,7 @@ class Type type-node
 								<td>void</td>
 								<td>
 									<div>
-    Adds spaces to 'camelCase' before each uppercase letter.
+    Adds spaces to `camelCase` before each uppercase letter.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -317,16 +317,16 @@ class Type type-node
 								<td>string</td>
 								<td>
 									<div>
-    Adds spaces to 'fieldName' before each uppercase letter and removes any underscores from the start.
+    Adds spaces to `fieldName` before each uppercase letter and removes any underscores from the start.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/997461B6">CopyCurve<wbr>(AnimationCurve)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/649386F8">CopyCurve<wbr>(AnimationCurve)<wbr></a></td>
 								<td>AnimationCurve</td>
 								<td>
-									<div>Creates a duplicate of the given 'curve'.</div>
+									<div>Creates a duplicate of the given `curve`.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -334,7 +334,7 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/C5C49105">DeepToString<wbr>(IEnumerable)<wbr></a></td>
 								<td>string</td>
 								<td>
-									<div>Returns a string containing the value of each element in 'collection' (each on a new line).</div>
+									<div>Returns a string containing the value of each element in `collection` (each on a new line).</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -342,7 +342,7 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/280AE99F">DeepToString<wbr>(IEnumerable, <wbr>string)<wbr></a></td>
 								<td>string</td>
 								<td>
-									<div>Returns a string containing the value of each element in 'collection'.</div>
+									<div>Returns a string containing the value of each element in `collection`.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -350,7 +350,7 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/49F62677">DeepToString<wbr>(IEnumerator)<wbr></a></td>
 								<td>string</td>
 								<td>
-									<div>Returns a string containing the value of each element in 'enumerator' (each on a new line).</div>
+									<div>Returns a string containing the value of each element in `enumerator` (each on a new line).</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -358,12 +358,12 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/DA7772F7">DeepToString<wbr>(IEnumerator, <wbr>string)<wbr></a></td>
 								<td>string</td>
 								<td>
-									<div>Returns a string containing the value of each element in 'enumerator'.</div>
+									<div>Returns a string containing the value of each element in `enumerator`.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/C8F0085D">Enforce<wbr>Horizontal<wbr>Symmetry<wbr>(AnimationCurve)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/F4D74F82">Enforce<wbr>Horizontal<wbr>Symmetry<wbr>(AnimationCurve)<wbr></a></td>
 								<td>AnimationCurve</td>
 								<td>
 									<div>
@@ -373,7 +373,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/BDBE6FD4">ExtendMirrorred<wbr>(AnimationCurve)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/7DFFF95D">ExtendMirrorred<wbr>(AnimationCurve)<wbr></a></td>
 								<td>AnimationCurve</td>
 								<td>
 									<div>
@@ -384,7 +384,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/0659321E">FlipHorizontal<wbr>(AnimationCurve)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/551D2E38">FlipHorizontal<wbr>(AnimationCurve)<wbr></a></td>
 								<td>AnimationCurve</td>
 								<td>
 									<div>
@@ -395,7 +395,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/64499C1D">FlipVertical<wbr>(AnimationCurve)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/DA19D5F5">FlipVertical<wbr>(AnimationCurve)<wbr></a></td>
 								<td>AnimationCurve</td>
 								<td>
 									<div>
@@ -406,11 +406,11 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/48F69F00">FlipWeightedMode<wbr>(WeightedMode)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/C88399A7">FlipWeightedMode<wbr>(WeightedMode)<wbr></a></td>
 								<td>WeightedMode</td>
 								<td>
 									<div>
-    <code class="cs">UnityEngine.WeightedMode.Out</code> becomes <code class="cs">UnityEngine.WeightedMode.In</code> and vice versa.
+    <code class="cs">WeightedMode.Out</code> becomes <code class="cs">WeightedMode.In</code> and vice versa.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -420,7 +420,7 @@ class Type type-node
 								<td>void</td>
 								<td>
 									<div>
-    Calls the specified 'method' once for each type in the specified 'assembly'.
+    Calls the specified `method` once for each type in the specified `assembly`.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -430,7 +430,7 @@ class Type type-node
 								<td>void</td>
 								<td>
 									<div>
-    Calls the specified 'method' once for each type in each loaded assembly that references the specified 'assembly'.
+    Calls the specified `method` once for each type in each loaded assembly that references the specified `assembly`.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -439,7 +439,7 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/5C496433">GetAttributedFields<wbr>&lt;TAttribute&gt;<wbr><wbr>(Type, <wbr>BindingFlags, <wbr>List<wbr>&lt;TAttribute&gt;<wbr>, <wbr>List<wbr>&lt;FieldInfo&gt;<wbr>)<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>Get all fields with the specified attribute in 'type'.</div>
+									<div>Get all fields with the specified attribute in `type`.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -447,7 +447,7 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/E73C33FB">GetAttributedMethods<wbr>&lt;TAttribute&gt;<wbr><wbr>(Type, <wbr>BindingFlags, <wbr>List<wbr>&lt;TAttribute&gt;<wbr>, <wbr>List<wbr>&lt;MethodInfo&gt;<wbr>)<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>Get all methods with the specified attribute in 'type'.</div>
+									<div>Get all methods with the specified attribute in `type`.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -455,16 +455,16 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/905A7302">Get<wbr>Attributed<wbr>Properties<wbr>&lt;TAttribute&gt;<wbr><wbr>(Type, <wbr>BindingFlags, <wbr>List<wbr>&lt;TAttribute&gt;<wbr>, <wbr>List<wbr>&lt;PropertyInfo&gt;<wbr>)<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>Get all properties with the specified attribute in 'type'.</div>
+									<div>Get all properties with the specified attribute in `type`.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/28A7C175">GetBestComponent<wbr>&lt;T&gt;<wbr><wbr>(T[], <wbr>string)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/5B324412">GetBestMatch<wbr>&lt;T&gt;<wbr><wbr>(T[], <wbr>string)<wbr></a></td>
 								<td>T</td>
 								<td>
 									<div>
-    Compares the name of each of the 'objects' and returns the one that is closest to the 'nameHint'.
+    Compares the name of each of the `objects` and returns the one that is closest to the `nameHint`.
     <p></p>
     See also: <code class="cs">InspectorGadgets.IGUtils.CalculateLevenshteinDistance(System.String,System.String)</code>.
     </div>
@@ -472,11 +472,11 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/7D39ADA3">GetBestComponent<wbr>&lt;T&gt;<wbr><wbr>(T[], <wbr>string, <wbr>int)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/76046ABD">GetBestMatch<wbr>&lt;T&gt;<wbr><wbr>(T[], <wbr>string, <wbr>int)<wbr></a></td>
 								<td>T</td>
 								<td>
 									<div>
-    Compares the name of each of the 'objects' and returns the one that is closest to the 'nameHint'.
+    Compares the name of each of the `objects` and returns the one that is closest to the `nameHint`.
     <p></p>
     See also: <code class="cs">InspectorGadgets.IGUtils.CalculateLevenshteinDistance(System.String,System.String)</code>.
     </div>
@@ -484,12 +484,12 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/FE4A7E0B">Get<wbr>Component<wbr>In<wbr>Hierarchy<wbr>(GameObject, <wbr>Type, <wbr>string)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/A48B3C8E">Get<wbr>Component<wbr>In<wbr>Hierarchy<wbr>(GameObject, <wbr>Type, <wbr>string)<wbr></a></td>
 								<td>Component</td>
 								<td>
 									<div>
-    Finds a component of the specified 'componentType' on the 'gameObject' or any of its parents or children.
-    If multiple components are found the one with a name closest to the 'nameHint' is chosen.
+    Finds a component of the specified `componentType` on the `gameObject` or any of its parents or children.
+    If multiple components are found the one with a name closest to the `nameHint` is chosen.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -510,7 +510,7 @@ class Type type-node
 								<td>
 									<div>
     Gets all non-abstract types in the currently loaded assemblies which derive from the specified base type
-    (including the base type itself if it isn't abstract).
+    (including the base type itself if it is not abstract).
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -521,23 +521,23 @@ class Type type-node
 								<td>
 									<div>
     Gets all non-abstract types in the currently loaded assemblies which derive from the specified base type
-    (including the base type itself if it isn't abstract).
+    (including the base type itself if it is not abstract).
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/D2202B25">GetDescription<wbr>(AnimationCurve)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/B8A9BA83">GetDescription<wbr>(AnimationCurve)<wbr></a></td>
 								<td>string</td>
 								<td>
 									<div>
-    Returns a string describing the start and end time and value of the 'curve'.
+    Returns a string describing the start and end time and value of the `curve`.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/02761082">GetMinMaxKeyValue<wbr>(AnimationCurve, <wbr>float, <wbr>float)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/C81529AF">GetMinMaxKeyValue<wbr>(AnimationCurve, <wbr>float, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>
@@ -550,7 +550,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/884643ED">GetMinMaxKeyValue<wbr>(Keyframe[], <wbr>float, <wbr>float)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/244C98C0">GetMinMaxKeyValue<wbr>(Keyframe[], <wbr>float, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>
@@ -563,10 +563,10 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/86E8CAF4">Get<wbr>Min<wbr>Max<wbr>Value<wbr>Estimate<wbr>(AnimationCurve, <wbr>float, <wbr>float, <wbr>int)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/860198F2">Get<wbr>Min<wbr>Max<wbr>Value<wbr>Estimate<wbr>(AnimationCurve, <wbr>float, <wbr>float, <wbr>int)<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>Estimates the highest and lowest values in the 'curve'.</div>
+									<div>Estimates the highest and lowest values in the `curve`.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -575,11 +575,11 @@ class Type type-node
 								<td>string</td>
 								<td>
 									<div>
-    Returns the full name of a 'member' as it would appear in C# code.
+    Returns the full name of a `member` as it would appear in C# code.
     <p></p>
     For example, passing this method info in as its own parameter would return "<code class="cs">InspectorGadgets.IGUtils</code>.GetNameCS".
     <p></p>
-    Note that when 'member' is a <code class="cs">System.Type</code>, this method calls <code class="cs">InspectorGadgets.IGUtils.GetNameCS(System.Type,System.Boolean)</code> instead.
+    Note that when `member` is a <code class="cs">System.Type</code>, this method calls <code class="cs">InspectorGadgets.IGUtils.GetNameCS(System.Type,System.Boolean)</code> instead.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -589,12 +589,12 @@ class Type type-node
 								<td>string</td>
 								<td>
 									<div>
-    Returns the name of a 'type' as it would appear in C# code.
+    Returns the name of a `type` as it would appear in C# code.
     <p></p>
     For example, typeof(List&lt;float&gt;).FullName would give you:
     System.Collections.Generic.List`1[[System.Single, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
     <p></p>
-    This method would instead return System.Collections.Generic.List&lt;float&gt; if 'fullName' is true, or
+    This method would instead return System.Collections.Generic.List&lt;float&gt; if `fullName` is true, or
     just List&lt;float&gt; if it is false.
     <p></p>
     Note that all returned values are stored in a dictionary to speed up repeated use.
@@ -607,14 +607,14 @@ class Type type-node
 								<td>TValue</td>
 								<td>
 									<div>
-    If the specified 'key' is present in the 'dictionary', its value is returned.
-    Otherwise a new value is added to the 'dictionary' and returned.
+    If the specified `key` is present in the `dictionary`, its value is returned.
+    Otherwise a new value is added to the `dictionary` and returned.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/AB6E8616">GetStartEndTime<wbr>(AnimationCurve, <wbr>float, <wbr>float)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/FA9A4BB2">GetStartEndTime<wbr>(AnimationCurve, <wbr>float, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>Gets the time of the first and last keyframes.</div>
@@ -622,7 +622,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/F175B989">GetStartEndTime<wbr>(Keyframe[], <wbr>float, <wbr>float)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/F3E28DE9">GetStartEndTime<wbr>(Keyframe[], <wbr>float, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>Gets the time of the first and last keyframes.</div>
@@ -630,7 +630,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/F059E198">GetStartEndValue<wbr>(AnimationCurve, <wbr>float, <wbr>float)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/A4D396F9">GetStartEndValue<wbr>(AnimationCurve, <wbr>float, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>Gets the value of the first and last keyframes.</div>
@@ -638,7 +638,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/06C20599">GetStartEndValue<wbr>(Keyframe[], <wbr>float, <wbr>float)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/1DB8EC76">GetStartEndValue<wbr>(Keyframe[], <wbr>float, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>Gets the value of the first and last keyframes.</div>
@@ -646,7 +646,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/27E106EE">Get<wbr>Start<wbr>End<wbr>Value<wbr>Sorted<wbr>(AnimationCurve, <wbr>float, <wbr>float)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/22CA6192">Get<wbr>Start<wbr>End<wbr>Value<wbr>Sorted<wbr>(AnimationCurve, <wbr>float, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>Gets the higher and lower value of the first and last keyframes.</div>
@@ -654,7 +654,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/BBF86218">Get<wbr>Start<wbr>End<wbr>Value<wbr>Sorted<wbr>(Keyframe[], <wbr>float, <wbr>float)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/189CBC9F">Get<wbr>Start<wbr>End<wbr>Value<wbr>Sorted<wbr>(Keyframe[], <wbr>float, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
 									<div>Gets the higher and lower value of the first and last keyframes.</div>
@@ -662,7 +662,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/9223F5EF">GetTransformPath<wbr>(Transform)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/FFEF13A3">GetTransformPath<wbr>(Transform)<wbr></a></td>
 								<td>string</td>
 								<td>
 									<div>
@@ -672,7 +672,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/D64B9477">IsNormalized<wbr>(AnimationCurve)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/095B4316">IsNormalized<wbr>(AnimationCurve)<wbr></a></td>
 								<td>bool</td>
 								<td>
 									<div>Indicates whether the time and values both start at 0 and end at 1.</div>
@@ -680,7 +680,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/281ED8E2">IsNormalized<wbr>(Keyframe[])<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/9383E3BE">IsNormalized<wbr>(Keyframe[])<wbr></a></td>
 								<td>bool</td>
 								<td>
 									<div>Indicates whether the time and values both start at 0 and end at 1.</div>
@@ -692,7 +692,7 @@ class Type type-node
 								<td>bool</td>
 								<td>
 									<div>
-    Returns true if the Unity editor is currently in the specified 'state'.
+    Returns true if the Unity editor is currently in the specified `state`.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -702,7 +702,7 @@ class Type type-node
 								<td>float</td>
 								<td>
 									<div>
-    Re-scales 'value' from the old range ('oldMin' to 'oldMax') to the new range ('newMin' to 'newMax').
+    Re-scales `value` from the old range (`oldMin` to `oldMax`) to the new range (`newMin` to `newMax`).
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -712,13 +712,13 @@ class Type type-node
 								<td>float</td>
 								<td>
 									<div>
-    Re-scales 'value' from the old range ('oldMin' to 'oldMax') to the new range (0 to 1).
+    Re-scales `value` from the old range (`oldMin` to `oldMax`) to the new range (0 to 1).
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/F3F39F3E">Normalize<wbr>(AnimationCurve)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/D66B415C">Normalize<wbr>(AnimationCurve)<wbr></a></td>
 								<td>AnimationCurve</td>
 								<td>
 									<div>
@@ -730,7 +730,7 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/293E0DCA">Normalize<wbr>(Keyframe[])<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/7C28CF86">Normalize<wbr>(Keyframe[])<wbr></a></td>
 								<td>Keyframe[]</td>
 								<td>
 									<div>
@@ -741,37 +741,18 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/F93EF7C8">ProgressiveSearch<wbr>(GameObject, <wbr>Type)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/B876E559">ProgressiveSearch<wbr>(GameObject, <wbr>Type, <wbr>string)<wbr></a></td>
 								<td>Component</td>
 								<td>
 									<div>
-    Tries various search methods until it finds something: first GetComponent, then GetComponentInParent,
-    then GetComponentInChildren, then FindObjectOfType.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/9B485993">ProgressiveSearch<wbr>(GameObject, <wbr>Type, <wbr>string)<wbr></a></td>
-								<td>Component</td>
-								<td>
-									<div>
-    Tries various search methods until it finds something: first GetComponent, then GetComponentsInParent,
-    then GetComponentsInChildren, then FindObjectsOfType.
+    Tries various search methods in the following order until it finds something:
+    <code class="cs">GameObject.GetComponent(Type)</code>, 
+    <code class="cs">GameObject.GetComponentsInParent(Type, bool)</code>,
+    <code class="cs">GameObject.GetComponentsInChildren(Type, bool)</code>,
+    <code class="cs">Resources.FindObjectsOfTypeAll(Type)</code>.
     <p></p>
     In the first group where a component of the correct type is found, if multiple components were found the
-    one with a name closest to the 'nameHint' is chosen.
-    </div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/ADE9A1F0">ProgressiveSearch<wbr>&lt;T&gt;<wbr><wbr>(GameObject)<wbr></a></td>
-								<td>T</td>
-								<td>
-									<div>
-    Tries various search methods until it finds something: first GetComponent, then GetComponentInParent,
-    then GetComponentInChildren, then FindObjectOfType.
+    one with a name closest to the `nameHint` is chosen.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -781,7 +762,7 @@ class Type type-node
 								<td>void</td>
 								<td>
 									<div>
-    If 'source' isn't null, 'target' is given its value.
+    If `source` is not null, `target` is given its value.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -791,13 +772,13 @@ class Type type-node
 								<td>float</td>
 								<td>
 									<div>
-    If 'source' isn't null, return its value, otherwise return 'target'.
+    If `source` is not null, return its value, otherwise return `target`.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/78911435">SmoothTangents<wbr>(AnimationCurve)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/251D8AE0">SmoothTangents<wbr>(AnimationCurve)<wbr></a></td>
 								<td>AnimationCurve</td>
 								<td>
 									<div>
@@ -812,7 +793,7 @@ class Type type-node
 								<td>void</td>
 								<td>
 									<div>
-    Sorts 'list', maintaining the order of any elements with an identical comparison
+    Sorts `list`, maintaining the order of any elements with an identical comparison
     (unlike the standard <code class="cs">System.Collections.Generic.List`1.Sort</code> method).
     </div>
 											<div><small><em>static</em></small></div>
@@ -823,7 +804,7 @@ class Type type-node
 								<td>void</td>
 								<td>
 									<div>
-    Sorts 'list', maintaining the order of any elements with an identical comparison
+    Sorts `list`, maintaining the order of any elements with an identical comparison
     (unlike the standard <code class="cs">System.Collections.Generic.List`1.Sort(System.Comparison{`0})</code> method).
     </div>
 											<div><small><em>static</em></small></div>
@@ -834,7 +815,7 @@ class Type type-node
 								<td>string</td>
 								<td>
 									<div>
-    Returns the specified 'value' as a string, or "-" if it is null.
+    Returns the specified `value` as a string, or "-" if it is null.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
