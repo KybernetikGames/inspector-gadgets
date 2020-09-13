@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.2</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.3</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -198,8 +198,8 @@
 								<dt>Implementing Types</dt>
 								<dd>
 									<ul class="list-unstyled">
-											<li><a href="/inspector-gadgets/api/InspectorGadgets/CommentAsset">CommentAsset</a></li>								
 											<li><a href="/inspector-gadgets/api/InspectorGadgets/CommentComponent">CommentComponent</a></li>								
+											<li><a href="/inspector-gadgets/api/InspectorGadgets/CommentAsset">CommentAsset</a></li>								
 									</ul>
 								</dd>				
 						</dl>
@@ -209,10 +209,10 @@
 							graph BT
 	Type["IComment"]
 class Type type-node
-	Implementing0["CommentAsset"]-.-&gt;Type
-	click Implementing0 "/inspector-gadgets/api/InspectorGadgets/CommentAsset"
-	Implementing1["CommentComponent"]-.-&gt;Type
-	click Implementing1 "/inspector-gadgets/api/InspectorGadgets/CommentComponent"
+	Implementing0["CommentComponent"]-.-&gt;Type
+	click Implementing0 "/inspector-gadgets/api/InspectorGadgets/CommentComponent"
+	Implementing1["CommentAsset"]-.-&gt;Type
+	click Implementing1 "/inspector-gadgets/api/InspectorGadgets/CommentAsset"
 
 						</div>
 					</div>
