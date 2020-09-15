@@ -151,8 +151,10 @@
 	<section class="content">
 		<h1 id="inspector-gadgets-v6.3">Inspector Gadgets v6.3</h1>
 <ul>
-<li>Released 2020-09-13</li>
+<li>Released 2020-09-15</li>
 <li>Fixed build error caused by <code><a href="/inspector-gadgets/api/InspectorGadgets/CommentAsset">CommentAsset</a></code> and <code><a href="/inspector-gadgets/api/InspectorGadgets/CommentComponent">CommentComponent</a></code>.</li>
+<li>Fixed <a href="../other/drag-and-drop-sub-assets">Drag &amp; Drop Sub-Assets</a> to not allow certain asset types that won't work (since Unity is dumb and would just corrupt the asset instead of telling you) and to ask if it isn't sure about a particular type.</li>
+<li>Fixed <code>GetDefaultFileExtension</code> to not throw an exception.</li>
 </ul>
 <h1 id="inspector-gadgets-v6.2">Inspector Gadgets v6.2</h1>
 <ul>
