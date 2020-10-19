@@ -166,7 +166,7 @@
 <li>If the value will change constantly, you can set the <code>ConstantlyRepaint</code> property to true.</li>
 <li>If the value is likely to be long, you can set the <code>Multiline</code> property to true.</li>
 </ul>
-<pre><code class="language-cs">[InspectorGadgets.Label]
+<pre><code class="language-cs">[InspectorGadgets.Attributes.Label]
 string PropertyLabel { get; set; }	 
 </code></pre>
 <p><img src="property-label.png" class="img-responsive"></p>
@@ -178,7 +178,7 @@ string PropertyLabel { get; set; }
 <li>If the method has a non-<code>void</code> return type, the returned value will be logged.</li>
 <li>If you assign <code>SetDirty = true</code> in the attribute’s constructor, it will automatically call <code>UnityEditor.EditorUtility.SetDirty</code> on the target after invoking the method to make sure changes are saved properly.</li>
 </ul>
-<pre><code class="language-cs">[InspectorGadgets.Button]
+<pre><code class="language-cs">[InspectorGadgets.Attributes.Button]
 void InspectorButton() { }	 
 </code></pre>
 <p><img src="button.png" class="img-responsive"></p>

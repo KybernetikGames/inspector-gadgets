@@ -155,64 +155,64 @@
 			<h1>Decorator Attributes</h1>
 		</section>
 	<section class="content">
-		<p>Unity has several attributes which can be used to easily customise the appearance of the Inspector without needing to write a custom Inspector class: <a href="https://docs.unity3d.com/ScriptReference/HeaderAttribute.html">Header</a>, <a href="https://docs.unity3d.com/ScriptReference/HideInInspector.html">HideInInspector</a>, <a href="https://docs.unity3d.com/ScriptReference/MultilineAttribute.html">Multiline</a>, <a href="https://docs.unity3d.com/ScriptReference/RangeAttribute.html">Range</a>, <a href="https://docs.unity3d.com/ScriptReference/SerializeField.html">SerializeField</a>, <a href="https://docs.unity3d.com/ScriptReference/SpaceAttribute.html">Space</a>, <a href="https://docs.unity3d.com/ScriptReference/TextAreaAttribute.html">TextArea</a>, <a href="https://docs.unity3d.com/ScriptReference/TooltipAttribute.html">Tooltip</a>. The <code>InspectorGadgets</code> namespace contains some additional attributes to allow for even greater customisation (see the links on the right for the full list).</p>
+		<p>Unity has several attributes which can be used to easily customise the appearance of the Inspector without needing to write a custom Inspector class: <a href="https://docs.unity3d.com/ScriptReference/HeaderAttribute.html">Header</a>, <a href="https://docs.unity3d.com/ScriptReference/HideInInspector.html">HideInInspector</a>, <a href="https://docs.unity3d.com/ScriptReference/MultilineAttribute.html">Multiline</a>, <a href="https://docs.unity3d.com/ScriptReference/RangeAttribute.html">Range</a>, <a href="https://docs.unity3d.com/ScriptReference/SerializeField.html">SerializeField</a>, <a href="https://docs.unity3d.com/ScriptReference/SpaceAttribute.html">Space</a>, <a href="https://docs.unity3d.com/ScriptReference/TextAreaAttribute.html">TextArea</a>, <a href="https://docs.unity3d.com/ScriptReference/TooltipAttribute.html">Tooltip</a>. The <code>InspectorGadgets.Attributes</code> namespace contains some additional attributes to allow for even greater customisation (see the links on the right for the full list).</p>
 <blockquote class="blockquote">
 <p><em>The following features are only available in <a href="../../features">Inspector Gadgets Pro</a>.</em></p>
 </blockquote>
 <h1 id="color">Color</h1>
 <p>The <code>[Color]</code> attribute simply changes the color of a field, allowing you to highlight it or group multiple fields together visually.</p>
-<pre><code class="language-cs">[InspectorGadgets.Color(1, 0.5f, 0.5f)]
+<pre><code class="language-cs">[InspectorGadgets.Attributes.Color(1, 0.5f, 0.5f)]
 public string coloredField = "I'm Red";	 
 </code></pre>
 <p><img src="color.png" class="img-responsive"></p>
 <h1 id="euler">Euler</h1>
 <p>The <code>[Euler]</code> attribute displays the Euler angles of a <code>Quaternion</code> field so they can be more easily edited by people without an intimate understanding of <code>Quaternion</code>s (which is everyone).</p>
-<pre><code class="language-cs">[InspectorGadgets.Euler]
+<pre><code class="language-cs">[InspectorGadgets.Attributes.Euler]
 public Quaternion quaternionField;	 
 </code></pre>
 <p><img src="euler.png" class="img-responsive"></p>
 <h1 id="labelled-collection">Labelled Collection</h1>
 <p>The <code>[LabelledCollection]</code> attribute provides labels for the elements of a collection field to use instead of just calling them <code>Element X</code>.</p>
 <pre><code class="language-cs">// Manually specify labels.
-[InspectorGadgets.LabelledCollection("Up", "Down", "Left", "Right")]
+[InspectorGadgets.Attributes.LabelledCollection("Up", "Down", "Left", "Right")]
 public Vector3[] directions;
 </code></pre>
 <p><img src="labelled-collection-manual.png" class="img-responsive"></p>
 <pre><code class="language-cs">// Use names from an Enum.
-[InspectorGadgets.LabelledCollection(typeof(HumanBodyBones))]
+[InspectorGadgets.Attributes.LabelledCollection(typeof(HumanBodyBones))]
 public Transform[] bones;
 </code></pre>
 <p><img src="labelled-collection-enum.png" class="img-responsive"></p>
 <pre><code class="language-cs">// Use names from another field.
 public string[] actions;
-[InspectorGadgets.LabelledCollection("actions")]
+[InspectorGadgets.Attributes.LabelledCollection("actions")]
 public KeyCode[] keys;
 </code></pre>
 <p><img src="labelled-collection-field.png" class="img-responsive"></p>
 <h1 id="readonly">Readonly</h1>
 <p>The <code>[Readonly]</code> attribute causes a field to be greyed out in the Inspector so the user can't edit it.</p>
-<pre><code class="language-cs">[InspectorGadgets.Readonly]	 
+<pre><code class="language-cs">[InspectorGadgets.Attributes.Readonly]	 
 public string readonlyField = "Can't touch this";
 </code></pre>
 <p><img src="readonly.png" class="img-responsive"></p>
 <h1 id="required">Required</h1>
 <p>The <code>[Required]</code> attribute causes a field to be highlighted red in the Inspector if it hasn’t been given a value so the user knows that they should assign something to it. This attribute is very useful on <code>Object</code> reference fields, but can be used on any type such as <code>int</code> or <code>string</code>.</p>
-<pre><code class="language-cs">[InspectorGadgets.Required]
+<pre><code class="language-cs">[InspectorGadgets.Attributes.Required]
 public Rigidbody myRigidbody;	 
 </code></pre>
 <p><img src="required.png" class="img-responsive"></p>
 <h1 id="scene">Scene</h1>
 <p>The <code>[Scene]</code> attribute can be placed on an <code>int</code> or <code>string</code> field to have it drawn as a dropdown box for selecting scene indices or names from the build settings.</p>
-<pre><code class="language-cs">[InspectorGadgets.Scene]
+<pre><code class="language-cs">[InspectorGadgets.Attributes.Scene]
 public int nextLevel;	 
 </code></pre>
 <p><img src="scene.png" class="img-responsive"></p>
 <h1 id="show-preview">Show Preview</h1>
 <p>The <code>[ShowPreview]</code> attribute can be placed on an <code>Object</code> reference field to show a preview image of the referenced object.</p>
-<pre><code class="language-cs">[InspectorGadgets.ShowPreview]
+<pre><code class="language-cs">[InspectorGadgets.Attributes.ShowPreview]
 public GameObject prefab;
 
-[InspectorGadgets.ShowPreview]
+[InspectorGadgets.Attributes.ShowPreview]
 public Texture texture;	 
 </code></pre>
 <p><img src="show-preview.png" class="img-responsive"></p>
@@ -237,7 +237,7 @@ public TextAlignment textAlignment;
 </code></pre>
 </td>
     <td>
-<pre><code class="language-cs">[InspectorGadgets.Toolbar]
+<pre><code class="language-cs">[InspectorGadgets.Attributes.Toolbar]
 public TextAlignment textAlignment;
 </code></pre>
 </td>
@@ -250,7 +250,7 @@ public TextAlignment textAlignment;
 </table>
 <h1 id="unique-collection">Unique Collection</h1>
 <p>The <code>[UniqueCollection]</code> attribute causes the elements of a collection to be highlighted in red if they are duplicates of other elements.</p>
-<pre><code class="language-cs">[InspectorGadgets.UniqueCollection]
+<pre><code class="language-cs">[InspectorGadgets.Attributes.UniqueCollection]
 public int[] dictionaryKeys;
 </code></pre>
 <p><img src="unique-collection.png" class="img-responsive"></p>
