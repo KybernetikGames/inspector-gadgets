@@ -39,216 +39,6 @@ var searchModule = function() {
     a(
         {
             id:0,
-            title:"DisposableStaticLazyStack",
-            content:"DisposableStaticLazyStack",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/DisposableStaticLazyStack_1',
-            title:"DisposableStaticLazyStack<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:1,
-            title:"Serialization PropertyReference",
-            content:"Serialization PropertyReference",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/PropertyReference',
-            title:"Serialization.PropertyReference",
-            description:""
-        }
-    );
-    a(
-        {
-            id:2,
-            title:"ShowPreviewAttribute",
-            content:"ShowPreviewAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ShowPreviewAttribute',
-            title:"ShowPreviewAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:3,
-            title:"AutoPrefs EditorString",
-            content:"AutoPrefs EditorString",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/EditorString',
-            title:"AutoPrefs.EditorString",
-            description:""
-        }
-    );
-    a(
-        {
-            id:4,
-            title:"Vector VisualiserWindow",
-            content:"Vector VisualiserWindow",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/Vector2VisualiserWindow',
-            title:"Vector2VisualiserWindow",
-            description:""
-        }
-    );
-    a(
-        {
-            id:5,
-            title:"MenuFunctionState",
-            content:"MenuFunctionState",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/MenuFunctionState',
-            title:"MenuFunctionState",
-            description:""
-        }
-    );
-    a(
-        {
-            id:6,
-            title:"DynamicInspector",
-            content:"DynamicInspector",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/DynamicInspector',
-            title:"DynamicInspector",
-            description:""
-        }
-    );
-    a(
-        {
-            id:7,
-            title:"CommentEditor",
-            content:"CommentEditor",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/CommentEditor',
-            title:"CommentEditor",
-            description:""
-        }
-    );
-    a(
-        {
-            id:8,
-            title:"ReadonlyAttribute",
-            content:"ReadonlyAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ReadonlyAttribute',
-            title:"ReadonlyAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:9,
-            title:"ColorAttribute",
-            content:"ColorAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ColorAttribute',
-            title:"ColorAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:10,
-            title:"MaxValueAttribute",
-            content:"MaxValueAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/MaxValueAttribute',
-            title:"MaxValueAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:11,
-            title:"CommentComponent",
-            content:"CommentComponent",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/CommentComponent',
-            title:"CommentComponent",
-            description:""
-        }
-    );
-    a(
-        {
-            id:12,
-            title:"IGEditorUtils",
-            content:"IGEditorUtils",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils',
-            title:"IGEditorUtils",
-            description:""
-        }
-    );
-    a(
-        {
-            id:13,
-            title:"BaseInspectableAttribute",
-            content:"BaseInspectableAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute',
-            title:"BaseInspectableAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:14,
-            title:"SceneAttribute",
-            content:"SceneAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/SceneAttribute',
-            title:"SceneAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:15,
             title:"AutoPrefs EditorBool",
             content:"AutoPrefs EditorBool",
             description:'',
@@ -262,483 +52,21 @@ var searchModule = function() {
     );
     a(
         {
-            id:16,
-            title:"CommentAsset",
-            content:"CommentAsset",
+            id:1,
+            title:"ColorAttribute",
+            content:"ColorAttribute",
             description:'',
             tags:''
         },
         {
-            url:'/inspector-gadgets/api/InspectorGadgets/CommentAsset',
-            title:"CommentAsset",
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ColorAttribute',
+            title:"ColorAttribute",
             description:""
         }
     );
     a(
         {
-            id:17,
-            title:"Serialization PropertyAccessor",
-            content:"Serialization PropertyAccessor",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor',
-            title:"Serialization.PropertyAccessor",
-            description:""
-        }
-    );
-    a(
-        {
-            id:18,
-            title:"MinValueAttribute",
-            content:"MinValueAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/MinValueAttribute',
-            title:"MinValueAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:19,
-            title:"RequiredAttribute",
-            content:"RequiredAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute',
-            title:"RequiredAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:20,
-            title:"AutoPrefs String",
-            content:"AutoPrefs String",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/String',
-            title:"AutoPrefs.String",
-            description:""
-        }
-    );
-    a(
-        {
-            id:21,
-            title:"NullableVector",
-            content:"NullableVector",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/NullableVector4',
-            title:"NullableVector4",
-            description:""
-        }
-    );
-    a(
-        {
-            id:22,
-            title:"Serialization ArrayPropertyAccessor",
-            content:"Serialization ArrayPropertyAccessor",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/ArrayPropertyAccessor',
-            title:"Serialization.ArrayPropertyAccessor",
-            description:""
-        }
-    );
-    a(
-        {
-            id:23,
-            title:"AutoPrefs Vector",
-            content:"AutoPrefs Vector",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/Vector3',
-            title:"AutoPrefs.Vector3",
-            description:""
-        }
-    );
-    a(
-        {
-            id:24,
-            title:"StaticLazyStack",
-            content:"StaticLazyStack",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/StaticLazyStack_1',
-            title:"StaticLazyStack<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:25,
-            title:"MethodCache",
-            content:"MethodCache",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache_1',
-            title:"MethodCache<TDelegate>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:26,
-            title:"AutoPrefs EditorVector",
-            content:"AutoPrefs EditorVector",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/EditorVector2',
-            title:"AutoPrefs.EditorVector2",
-            description:""
-        }
-    );
-    a(
-        {
-            id:27,
-            title:"EulerAttribute",
-            content:"EulerAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/EulerAttribute',
-            title:"EulerAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:28,
-            title:"MethodCache OnPropertyContextMenuMethod",
-            content:"MethodCache OnPropertyContextMenuMethod",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/OnPropertyContextMenuMethod',
-            title:"MethodCache.OnPropertyContextMenuMethod",
-            description:""
-        }
-    );
-    a(
-        {
-            id:29,
-            title:"WatcherWindow",
-            content:"WatcherWindow",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/WatcherWindow',
-            title:"WatcherWindow",
-            description:""
-        }
-    );
-    a(
-        {
-            id:30,
-            title:"AutoPrefs AutoPref",
-            content:"AutoPrefs AutoPref",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/AutoPref_1',
-            title:"AutoPrefs.AutoPref<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:31,
-            title:"AutoPrefs EditorVector",
-            content:"AutoPrefs EditorVector",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/EditorVector4',
-            title:"AutoPrefs.EditorVector4",
-            description:""
-        }
-    );
-    a(
-        {
-            id:32,
-            title:"MethodCache",
-            content:"MethodCache",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache',
-            title:"MethodCache",
-            description:""
-        }
-    );
-    a(
-        {
-            id:33,
-            title:"ValidatorAttribute",
-            content:"ValidatorAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ValidatorAttribute',
-            title:"ValidatorAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:34,
-            title:"ToolbarAttribute",
-            content:"ToolbarAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ToolbarAttribute',
-            title:"ToolbarAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:35,
-            title:"MethodCache OverridePropertyGUIMethod",
-            content:"MethodCache OverridePropertyGUIMethod",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/OverridePropertyGUIMethod',
-            title:"MethodCache.OverridePropertyGUIMethod",
-            description:""
-        }
-    );
-    a(
-        {
-            id:36,
-            title:"AutoPrefs EditorQuaternion",
-            content:"AutoPrefs EditorQuaternion",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/EditorQuaternion',
-            title:"AutoPrefs.EditorQuaternion",
-            description:""
-        }
-    );
-    a(
-        {
-            id:37,
-            title:"AutoPrefs Bool",
-            content:"AutoPrefs Bool",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/Bool',
-            title:"AutoPrefs.Bool",
-            description:""
-        }
-    );
-    a(
-        {
-            id:38,
-            title:"AutoPrefs EditorVector",
-            content:"AutoPrefs EditorVector",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/EditorVector3',
-            title:"AutoPrefs.EditorVector3",
-            description:""
-        }
-    );
-    a(
-        {
-            id:39,
-            title:"LabelAttribute",
-            content:"LabelAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/LabelAttribute',
-            title:"LabelAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:40,
-            title:"AutoHideUI",
-            content:"AutoHideUI",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/AutoHideUI',
-            title:"AutoHideUI",
-            description:""
-        }
-    );
-    a(
-        {
-            id:41,
-            title:"AutoPrefs AutoPref GUIFieldMethod",
-            content:"AutoPrefs AutoPref GUIFieldMethod",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/GUIFieldMethod',
-            title:"AutoPrefs.AutoPref<T>.GUIFieldMethod",
-            description:""
-        }
-    );
-    a(
-        {
-            id:42,
-            title:"MissingScriptEditor",
-            content:"MissingScriptEditor",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor',
-            title:"MissingScriptEditor",
-            description:""
-        }
-    );
-    a(
-        {
-            id:43,
-            title:"IComment",
-            content:"IComment",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/IComment',
-            title:"IComment",
-            description:""
-        }
-    );
-    a(
-        {
-            id:44,
-            title:"AutoPrefs Quaternion",
-            content:"AutoPrefs Quaternion",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/Quaternion',
-            title:"AutoPrefs.Quaternion",
-            description:""
-        }
-    );
-    a(
-        {
-            id:45,
-            title:"SimpleStaticLazyStack",
-            content:"SimpleStaticLazyStack",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/SimpleStaticLazyStack_2',
-            title:"SimpleStaticLazyStack<TStack, TValue>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:46,
-            title:"AutoPrefs Vector",
-            content:"AutoPrefs Vector",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/Vector4',
-            title:"AutoPrefs.Vector4",
-            description:""
-        }
-    );
-    a(
-        {
-            id:47,
-            title:"AutoPrefs Float",
-            content:"AutoPrefs Float",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/Float',
-            title:"AutoPrefs.Float",
-            description:""
-        }
-    );
-    a(
-        {
-            id:48,
-            title:"AutoPrefs IAutoPref",
-            content:"AutoPrefs IAutoPref",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/IAutoPref',
-            title:"AutoPrefs.IAutoPref",
-            description:""
-        }
-    );
-    a(
-        {
-            id:49,
-            title:"DynamicInspector InspectorModifiers",
-            content:"DynamicInspector InspectorModifiers",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/InspectorModifiers',
-            title:"DynamicInspector.InspectorModifiers",
-            description:""
-        }
-    );
-    a(
-        {
-            id:50,
+            id:2,
             title:"PropertyVisualiserWindow",
             content:"PropertyVisualiserWindow",
             description:'',
@@ -752,49 +80,21 @@ var searchModule = function() {
     );
     a(
         {
-            id:51,
-            title:"InspectableAttribute",
-            content:"InspectableAttribute",
+            id:3,
+            title:"MissingScriptEditor",
+            content:"MissingScriptEditor",
             description:'',
             tags:''
         },
         {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute',
-            title:"InspectableAttribute",
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor',
+            title:"MissingScriptEditor",
             description:""
         }
     );
     a(
         {
-            id:52,
-            title:"PersistentValues Operation",
-            content:"PersistentValues Operation",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/Operation',
-            title:"PersistentValues.Operation",
-            description:""
-        }
-    );
-    a(
-        {
-            id:53,
-            title:"Editor",
-            content:"Editor",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1',
-            title:"Editor<T>",
-            description:""
-        }
-    );
-    a(
-        {
-            id:54,
+            id:4,
             title:"Strings",
             content:"Strings",
             description:'',
@@ -808,7 +108,203 @@ var searchModule = function() {
     );
     a(
         {
-            id:55,
+            id:5,
+            title:"EditorState",
+            content:"EditorState",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/EditorState',
+            title:"EditorState",
+            description:""
+        }
+    );
+    a(
+        {
+            id:6,
+            title:"AutoPrefs Float",
+            content:"AutoPrefs Float",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/Float',
+            title:"AutoPrefs.Float",
+            description:""
+        }
+    );
+    a(
+        {
+            id:7,
+            title:"AutoPrefs Int",
+            content:"AutoPrefs Int",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/Int',
+            title:"AutoPrefs.Int",
+            description:""
+        }
+    );
+    a(
+        {
+            id:8,
+            title:"FloatVisualiserWindow",
+            content:"FloatVisualiserWindow",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow',
+            title:"FloatVisualiserWindow",
+            description:""
+        }
+    );
+    a(
+        {
+            id:9,
+            title:"NullableVector",
+            content:"NullableVector",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/NullableVector4',
+            title:"NullableVector4",
+            description:""
+        }
+    );
+    a(
+        {
+            id:10,
+            title:"AutoPrefs String",
+            content:"AutoPrefs String",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/String',
+            title:"AutoPrefs.String",
+            description:""
+        }
+    );
+    a(
+        {
+            id:11,
+            title:"AutoPrefs AutoPref",
+            content:"AutoPrefs AutoPref",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/AutoPref_1',
+            title:"AutoPrefs.AutoPref<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:12,
+            title:"MethodCache",
+            content:"MethodCache",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache',
+            title:"MethodCache",
+            description:""
+        }
+    );
+    a(
+        {
+            id:13,
+            title:"UniqueCollectionAttribute",
+            content:"UniqueCollectionAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/UniqueCollectionAttribute',
+            title:"UniqueCollectionAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:14,
+            title:"Strings GUI",
+            content:"Strings GUI",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/GUI',
+            title:"Strings.GUI",
+            description:""
+        }
+    );
+    a(
+        {
+            id:15,
+            title:"MaxValueAttribute",
+            content:"MaxValueAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/MaxValueAttribute',
+            title:"MaxValueAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:16,
+            title:"Vector VisualiserWindow",
+            content:"Vector VisualiserWindow",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/Vector2VisualiserWindow',
+            title:"Vector2VisualiserWindow",
+            description:""
+        }
+    );
+    a(
+        {
+            id:17,
+            title:"AutoPrefs Bool",
+            content:"AutoPrefs Bool",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/Bool',
+            title:"AutoPrefs.Bool",
+            description:""
+        }
+    );
+    a(
+        {
+            id:18,
+            title:"AutoPrefs EditorInt",
+            content:"AutoPrefs EditorInt",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/EditorInt',
+            title:"AutoPrefs.EditorInt",
+            description:""
+        }
+    );
+    a(
+        {
+            id:19,
             title:"AutoPrefs EditorFloat",
             content:"AutoPrefs EditorFloat",
             description:'',
@@ -822,15 +318,519 @@ var searchModule = function() {
     );
     a(
         {
-            id:56,
-            title:"ClampValueAttribute",
-            content:"ClampValueAttribute",
+            id:20,
+            title:"AutoPrefs Vector",
+            content:"AutoPrefs Vector",
             description:'',
             tags:''
         },
         {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute',
-            title:"ClampValueAttribute",
+            url:'/inspector-gadgets/api/InspectorGadgets/Vector2',
+            title:"AutoPrefs.Vector2",
+            description:""
+        }
+    );
+    a(
+        {
+            id:21,
+            title:"ReadonlyAttribute",
+            content:"ReadonlyAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ReadonlyAttribute',
+            title:"ReadonlyAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:22,
+            title:"RequiredAttribute",
+            content:"RequiredAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute',
+            title:"RequiredAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:23,
+            title:"MethodCache OverridePropertyGUIMethod",
+            content:"MethodCache OverridePropertyGUIMethod",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/OverridePropertyGUIMethod',
+            title:"MethodCache.OverridePropertyGUIMethod",
+            description:""
+        }
+    );
+    a(
+        {
+            id:24,
+            title:"Shortcut",
+            content:"Shortcut",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/Shortcut',
+            title:"Shortcut",
+            description:""
+        }
+    );
+    a(
+        {
+            id:25,
+            title:"AutoPrefs EditorVector",
+            content:"AutoPrefs EditorVector",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/EditorVector4',
+            title:"AutoPrefs.EditorVector4",
+            description:""
+        }
+    );
+    a(
+        {
+            id:26,
+            title:"BaseInspectableAttribute",
+            content:"BaseInspectableAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute',
+            title:"BaseInspectableAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:27,
+            title:"Serialization PropertyReference",
+            content:"Serialization PropertyReference",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/PropertyReference',
+            title:"Serialization.PropertyReference",
+            description:""
+        }
+    );
+    a(
+        {
+            id:28,
+            title:"AutoPrefs Quaternion",
+            content:"AutoPrefs Quaternion",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/Quaternion',
+            title:"AutoPrefs.Quaternion",
+            description:""
+        }
+    );
+    a(
+        {
+            id:29,
+            title:"SimpleStaticLazyStack",
+            content:"SimpleStaticLazyStack",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/SimpleStaticLazyStack_2',
+            title:"SimpleStaticLazyStack<TStack, TValue>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:30,
+            title:"LabelAttribute",
+            content:"LabelAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/LabelAttribute',
+            title:"LabelAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:31,
+            title:"ToolbarAttribute",
+            content:"ToolbarAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ToolbarAttribute',
+            title:"ToolbarAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:32,
+            title:"CommentAsset",
+            content:"CommentAsset",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/CommentAsset',
+            title:"CommentAsset",
+            description:""
+        }
+    );
+    a(
+        {
+            id:33,
+            title:"DisposableStaticLazyStack",
+            content:"DisposableStaticLazyStack",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/DisposableStaticLazyStack_1',
+            title:"DisposableStaticLazyStack<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:34,
+            title:"MenuFunctionState",
+            content:"MenuFunctionState",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/MenuFunctionState',
+            title:"MenuFunctionState",
+            description:""
+        }
+    );
+    a(
+        {
+            id:35,
+            title:"MinValueAttribute",
+            content:"MinValueAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/MinValueAttribute',
+            title:"MinValueAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:36,
+            title:"AutoPrefs EditorVector",
+            content:"AutoPrefs EditorVector",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/EditorVector2',
+            title:"AutoPrefs.EditorVector2",
+            description:""
+        }
+    );
+    a(
+        {
+            id:37,
+            title:"ButtonAttribute",
+            content:"ButtonAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ButtonAttribute',
+            title:"ButtonAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:38,
+            title:"Serialization ObjectReference",
+            content:"Serialization ObjectReference",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/ObjectReference',
+            title:"Serialization.ObjectReference",
+            description:""
+        }
+    );
+    a(
+        {
+            id:39,
+            title:"AutoPrefs Vector",
+            content:"AutoPrefs Vector",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/Vector3',
+            title:"AutoPrefs.Vector3",
+            description:""
+        }
+    );
+    a(
+        {
+            id:40,
+            title:"AutoPrefs IAutoPref",
+            content:"AutoPrefs IAutoPref",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/IAutoPref',
+            title:"AutoPrefs.IAutoPref",
+            description:""
+        }
+    );
+    a(
+        {
+            id:41,
+            title:"CommentEditor",
+            content:"CommentEditor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/CommentEditor',
+            title:"CommentEditor",
+            description:""
+        }
+    );
+    a(
+        {
+            id:42,
+            title:"AutoPrefs EditorQuaternion",
+            content:"AutoPrefs EditorQuaternion",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/EditorQuaternion',
+            title:"AutoPrefs.EditorQuaternion",
+            description:""
+        }
+    );
+    a(
+        {
+            id:43,
+            title:"Vector VisualiserWindow",
+            content:"Vector VisualiserWindow",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/Vector3VisualiserWindow',
+            title:"Vector3VisualiserWindow",
+            description:""
+        }
+    );
+    a(
+        {
+            id:44,
+            title:"PersistentValues Operation",
+            content:"PersistentValues Operation",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/Operation',
+            title:"PersistentValues.Operation",
+            description:""
+        }
+    );
+    a(
+        {
+            id:45,
+            title:"InspectableAttribute",
+            content:"InspectableAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute',
+            title:"InspectableAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:46,
+            title:"AutoHideUI",
+            content:"AutoHideUI",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/AutoHideUI',
+            title:"AutoHideUI",
+            description:""
+        }
+    );
+    a(
+        {
+            id:47,
+            title:"IGEditorUtils",
+            content:"IGEditorUtils",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils',
+            title:"IGEditorUtils",
+            description:""
+        }
+    );
+    a(
+        {
+            id:48,
+            title:"HasComponentAttribute",
+            content:"HasComponentAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/HasComponentAttribute',
+            title:"HasComponentAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:49,
+            title:"PersistentValues",
+            content:"PersistentValues",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues',
+            title:"PersistentValues",
+            description:""
+        }
+    );
+    a(
+        {
+            id:50,
+            title:"DynamicInspector InspectorModifiers",
+            content:"DynamicInspector InspectorModifiers",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/InspectorModifiers',
+            title:"DynamicInspector.InspectorModifiers",
+            description:""
+        }
+    );
+    a(
+        {
+            id:51,
+            title:"Serialization CollectionPropertyAccessor",
+            content:"Serialization CollectionPropertyAccessor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/CollectionPropertyAccessor',
+            title:"Serialization.CollectionPropertyAccessor",
+            description:""
+        }
+    );
+    a(
+        {
+            id:52,
+            title:"IGUtils",
+            content:"IGUtils",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/IGUtils',
+            title:"IGUtils",
+            description:""
+        }
+    );
+    a(
+        {
+            id:53,
+            title:"ShowPreviewAttribute",
+            content:"ShowPreviewAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ShowPreviewAttribute',
+            title:"ShowPreviewAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:54,
+            title:"MethodCache",
+            content:"MethodCache",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/MethodCache_1',
+            title:"MethodCache<TDelegate>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:55,
+            title:"Serialization PropertyAccessor",
+            content:"Serialization PropertyAccessor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor',
+            title:"Serialization.PropertyAccessor",
+            description:""
+        }
+    );
+    a(
+        {
+            id:56,
+            title:"MethodCache OnPropertyContextMenuMethod",
+            content:"MethodCache OnPropertyContextMenuMethod",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/OnPropertyContextMenuMethod',
+            title:"MethodCache.OnPropertyContextMenuMethod",
             description:""
         }
     );
@@ -851,48 +851,62 @@ var searchModule = function() {
     a(
         {
             id:58,
-            title:"AutoPrefs Vector",
-            content:"AutoPrefs Vector",
+            title:"DynamicInspector",
+            content:"DynamicInspector",
             description:'',
             tags:''
         },
         {
-            url:'/inspector-gadgets/api/InspectorGadgets/Vector2',
-            title:"AutoPrefs.Vector2",
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/DynamicInspector',
+            title:"DynamicInspector",
             description:""
         }
     );
     a(
         {
             id:59,
-            title:"Vector VisualiserWindow",
-            content:"Vector VisualiserWindow",
+            title:"ClampValueAttribute",
+            content:"ClampValueAttribute",
             description:'',
             tags:''
         },
         {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/Vector3VisualiserWindow',
-            title:"Vector3VisualiserWindow",
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute',
+            title:"ClampValueAttribute",
             description:""
         }
     );
     a(
         {
             id:60,
-            title:"Shortcut",
-            content:"Shortcut",
+            title:"AutoPrefs AutoPref GUIFieldMethod",
+            content:"AutoPrefs AutoPref GUIFieldMethod",
             description:'',
             tags:''
         },
         {
-            url:'/inspector-gadgets/api/InspectorGadgets/Shortcut',
-            title:"Shortcut",
+            url:'/inspector-gadgets/api/InspectorGadgets/GUIFieldMethod',
+            title:"AutoPrefs.AutoPref<T>.GUIFieldMethod",
             description:""
         }
     );
     a(
         {
             id:61,
+            title:"CommentComponent",
+            content:"CommentComponent",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/CommentComponent',
+            title:"CommentComponent",
+            description:""
+        }
+    );
+    a(
+        {
+            id:62,
             title:"LabelledCollectionAttribute",
             content:"LabelledCollectionAttribute",
             description:'',
@@ -906,119 +920,7 @@ var searchModule = function() {
     );
     a(
         {
-            id:62,
-            title:"IGUtils",
-            content:"IGUtils",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/IGUtils',
-            title:"IGUtils",
-            description:""
-        }
-    );
-    a(
-        {
             id:63,
-            title:"EditorState",
-            content:"EditorState",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/EditorState',
-            title:"EditorState",
-            description:""
-        }
-    );
-    a(
-        {
-            id:64,
-            title:"ButtonAttribute",
-            content:"ButtonAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ButtonAttribute',
-            title:"ButtonAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:65,
-            title:"UniqueCollectionAttribute",
-            content:"UniqueCollectionAttribute",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/UniqueCollectionAttribute',
-            title:"UniqueCollectionAttribute",
-            description:""
-        }
-    );
-    a(
-        {
-            id:66,
-            title:"Strings GUI",
-            content:"Strings GUI",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/GUI',
-            title:"Strings.GUI",
-            description:""
-        }
-    );
-    a(
-        {
-            id:67,
-            title:"AutoPrefs Int",
-            content:"AutoPrefs Int",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets/Int',
-            title:"AutoPrefs.Int",
-            description:""
-        }
-    );
-    a(
-        {
-            id:68,
-            title:"Serialization ObjectReference",
-            content:"Serialization ObjectReference",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/ObjectReference',
-            title:"Serialization.ObjectReference",
-            description:""
-        }
-    );
-    a(
-        {
-            id:69,
-            title:"PersistentValues",
-            content:"PersistentValues",
-            description:'',
-            tags:''
-        },
-        {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues',
-            title:"PersistentValues",
-            description:""
-        }
-    );
-    a(
-        {
-            id:70,
             title:"Serialization",
             content:"Serialization",
             description:'',
@@ -1032,43 +934,141 @@ var searchModule = function() {
     );
     a(
         {
-            id:71,
-            title:"HasComponentAttribute",
-            content:"HasComponentAttribute",
+            id:64,
+            title:"EulerAttribute",
+            content:"EulerAttribute",
             description:'',
             tags:''
         },
         {
-            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/HasComponentAttribute',
-            title:"HasComponentAttribute",
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/EulerAttribute',
+            title:"EulerAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:65,
+            title:"IComment",
+            content:"IComment",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/IComment',
+            title:"IComment",
+            description:""
+        }
+    );
+    a(
+        {
+            id:66,
+            title:"AutoPrefs EditorString",
+            content:"AutoPrefs EditorString",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/EditorString',
+            title:"AutoPrefs.EditorString",
+            description:""
+        }
+    );
+    a(
+        {
+            id:67,
+            title:"StaticLazyStack",
+            content:"StaticLazyStack",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/StaticLazyStack_1',
+            title:"StaticLazyStack<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:68,
+            title:"Editor",
+            content:"Editor",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1',
+            title:"Editor<T>",
+            description:""
+        }
+    );
+    a(
+        {
+            id:69,
+            title:"ValidatorAttribute",
+            content:"ValidatorAttribute",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/ValidatorAttribute',
+            title:"ValidatorAttribute",
+            description:""
+        }
+    );
+    a(
+        {
+            id:70,
+            title:"WatcherWindow",
+            content:"WatcherWindow",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets.Editor/WatcherWindow',
+            title:"WatcherWindow",
+            description:""
+        }
+    );
+    a(
+        {
+            id:71,
+            title:"AutoPrefs EditorVector",
+            content:"AutoPrefs EditorVector",
+            description:'',
+            tags:''
+        },
+        {
+            url:'/inspector-gadgets/api/InspectorGadgets/EditorVector3',
+            title:"AutoPrefs.EditorVector3",
             description:""
         }
     );
     a(
         {
             id:72,
-            title:"AutoPrefs EditorInt",
-            content:"AutoPrefs EditorInt",
+            title:"SceneAttribute",
+            content:"SceneAttribute",
             description:'',
             tags:''
         },
         {
-            url:'/inspector-gadgets/api/InspectorGadgets/EditorInt',
-            title:"AutoPrefs.EditorInt",
+            url:'/inspector-gadgets/api/InspectorGadgets.Attributes/SceneAttribute',
+            title:"SceneAttribute",
             description:""
         }
     );
     a(
         {
             id:73,
-            title:"FloatVisualiserWindow",
-            content:"FloatVisualiserWindow",
+            title:"AutoPrefs Vector",
+            content:"AutoPrefs Vector",
             description:'',
             tags:''
         },
         {
-            url:'/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow',
-            title:"FloatVisualiserWindow",
+            url:'/inspector-gadgets/api/InspectorGadgets/Vector4',
+            title:"AutoPrefs.Vector4",
             description:""
         }
     );
