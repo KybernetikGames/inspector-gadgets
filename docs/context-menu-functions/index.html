@@ -153,7 +153,15 @@
 <ul>
 <li>These functions only support multi-object selection in <a href="../features">Inspector Gadgets Pro</a>.</li>
 <li><a href="../features">Inspector Gadgets Pro</a> also has several additional functions specific to <a href="../script-inspector/object-reference-fields">Object Fields</a>.</li>
-<li>Most types have <code>Copy</code> and <code>Paste</code> functions which allow you to copy values between fields in Unity as well as to and from other programs.</li>
+<li>All fields have <code>Copy</code> and <code>Paste</code> functions.
+<ul>
+<li>Most types try to <code>Copy</code> the value to the system clipboard in case you want to paste it into another program such as a text editor.</li>
+<li>Basic types can also parse text from the clipboard to <code>Paste</code> an appropriate value. For example, if you copy <code>(1, 2, 3)</code> from this page you will be able to paste it into any of the <code>Transform</code> fields.</li>
+<li><code>Object</code> reference fields will try to find an object by name using the clipboard text.</li>
+<li>All fields have a <code>Paste (Direct)</code> function which will copy the serialized value directly.</li>
+<li><code>Transform</code> fields also have a <code>Paste (Private)</code> function which uses a separate clipboard for each of them so that you can copy <code>Position</code>, <code>Rotation</code>, and <code>Scale</code> at the same time.</li>
+</ul>
+</li>
 <li>The fields in the <code>Transform</code> Inspector have functions to snap them to the grid, raycast down and snap to the ground, and rotate to look at another object.</li>
 <li>The fields in the <code>RectTransform</code> Inspector have functions to square them (set the height equal to the width or vice versa) and to snap them to the edges of its siblings in a particular direction (Right/Up/Left/Down).</li>
 <li>Randomize within common ranges:
