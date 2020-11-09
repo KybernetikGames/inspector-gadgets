@@ -76,7 +76,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#new-locked-inspector">New Locked Inspector</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#reset-copy-and-paste">Reset, Copy, and Paste</a></p>
+<p><a href="#new-locked-inspector">New Locked Inspector</a></p>
 <p><a href="#persist-after-play-mode">Persist After Play Mode</a></p>
 <p><a href="#visualise">Visualise</a></p>
 <p><a href="#watch">Watch</a></p>
@@ -152,16 +153,6 @@
 		<p>Inspector Gadgets automatically adds various useful functions to the context menu (right click menu) of each field in the Inspector based on its type:</p>
 <ul>
 <li>These functions only support multi-object selection in <a href="../features">Inspector Gadgets Pro</a>.</li>
-<li><a href="../features">Inspector Gadgets Pro</a> also has several additional functions specific to <a href="../script-inspector/object-reference-fields">Object Fields</a>.</li>
-<li>All fields have <code>Copy</code> and <code>Paste</code> functions.
-<ul>
-<li>Most types try to <code>Copy</code> the value to the system clipboard in case you want to paste it into another program such as a text editor.</li>
-<li>Basic types can also parse text from the clipboard to <code>Paste</code> an appropriate value. For example, if you copy <code>(1, 2, 3)</code> from this page you will be able to paste it into any of the <code>Transform</code> fields.</li>
-<li><code>Object</code> reference fields will try to find an object by name using the clipboard text.</li>
-<li>All fields have a <code>Paste (Direct)</code> function which will copy the serialized value directly.</li>
-<li><code>Transform</code> fields also have a <code>Paste (Private)</code> function which uses a separate clipboard for each of them so that you can copy <code>Position</code>, <code>Rotation</code>, and <code>Scale</code> at the same time.</li>
-</ul>
-</li>
 <li>The fields in the <code>Transform</code> Inspector have functions to snap them to the grid, raycast down and snap to the ground, and rotate to look at another object.</li>
 <li>The fields in the <code>RectTransform</code> Inspector have functions to square them (set the height equal to the width or vice versa) and to snap them to the edges of its siblings in a particular direction (Right/Up/Left/Down).</li>
 <li>Randomize within common ranges:
@@ -178,9 +169,22 @@
 <li>Convert between degrees and radians for <code>float</code>.</li>
 <li>Set common vectors: zero, right, up, forward, one.</li>
 <li><code>Normalize</code> vectors.</li>
-<li><code>String</code> to lower or upper case.</li>
+<li><code>String</code> convert to lower or upper case.</li>
 <li><code>Log</code> the current value of the field.</li>
 <li><code>Help</code> functions to open the Inspector Gadgets Documentation or do a Google search for the name of the target script.</li>
+</ul>
+<h1 id="reset-copy-and-paste">Reset, Copy, and Paste</h1>
+<p><em>All fields have <code>Reset</code>, <code>Copy</code>, and <code>Paste</code> functions in <a href="../features">Inspector Gadgets Pro</a>.</em></p>
+<ul>
+<li>Most types try to <code>Copy</code> the value to the system clipboard in case you want to paste it into another program such as a text editor.</li>
+<li>Basic types can also parse text from the clipboard to <code>Paste</code> an appropriate value. For example, if you copy <code>(1, 2, 3)</code> from this page you will be able to paste it into any of the <code>Transform</code> fields.</li>
+<li><code>Object</code> reference fields will try to find an object by name using the clipboard text.</li>
+<li>All fields have a <code>Paste (Direct)</code> function which will copy the serialized value directly.</li>
+<li><code>Transform</code> fields also have a <code>Paste (Private)</code> function which uses a separate clipboard for each of them so that you can copy <code>Position</code>, <code>Rotation</code>, and <code>Scale</code> at the same time.
+<ul>
+<li><code>Copy</code> and <code>Paste</code> functions on <code>Transform</code> fields are available in <a href="../features">Inspector Gadgets Lite</a>.</li>
+</ul>
+</li>
 </ul>
 <h1 id="new-locked-inspector">New Locked Inspector</h1>
 <p><em>This feature is only available in <a href="../features">Inspector Gadgets Pro</a>.</em></p>
@@ -195,7 +199,7 @@
 <p><img src="visualise-vector3.png" class="img-responsive"></p>
 <h1 id="watch">Watch</h1>
 <p>Opens an editor window that displays a list of all fields you have used the function on so you can view (and edit) them all at the same time. You can use this function on individual fields as well as entire <code>Component</code>s.</p>
-<p><em>The <a href="../features">Lite version</a> only allows you to watch up to 3 fields at a time.</em></p>
+<p><em><a href="../features">Inspector Gadgets Lite</a> only allows you to watch up to 3 fields at a time.</em></p>
 <p><img src="watcher.png" class="img-responsive"></p>
 
 	</section>
