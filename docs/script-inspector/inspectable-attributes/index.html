@@ -173,7 +173,7 @@ string PropertyLabel { get; set; }
 <h1 id="button">Button</h1>
 <p>The <code>[Button]</code> attribute adds a button in the Inspector which the user can click to invoke the attributed method.</p>
 <ul>
-<li>The will automatically be given the method’s name (with spaces between words) unless you specify a different <code>Label</code> in its constructor.</li>
+<li>It will automatically display the name of the method unless you specify a different <code>Label</code> in its constructor.</li>
 <li>If it is an instance method and multiple objects are selected, the method will be called once for each selected object.</li>
 <li>If the method has a non-<code>void</code> return type, the returned value will be logged.</li>
 <li>If you assign <code>SetDirty = true</code> in the attribute’s constructor, it will automatically call <code>UnityEditor.EditorUtility.SetDirty</code> on the target after invoking the method to make sure changes are saved properly.</li>
