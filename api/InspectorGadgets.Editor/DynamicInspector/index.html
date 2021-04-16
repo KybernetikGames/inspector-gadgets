@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.5</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.6</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -247,11 +247,9 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/DynamicInspector/5EF18EAC">AddInspectorButton<wbr>(UnityEngine<wbr>.Object, <wbr>string, <wbr>Action, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>
+									<div>[Editor-Conditional] [Pro-Only]
     Adds a button to the bottom of the `context` object's inspector which triggers the specified `callback` when clicked.
     If an entry with the specified `label` already exists, it will be updated to display the new `value` instead.
-    <p></p>
-    This method does nothing outside of the Unity Editor.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -260,11 +258,9 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/DynamicInspector/BA3A9BDE">AddInspectorLabel<wbr>(UnityEngine<wbr>.Object, <wbr>string, <wbr>Object, <wbr>float)<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>
+									<div>[Editor-Conditional] [Pro-Only]
     Adds a label to the bottom of the `context` object's inspector.
     If an entry with the specified `name` already exists, it will be updated to display the new `value` instead.
-    <p></p>
-    This method does nothing outside of the Unity Editor.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>
@@ -291,7 +287,7 @@ class Type type-node
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/DynamicInspector/76EB88E2">RemoveInspectorExtra<wbr>(UnityEngine<wbr>.Object, <wbr>string)<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>
+									<div>[Editor-Conditional] [Pro-Only]
     Removes an inspector extra with the specified `name` such as a label or button.
     </div>
 											<div><small><em>static</em></small></div>
