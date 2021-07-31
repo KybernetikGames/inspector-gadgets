@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.6</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.7</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -80,7 +80,7 @@
 <p><a href="#Syntax">Syntax</a></p>
 <p><a href="#Attributes">Attributes</a></p>
 <p><a href="#Constructors">Constructors</a></p>
-<p><a href="#fields">Fields</a></p>
+<p><a href="#Properties">Properties</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -154,6 +154,7 @@
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute">InspectableAttribute</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LabelAttribute">LabelAttribute</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LabelledCollectionAttribute">Labelled<wbr>Collection<wbr>Attribute</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LayerAttribute">LayerAttribute</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/MaxValueAttribute">MaxValueAttribute</a></li>
 				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/MinValueAttribute">MinValueAttribute</a></li>
 				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ReadonlyAttribute">ReadonlyAttribute</a></li>
@@ -260,6 +261,13 @@ public sealed class ReadonlyAttribute : PropertyAttribute</code></pre>
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ReadonlyAttribute/2F3BC233">ReadonlyAttribute<wbr>()<wbr></a></td>
+									<td>
+    Creates a new <code class="cs">InspectorGadgets.Attributes.ReadonlyAttribute</code> to apply its effects in the default <code class="cs">InspectorGadgets.EditorState</code>
+    (set in the <code class="cs">Edit/Preferences</code> menu.
+    </td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ReadonlyAttribute/CA482301">ReadonlyAttribute<wbr>(EditorState)<wbr></a></td>
 									<td>
     Creates a new <code class="cs">InspectorGadgets.Attributes.ReadonlyAttribute</code> to apply its effects in the specified <code class="cs">InspectorGadgets.EditorState</code>.
@@ -271,31 +279,29 @@ public sealed class ReadonlyAttribute : PropertyAttribute</code></pre>
 		
 
 
-			<h1 id="fields">Fields</h1>
+
+			<h1 id="Properties">Properties</h1>
 			<div class="box">
 				<div class="box-body no-padding table-responsive">
 					<table class="table table-striped table-hover three-cols">
 						<thead>
 							<tr>
 								<th>Name</th>
-								<th>Constant Value</th>
+								<th>Value</th>
 								<th>Summary</th>
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ReadonlyAttribute/68994A40">When</a></td>
-								<td></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ReadonlyAttribute/9248EBC5">When</a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/EditorState">EditorState</a></td>
 								<td>
-									<div>
-    Indicates when the field should be greyed out.
-    </div>
+									<div>Indicates when the field should be greyed out.</div>
 								</td>
 							</tr>
 					</tbody></table>
 				</div>
 			</div>
 		
-
 
 
 

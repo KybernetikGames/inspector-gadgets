@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li class="active"><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.6</a></li>
+        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.7</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -76,7 +76,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#inspector-gadgets-v6.6">Inspector Gadgets v6.6</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#inspector-gadgets-v6.7">Inspector Gadgets v6.7</a></p>
+<p><a href="#inspector-gadgets-v6.6">Inspector Gadgets v6.6</a></p>
 <p><a href="#inspector-gadgets-v6.5">Inspector Gadgets v6.5</a></p>
 <p><a href="#inspector-gadgets-v6.4">Inspector Gadgets v6.4</a></p>
 <p><a href="#inspector-gadgets-v6.3">Inspector Gadgets v6.3</a></p>
@@ -153,7 +154,36 @@
 			<h1>Inspector Gadgets v6</h1>
 		</section>
 	<section class="content">
-		<h1 id="inspector-gadgets-v6.6">Inspector Gadgets v6.6</h1>
+		<h1 id="inspector-gadgets-v6.7">Inspector Gadgets v6.7</h1>
+<ul>
+<li>Released 2021-07-31</li>
+<li>Dropped support for Unity 2018. Tested versions are now 2019.4 (LTS), 2020.3 (LTS), and 2021.1 (Latest Stable). Inspector Gadgets v6.6 is still available for Unity 2018.4 though.</li>
+<li><code>DragAndDropSubAssets</code> now allows sub-assets to be extracted by dropping them on their root asset instead of needing to target a folder.</li>
+<li>Added Context Menu Functions to set the type of a <code>[SerializeReference]</code> field.</li>
+<li>Added <code>[Layer]</code> attribute for drawing <code>int</code> fields as a dropdown menu to select a layer.</li>
+<li>Added <code><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/B9583F9B">IGUtils.DefaultEditorState</a></code> which can be set in the <em>Edit/Preferences...</em> window. Inspectable attributes will now use that value unless specified otherwise in their constructor.</li>
+<li>Improved the <code>Paste</code> Context Menu Function to trim prefixes and suffixes from the numbers.</li>
+<li>Optimized <code>Editor</code> to not cause <code>OnValidate</code> and <code>ISerializationCallbackReceiver.OnAfterDeserialize</code> to be called continuously on all components shown in the Inspector (even though Unity's default Inspector does that).</li>
+<li>Changed usage of <code>SelectionMode.OnlyUserModifiable</code> to <code>Editable</code> since the former is obsolete (and the latter is identical).</li>
+<li>Changed <code>ManagedReferenceHandler</code> to use <code>IGUtils.GetDerivedTypes</code> instead of implementing the search itself.</li>
+<li>Fixed the way Unity 2020+ generates C# project files using <code>FixProjectDefinition</code> to prevent it from referencing the Runtime-Only Lite DLLs.</li>
+<li>Fixed <code>IGUtils.GetDerivedTypes</code> to support interfaces.</li>
+<li>Fixed <code>MissingScriptEditor.DestroyProperly</code> to support multi-object selection.</li>
+<li>Fixed the <code>Transform</code> Copy button to copy the displayed value instead of the local value.</li>
+<li>Replaced the ReadMe.pdf with a text file since it didn't have any real detail anyway. This gives an 86% reduction in the package size of Inspector Gadgets Pro.</li>
+</ul>
+<h2 id="serialization">Serialization</h2>
+<ul>
+<li>Added support for inheritance in <code>[SerializeReference]</code> fields.
+<ul>
+<li>Changed <code>Serialization.PropertyAccessor.FieldType</code> to be private and accessible via <code>GetFieldElementType</code>.</li>
+<li>Changed <code>Serialization.PropertyAccessor.Field</code> to be private and accessible via <code>GetField</code>.</li>
+<li>Fixed <code>Serialization.PropertyAccessor.ResetValue</code> to run the constructor of the field's current type so that it can reset <code>[SerializeReference]</code> fields to the defaults of the current type instead of <code>null</code>.</li>
+</ul>
+</li>
+<li>Fixed <code>SerializedPropertyContextMenu.GenericHandler</code> to work properly for array fields.</li>
+</ul>
+<h1 id="inspector-gadgets-v6.6">Inspector Gadgets v6.6</h1>
 <ul>
 <li>Released 2021-04-16</li>
 <li>Added <code>Reset</code> <a href="../context-menu-functions">Context Menu Function</a> for all fields to reset their value to the default of their type.</li>

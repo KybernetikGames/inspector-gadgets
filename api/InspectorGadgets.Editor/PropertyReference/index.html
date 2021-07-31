@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.6</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.7</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -186,9 +186,7 @@
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">[Editor-Only]
-    A serializable reference to a <code class="cs">SerializedProperty</code>.
-    </div>
+	<div class="lead">[Editor-Only] A serializable reference to a <code class="cs">SerializedProperty</code>.</div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">
@@ -294,7 +292,7 @@ public sealed class Serialization.PropertyReference</code></pre>
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyReference/55D43173">IsInitialised</a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyReference/DAEFE07C">IsInitialized</a></td>
 								<td>bool</td>
 								<td>
 									<div>Indicates whether the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyReference.Property</code> has been accessed.</div>
@@ -349,7 +347,7 @@ public sealed class Serialization.PropertyReference</code></pre>
 								<td>void</td>
 								<td>
 									<div>
-    Calls <code class="cs">SerializedObject.ApplyModifiedProperties</code> if the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyReference.Property</code> has been initialised.
+    Calls <code class="cs">SerializedObject.ApplyModifiedProperties</code> if the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyReference.Property</code> has been initialized.
     </div>
 								</td>
 							</tr>
@@ -358,7 +356,7 @@ public sealed class Serialization.PropertyReference</code></pre>
 								<td>void</td>
 								<td>
 									<div>
-    Calls <code class="cs">SerializedObject.Dispose</code> if the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyReference.Property</code> has been initialised.
+    Calls <code class="cs">SerializedObject.Dispose</code> if the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyReference.Property</code> has been initialized.
     </div>
 								</td>
 							</tr>
@@ -387,9 +385,7 @@ public sealed class Serialization.PropertyReference</code></pre>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyReference/83FFD260">IsTarget<wbr>(<wbr>Serialized<wbr>Property, <wbr>UnityEngine<wbr>.Object[])<wbr></a></td>
 								<td>bool</td>
 								<td>
-									<div>
-    Returns true if the specified property and objects match the targets of this reference.
-    </div>
+									<div>Do the specified `property` and `targetObjects` match the targets of this reference?</div>
 								</td>
 							</tr>
 							<tr>
@@ -397,7 +393,7 @@ public sealed class Serialization.PropertyReference</code></pre>
 								<td>void</td>
 								<td>
 									<div>
-    Calls <code class="cs">SerializedObject.Update</code> if the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyReference.Property</code> has been initialised.
+    Calls <code class="cs">SerializedObject.Update</code> if the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyReference.Property</code> has been initialized.
     </div>
 								</td>
 							</tr>

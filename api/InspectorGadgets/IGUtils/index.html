@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.6</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.7</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -78,6 +78,7 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Properties">Properties</a></p>
 <p><a href="#Methods">Methods</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -228,6 +229,29 @@ class Type type-node
 
 
 
+			<h1 id="Properties">Properties</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover three-cols">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Value</th>
+								<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/B9583F9B">DefaultEditorState</a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/EditorState">EditorState</a></td>
+								<td>
+									<div>Determines when to show Inspectable attributes if not specified in their constructor.</div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
 
 			<h1 id="Methods">Methods</h1>
 			<div class="box">
@@ -841,6 +865,17 @@ class Type type-node
 								<td>
 									<div>
     Truncate the given string so it can be used in a GUI.Label. MaxLength = 16,382.
+    </div>
+											<div><small><em>static</em></small></div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/603A45F1">ValueOrDefault<wbr>(Nullable<wbr>&lt;EditorState&gt;<wbr>)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/EditorState">EditorState</a></td>
+								<td>
+									<div>
+    Returns the `state` as long as it isn't <code class="cs">null</code>.
+    Otherwise returns the <code class="cs">InspectorGadgets.IGUtils.DefaultEditorState</code>.
     </div>
 											<div><small><em>static</em></small></div>
 								</td>

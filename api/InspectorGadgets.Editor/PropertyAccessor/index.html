@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.6</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.7</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -250,7 +250,7 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/542311A5">PropertyAccessor<wbr>(Serialization<wbr>.PropertyAccessor, <wbr>FieldInfo, <wbr>Type)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/DA167CE1">PropertyAccessor<wbr>(Serialization<wbr>.PropertyAccessor, <wbr>string, <wbr>FieldInfo, <wbr>Type)<wbr></a></td>
 									<td>Creates a new <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor</code>.</td>
 							</tr>
 					</tbody></table>
@@ -278,10 +278,20 @@ class Type type-node
 								</td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/A60C4320">FieldType</a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/B6557300">FieldElementType</a></td>
 								<td></td>
 								<td>
-									<div>The type of the wrapped <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.Field</code>.</div>
+									<div>
+    The type of the wrapped <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.Field</code>.
+    Or if it's a collection, this is the type of items in the collection.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/5AAD81B2">Name</a></td>
+								<td></td>
+								<td>
+									<div>The name of the field wrapped by this accessor.</div>
 								</td>
 							</tr>
 							<tr>
@@ -309,6 +319,71 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/4A1669B3">GetField<wbr>(Object)<wbr></a></td>
+								<td>FieldInfo</td>
+								<td>
+									<div>Returns the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.Field</code> if there is one or tries to get it from the object's type.</div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/0BCD6834">GetField<wbr>(Object)<wbr></a></td>
+								<td>FieldInfo</td>
+								<td>
+									<div>
+    Returns the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.Field</code> if there is one, otherwise calls <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.GetField(System.Object@)</code>.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/C33A3251">GetField<wbr>(SerializedObject)<wbr></a></td>
+								<td>FieldInfo</td>
+								<td>
+									<div>
+    Calls <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.GetField(System.Object)</code> with the <code class="cs">SerializedObject.targetObject</code>.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/BA53E31B">GetField<wbr>(SerializedProperty)<wbr></a></td>
+								<td>FieldInfo</td>
+								<td>
+									<div>
+    Calls <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.GetField(SerializedObject)</code> with the
+    <code class="cs">SerializedProperty.serializedObject</code>.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/D1F12840">GetFieldElementType<wbr>(Object)<wbr></a></td>
+								<td>Type</td>
+								<td>
+									<div>
+    Returns the <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.FieldElementType</code> if there is one, otherwise calls <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.GetField(System.Object@)</code>
+    and returns its <code class="cs">System.Reflection.FieldInfo.FieldType</code>.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/3EB203D4">GetFieldElementType<wbr>(SerializedObject)<wbr></a></td>
+								<td>Type</td>
+								<td>
+									<div>
+    Calls <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.GetFieldElementType(System.Object)</code> with the
+    <code class="cs">SerializedObject.targetObject</code>.
+    </div>
+								</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/69429259">GetFieldElementType<wbr>(SerializedProperty)<wbr></a></td>
+								<td>Type</td>
+								<td>
+									<div>
+    Calls <code class="cs">InspectorGadgets.Editor.Serialization.PropertyAccessor.GetFieldElementType(SerializedObject)</code> with the
+    <code class="cs">SerializedProperty.serializedObject</code>.
+    </div>
+								</td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyAccessor/2E04FE12">GetPath<wbr>()<wbr></a></td>
 								<td>string</td>
 								<td>
@@ -351,7 +426,7 @@ class Type type-node
 								<td>
 									<div>
     Resets the value of the <code class="cs">SerializedProperty</code> to the default value of its type by executing
-    its constructor and field initialisers.
+    its constructor and field initializers.
     </div>
 								</td>
 							</tr>

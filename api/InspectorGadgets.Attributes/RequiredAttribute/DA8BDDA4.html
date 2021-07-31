@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
-        <title>Inspector Gadgets - API - BaseInspectableAttribute.Initialise() Method</title>
+        <title>Inspector Gadgets - API - RequiredAttribute.Initialize(FieldInfo) Method</title>
         <link href="/inspector-gadgets/assets/css/highlight.css" rel="stylesheet">
         <link href="/inspector-gadgets/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/inspector-gadgets/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.6</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.7</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -78,6 +78,7 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Parameters">Parameters</a></p>
 <p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -142,25 +143,15 @@
 		<li class="header">Namespace</li>
 		<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes">InspectorGadgets<wbr>.Attributes</a></li>
 		<li class="header">Type</li>
-		<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute">Base<wbr>Inspectable<wbr>Attribute</a></li>
+		<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute">RequiredAttribute</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Constructors</li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/A38E53A2">Base<wbr>Inspectable<wbr>Attribute<wbr>()<wbr></a></li>
-			<li class="header">Property Members</li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/43EB164A">DisplayIndex</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/A8AF06A7">Label</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/1BE38AF2">LabelContent</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/F61CE842">LabelStyle</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/171A9106">Member</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/9956C27C">Tooltip</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/F01DB93E">When</a></li>
 			<li class="header">Method Members</li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/5D1F0628">CheckContextMenu<wbr>(Rect, <wbr>UnityEngine<wbr>.Object[])<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/206BB80E">CompareTo<wbr>(<wbr>Base<wbr>Inspectable<wbr>Attribute)<wbr></a></li>
-				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/A2A97A79">Initialise<wbr>()<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/24F9AC9C">OnGUI<wbr>(UnityEngine<wbr>.Object[])<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/51C60C60">PopulateContextMenu<wbr>(UnityEditor<wbr>.GenericMenu, <wbr>UnityEngine<wbr>.Object[])<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/C6348EC9">PrefixLabel<wbr>(GUIContent)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute/0D436D2D">Initialize<wbr>(SerializedProperty)<wbr></a></li>
+				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute/DA8BDDA4">Initialize<wbr>(FieldInfo)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute/BE4522B3">Initialize<wbr>(PropertyInfo)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute/874090FA">IsDefaultValue<wbr>(Object)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute/E0B7329B">IsDefaultValue<wbr>(Serialization<wbr>.PropertyAccessor, <wbr>Object)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute/00A72BB1">ToString<wbr>()<wbr></a></li>
 
 
                     </ul>
@@ -175,14 +166,14 @@
 
 
 <section class="content-header">
-			<h3><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute">Base<wbr>Inspectable<wbr>Attribute</a>.</h3>
-	<h1>Initialise<wbr>()<wbr> <small>Method</small></h1>
+			<h3><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute">RequiredAttribute</a>.</h3>
+	<h1>Initialize<wbr>(FieldInfo)<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">Initialise this inspectable with a member.</div>
+	<div class="lead">Initializes this attribute to check the value of the specified `property`.</div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">	
@@ -194,19 +185,38 @@
 						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Attributes">InspectorGadgets<wbr>.Attributes</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute">Base<wbr>Inspectable<wbr>Attribute</a></dd>		
+						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute">RequiredAttribute</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>protected abstract string Initialise()</code></pre>
+	<pre><code>public void Initialize(FieldInfo field)</code></pre>
 
 
 
 
 
+	<h1 id="Parameters">Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover three-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>field</td>
+						<td>FieldInfo</td>
+						<td></td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
 
 	<h1 id="ReturnValue">Return Value</h1>
 	<div class="box">
@@ -219,7 +229,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>string</td>
+					<td>void</td>
 					<td></td>
 				</tr>
 			</tbody></table>

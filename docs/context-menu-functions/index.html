@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li class="active"><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.6</a></li>
+        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.7</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -76,7 +76,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#reset-copy-and-paste">Reset, Copy, and Paste</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#set">Set</a></p>
+<p><a href="#reset-copy-and-paste">Reset, Copy, and Paste</a></p>
 <p><a href="#new-locked-inspector">New Locked Inspector</a></p>
 <p><a href="#persist-after-play-mode">Persist After Play Mode</a></p>
 <p><a href="#visualise">Visualise</a></p>
@@ -168,12 +169,53 @@
 </ul>
 </li>
 <li>Convert between degrees and radians for <code>float</code>.</li>
-<li>Set common vectors: zero, right, up, forward, one.</li>
 <li><code>Normalize</code> vectors.</li>
 <li><code>String</code> convert to lower or upper case.</li>
 <li><code>Log</code> the current value of the field.</li>
 <li><code>Help</code> functions to open the Inspector Gadgets Documentation or do a Google search for the name of the target script.</li>
 </ul>
+<h1 id="set">Set</h1>
+<p>Number fields have <code>Set</code> commands to assign common values such as <code>0</code>, <code>Vector3.right</code>, etc.</p>
+<p><a href="https://docs.unity3d.com/ScriptReference/SerializeReference.html"><code>[SerializeReference]</code></a> fields also have <code>Set</code> commands to choose their type.</p>
+<p></p><details><summary>For example, this could allow you to assign any type of <code>Item</code> to an <code>Inventory</code> array:</summary><p>
+</p><pre><code class="language-cs">using System;
+using UnityEngine;
+
+public sealed class PolymorphicExample : MonoBehaviour
+{
+    [SerializeReference] private Item[] _Inventory;
+}
+
+[Serializable]
+public abstract class Item
+{
+    [SerializeField] private string _Name;
+    [SerializeField] private string _Description;
+    [SerializeField] private float _Weight;
+}
+
+[Serializable]
+public class Potion : Item
+{
+    [SerializeField] private int _HealingAmount;
+}
+
+[Serializable]
+public class Weapon : Item
+{
+    [SerializeField] private int _Damage;
+    [SerializeField] private float _AttackSpeed;
+}
+
+[Serializable]
+public class Armour : Item
+{
+    [SerializeField] private int _Defence;
+}
+</code></pre>
+<p></p></details><p></p>
+<p><img src="serialize-reference-example.gif" class="img-responsive"></p>
+<p><a href="/animancer/docs/manual/other/polymorphic">Animancer's Polymorphic Drawer</a> system could make it even easier to use (and is included in Animancer Lite).</p>
 <h1 id="reset-copy-and-paste">Reset, Copy, and Paste</h1>
 <p><em>All fields have <code>Reset</code>, <code>Copy</code>, and <code>Paste</code> functions in <a href="../features">Inspector Gadgets Pro</a>.</em></p>
 <ul>
@@ -193,6 +235,7 @@
 <h1 id="persist-after-play-mode">Persist After Play Mode</h1>
 <p><em>This feature is only available in <a href="../features">Inspector Gadgets Pro</a>.</em></p>
 <p>While in Play Mode, every <code>Component</code> and Inspector field gets a <code>Persist After Play Mode</code> context menu function to allow their values to be retained once you leave Play Mode instead of being reset to their previous value.</p>
+<p>The following video shows some physics objects falling onto the environment in Play Mode then this feature is used to keep them in those locations when returning to Edit Mode so that the scene can now start with the objects in their fallen positions without needing to manually position them all in appropriate locations on the ground.</p>
 <p><img src="persist-after-play-mode.gif" class="img-responsive"></p>
 <h1 id="visualise">Visualise</h1>
 <p>For <code>float</code>s and <code>Vector</code>s only. Opens an editor window that displays a gizmo in the scene to visualise and manipulate the chosen field. <code>Vector</code>s are visualised using a position handle with a line leading back to the origin while <code>float</code>s are visualised using the same wireframe sphere used to display the shape of a <code>SphereCollider</code>.</p>
