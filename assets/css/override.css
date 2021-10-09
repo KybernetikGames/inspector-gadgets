@@ -3,7 +3,7 @@ body.layout-boxed {
   background-color: #eef;
 }
 body.layout-boxed .top-banner {
-  background-color: #57d;
+  background-color: #36c;
   position: absolute;
   top: 0;
   left: 0;
@@ -65,10 +65,10 @@ h1 {
   }
 }
 .main-header {
-  background-color: #57d;
+  background-color: #36c;
 }
 .main-header .navbar {
-  background-color: #57d;
+  background-color: #36c;
 }
 .main-header .navbar .nav > li > a {
   color: #fff;
@@ -94,7 +94,7 @@ h1 {
   color: #fff;
 }
 .main-header .navbar .sidebar-toggle:hover {
-  background-color: #4066d9;
+  background-color: #2e5cb8;
 }
 .main-header .navbar .navbar-toggle {
   font-family: "fontAwesome";
@@ -110,16 +110,16 @@ h1 {
     color: #fff;
   }
   .main-header .navbar .dropdown-menu li a:hover {
-    background: #4066d9;
+    background: #2e5cb8;
   }
 }
 .main-header .logo {
-  background-color: #57d;
+  background-color: #36c;
   color: #fff;
   border-bottom: 0 solid transparent;
 }
 .main-header .logo:hover {
-  background-color: #5174dc;
+  background-color: #3264c8;
 }
 @media (max-width: 767px) {
   .main-header .logo {
@@ -137,7 +137,7 @@ h1 {
   }
 }
 .main-header li.user-header {
-  background-color: #57d;
+  background-color: #36c;
 }
 .wrapper,
 .layout-boxed .wrapper {
@@ -160,7 +160,7 @@ h1 {
   padding-right: 30px;
 }
 .content h1 {
-  color: #7f99e6;
+  color: #5c85d6;
   font-style: italic;
 }
 .wrapper,
@@ -195,7 +195,7 @@ h1 {
   background: #f4f4f5;
 }
 .sidebar-menu > li.active {
-  border-left-color: #57d;
+  border-left-color: #36c;
 }
 .sidebar-menu > li.active > a {
   font-weight: 600;
@@ -284,7 +284,7 @@ h1 {
   color: #333333;
 }
 .sidebar-menu li a:hover {
-  color: #57d;
+  color: #36c;
 }
 .sidebar-menu li.treeview.active > a,
 .sidebar-menu > li.treeview.active > a,
@@ -303,7 +303,7 @@ h1 {
   border-radius: 6px;
 }
 .sidebar-menu li.selected > a {
-  background-color: #57d !important;
+  background-color: #36c !important;
   color: white;
   font-weight: 600;
 }
@@ -367,11 +367,11 @@ h1 {
   background-color: #f9fafc;
 }
 .table thead tr {
-  background-color: #57d;
+  background-color: #36c;
   color: #fff;
 }
 .box {
-  border-top-color: #2a55d5;
+  border-top-color: #2952a3;
 }
 .main-header,
 .main-footer {
@@ -394,12 +394,12 @@ h1 {
   background-color: white;
 }
 .layout-top-nav .main-header > .logo {
-  background-color: #57d;
+  background-color: #36c;
   color: #fff;
   border-bottom: 0 solid transparent;
 }
 .layout-top-nav .main-header > .logo:hover {
-  background-color: #5174dc;
+  background-color: #3264c8;
 }
 hr {
   border-top-color: #B5BBC8;
@@ -407,7 +407,7 @@ hr {
 .lead {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #57d;
+  border-left: 5px solid #36c;
 }
 .three-cols th,
 .three-cols td {
@@ -579,7 +579,7 @@ code a {
 .type-node circle,
 .type-node ellipse,
 .type-node polygon {
-  fill: #d4ddf7 !important;
+  fill: #adc2eb !important;
   stroke: #000 !important;
 }
 .cluster rect {
@@ -589,14 +589,14 @@ code a {
 /* Turbolinks */
 
 .turbolinks-progress-bar {
-  background-color: #57d !important;
+  background-color: #36c !important;
 }
 body.layout-boxed {
-  background-image: -webkit-linear-gradient(top, #cdf 0%, #9be 100%);
-  background-image: -o-linear-gradient(top, #cdf 0%, #9be 100%);
-  background-image: linear-gradient(to bottom, #cdf 0%, #9be 100%);
+  background-image: -webkit-linear-gradient(top, #def 0%, #cdf 100%);
+  background-image: -o-linear-gradient(top, #def 0%, #cdf 100%);
+  background-image: linear-gradient(to bottom, #def 0%, #cdf 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffccddff', endColorstr='#ff99bbee', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffddeeff', endColorstr='#ffccddff', GradientType=0);
 }
 .content,
 .content-header,
@@ -607,7 +607,7 @@ body.layout-boxed {
   background: #eef;
 }
 .content-header > h1 {
-  background: #bbc0ff;
+  background: #cdf;
 }
 .main-footer {
   display: none;
@@ -632,10 +632,10 @@ a:focus {
   border-top: hidden;
 }
 .table > tbody > tr:nth-of-type(odd) {
-  background-color: #f0f0ff;
+  background-color: #def;
 }
 .table > tbody > tr:nth-of-type(even) {
-  background-color: #ddf;
+  background-color: #cdf;
 }
 .table .section {
   border-left: hidden;
