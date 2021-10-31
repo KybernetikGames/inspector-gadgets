@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.8</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.9</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -78,6 +78,7 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Remarks">Remarks</a></p>
 <p><a href="#Parameters">Parameters</a></p>
 <p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
@@ -173,10 +174,7 @@
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">
-    Creates a new <code class="cs">InspectorGadgets.Attributes.ToolbarAttribute</code> using the specified labels (not required for enums).
-    For bool fields, the first label is used for false and the second for true.
-    </div>
+	<div class="lead">Creates a new <code class="cs">InspectorGadgets.Attributes.ToolbarAttribute</code> using the specified labels (not required for enums).</div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">	
@@ -198,6 +196,8 @@
 	<pre><code>public ToolbarAttribute(params string[] labels)</code></pre>
 
 
+	<h1 id="Remarks">Remarks</h1>
+	<div>For bool fields, the first label is used for false and the second for true.</div>
 
 
 

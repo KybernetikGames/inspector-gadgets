@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.8</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.9</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -229,7 +229,7 @@
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/EditorString">AutoPrefs<wbr>.EditorString</a></td>
 									<td>[Editor-Only]
-    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs">System.String</code> value stored in
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs"><a href="/inspector-gadgets">string</a></code> value stored in
     <code class="cs">EditorPrefs</code>.
     </td>
 							</tr>
@@ -263,7 +263,7 @@
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/Int">AutoPrefs<wbr>.Int</a></td>
 									<td>
-    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs">System.Int32</code> value stored in
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs"><a href="/inspector-gadgets">int</a></code> value stored in
     <code class="cs">PlayerPrefs</code>.
     </td>
 							</tr>
@@ -311,7 +311,8 @@
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ButtonAttribute">ButtonAttribute</a></td>
 									<td>[Pro-Only]
-    <code class="cs">InspectorGadgets.Editor.Editor`1</code> uses this attribute to add a button at the bottom of the default inspector to run the marked method.
+    <code class="cs">InspectorGadgets.Editor.Editor`1</code> uses this attribute to add a button at the bottom of the default inspector to
+    run the marked method.
     </td>
 							</tr>
 							<tr>
@@ -329,19 +330,11 @@
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/CommentAsset">CommentAsset</a></td>
-									<td>
-    Holds a text comment as a <code class="cs">ScriptableObject</code> asset which can be viewed and edited in the inspector.
-    <p></p>
-    By default, this script sets itself to be excluded from the build.
-    </td>
+									<td>Holds a text comment as a <code class="cs">ScriptableObject</code> asset which can be viewed and edited in the inspector.</td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/CommentComponent">CommentComponent</a></td>
-									<td>
-    Holds a text comment for a <code class="cs">GameObject</code> which can be viewed and edited in the inspector.
-    <p></p>
-    By default, this script sets itself to be excluded from the build.
-    </td>
+									<td>Holds a text comment for a <code class="cs">GameObject</code> which can be viewed and edited in the inspector.</td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/CommentEditor">CommentEditor</a></td>
@@ -355,28 +348,10 @@
     </td>
 							</tr>
 							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/DynamicInspector">DynamicInspector</a></td>
-									<td>[Editor-Conditional] [Experimental]
-    Contains various utilities for dynamically modifying the inspector.
-    </td>
-							</tr>
-							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/InspectorModifiers">DynamicInspector<wbr>.InspectorModifiers</a></td>
-									<td>A collection of modifications and/or additions to the inspector for a particular object.</td>
-							</tr>
-							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1">Editor</a><wbr>&lt;<a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1#typeparam-T">T</a>&gt;<wbr></td>
 									<td>[Pro-Only] [Editor-Only]
     Base class to derive custom editors from, with a bunch of additional features on top of Unity's base
     <code class="cs">UnityEditor.Editor</code> class.
-    <p></p>
-    Doesn't draw the target's "Script" field to save inspector space and reduce clutter.
-    <p></p>
-    You can Middle Click anywhere in the inspector area to open the script in your script editor or Ctrl + Middle
-    Click to open its editor script (or create one if none exists already).
-    <p></p>
-    Provides type-casted versions of <code class="cs">UnityEditor.Editor.target</code> and <code class="cs">UnityEditor.Editor.targets</code> so you don't
-    always have to do it yourself (<code class="cs">InspectorGadgets.Editor.Editor`1.Target</code> and <code class="cs">InspectorGadgets.Editor.Editor`1.Targets</code> respectively).
     </td>
 							</tr>
 							<tr>
@@ -405,9 +380,7 @@
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils">IGUtils</a></td>
-									<td>
-    Various utility methods used by <code class="cs">InspectorGadgets</code>.
-    </td>
+									<td>Various utility methods used by <code class="cs">InspectorGadgets</code>.</td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute">InspectableAttribute</a></td>
@@ -418,13 +391,14 @@
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LabelAttribute">LabelAttribute</a></td>
 									<td>[Pro-Only]
-    <code class="cs">InspectorGadgets.Editor.Editor`1</code> uses this attribute to add a label at the bottom of the default inspector to display the value of the marked property.
+    <code class="cs">InspectorGadgets.Editor.Editor`1</code> uses this attribute to add a label at the bottom of the default inspector to
+    display the value of the marked property.
     </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LabelledCollectionAttribute">Labelled<wbr>Collection<wbr>Attribute</a></td>
 									<td>[Pro-Only]
-    Provides labels for the elements of a collection field to use instead of just calling them Element X.
+    Provides labels for the elements of a collection field to use instead of just calling them "Element X".
     </td>
 							</tr>
 							<tr>
@@ -466,9 +440,7 @@
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/NullableVector4">NullableVector4</a></td>
-									<td>
-    A <code class="cs">Vector4</code> which uses nullable floats.
-    </td>
+									<td>A <code class="cs">Vector4</code> which uses nullable floats.</td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues">PersistentValues</a></td>
@@ -531,7 +503,7 @@
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ShowPreviewAttribute">ShowPreviewAttribute</a></td>
 									<td>[Pro-Only]
-    Causes the attributed <code class="cs">UnityEngine.Object</code> reference field to draw a preview of the target object.
+    Causes the attributed <code class="cs">Object</code> reference field to draw a preview of the target object.
     </td>
 							</tr>
 							<tr>
@@ -670,9 +642,7 @@
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets/IComment">IComment</a></td>
-									<td>
-    Common interface for objects that are displayed by the <code class="cs">InspectorGadgets.Editor.CommentEditor</code>.
-    </td>
+									<td>Common interface for objects that are displayed by the <code class="cs">InspectorGadgets.Editor.CommentEditor</code>.</td>
 							</tr>
 					</tbody></table>
 				</div>

@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.8</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.9</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -79,7 +79,6 @@
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
 <p><a href="#Attributes">Attributes</a></p>
-<p><a href="#Constructors">Constructors</a></p>
 <p><a href="#Properties">Properties</a></p>
 <p><a href="#Methods">Methods</a></p>
 <hr class="infobar-hidden">
@@ -217,9 +216,9 @@
 								<dt>Derived Types</dt>
 								<dd>
 									<ul class="list-unstyled">
+											<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LabelAttribute">LabelAttribute</a></li>								
 											<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ButtonAttribute">ButtonAttribute</a></li>								
 											<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute">InspectableAttribute</a></li>								
-											<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LabelAttribute">LabelAttribute</a></li>								
 									</ul>
 								</dd>			
 							
@@ -232,12 +231,12 @@
 	Type-.-&gt;Interface0["IComparable&lt;BaseInspectableAttribute&gt;"]
 	Type["BaseInspectableAttribute"]
 class Type type-node
-	Derived0["ButtonAttribute"]--&gt;Type
-	click Derived0 "/inspector-gadgets/api/InspectorGadgets.Attributes/ButtonAttribute"
-	Derived1["InspectableAttribute"]--&gt;Type
-	click Derived1 "/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute"
-	Derived2["LabelAttribute"]--&gt;Type
-	click Derived2 "/inspector-gadgets/api/InspectorGadgets.Attributes/LabelAttribute"
+	Derived0["LabelAttribute"]--&gt;Type
+	click Derived0 "/inspector-gadgets/api/InspectorGadgets.Attributes/LabelAttribute"
+	Derived1["ButtonAttribute"]--&gt;Type
+	click Derived1 "/inspector-gadgets/api/InspectorGadgets.Attributes/ButtonAttribute"
+	Derived2["InspectableAttribute"]--&gt;Type
+	click Derived2 "/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute"
 
 						</div>
 					</div>
@@ -272,24 +271,6 @@ public abstract class BaseInspectableAttribute : Attribute, IComparable&lt;BaseI
 
 
 
-			<h1 id="Constructors">Constructors</h1>
-			<div class="box">
-				<div class="box-body no-padding table-responsive">
-					<table class="table table-striped table-hover two-cols">
-						<thead>
-							<tr>
-								<th>Name</th>
-									<th>Summary</th>
-							</tr>
-						</thead>
-							<tbody><tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/A38E53A2">Base<wbr>Inspectable<wbr>Attribute<wbr>()<wbr></a></td>
-									<td>Creates a new <code class="cs">InspectorGadgets.Attributes.BaseInspectableAttribute</code>.</td>
-							</tr>
-					</tbody></table>
-				</div>
-			</div>
-		
 
 
 
@@ -308,7 +289,10 @@ public abstract class BaseInspectableAttribute : Attribute, IComparable&lt;BaseI
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/43EB164A">DisplayIndex</a></td>
 								<td>int</td>
 								<td>
-									<div>If set, this inspectable will be drawn at the specified index amongst the regular serialized fields instead of after them.</div>
+									<div>
+    If set, this inspectable will be drawn at the specified index amongst the regular serialized fields instead
+    of after them.
+    </div>
 								</td>
 							</tr>
 							<tr>
@@ -322,7 +306,10 @@ public abstract class BaseInspectableAttribute : Attribute, IComparable&lt;BaseI
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/1BE38AF2">LabelContent</a></td>
 								<td>GUIContent</td>
 								<td>
-									<div>The <code class="cs">GUIContent</code> used for this inspectable's label, creates from the <code class="cs">InspectorGadgets.Attributes.BaseInspectableAttribute.Label</code> and <code class="cs">InspectorGadgets.Attributes.BaseInspectableAttribute.Tooltip</code>.</div>
+									<div>
+    The <code class="cs">GUIContent</code> used for this inspectable's label, creates from the <code class="cs">InspectorGadgets.Attributes.BaseInspectableAttribute.Label</code> and
+    <code class="cs">InspectorGadgets.Attributes.BaseInspectableAttribute.Tooltip</code>.
+    </div>
 								</td>
 							</tr>
 							<tr>
@@ -393,23 +380,21 @@ public abstract class BaseInspectableAttribute : Attribute, IComparable&lt;BaseI
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/EB12B8A8">Initialize<wbr>()<wbr></a></td>
 								<td>string</td>
 								<td>
-									<div>Initialize this inspectable with a member.</div>
+									<div>Initializes this inspectable with a member.</div>
 								</td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/24F9AC9C">OnGUI<wbr>(UnityEngine<wbr>.Object[])<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>Draw this inspectable using <code class="cs">GUILayout</code>.</div>
+									<div>Draws this inspectable using <code class="cs">GUILayout</code>.</div>
 								</td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/51C60C60">PopulateContextMenu<wbr>(UnityEditor<wbr>.GenericMenu, <wbr>UnityEngine<wbr>.Object[])<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>
-    Adds various items to the `menu` relating to the `targets`.
-    </div>
+									<div>Adds various items to the `menu` relating to the `targets`.</div>
 								</td>
 							</tr>
 							<tr>

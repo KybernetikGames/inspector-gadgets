@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.8</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.9</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -185,7 +185,8 @@
 	
 		<h1 id="Summary">Summary</h1>
 	<div class="lead">[Pro-Only]
-    <code class="cs">InspectorGadgets.Editor.Editor`1</code> uses this attribute to add a button at the bottom of the default inspector to run the marked method.
+    <code class="cs">InspectorGadgets.Editor.Editor`1</code> uses this attribute to add a button at the bottom of the default inspector to
+    run the marked method.
     </div>
 
 		<div class="panel panel-default">
@@ -279,7 +280,10 @@ public sealed class ButtonAttribute : BaseInspectableAttribute,
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/43EB164A">DisplayIndex</a></td>
 								<td>int</td>
 								<td>
-									<div>If set, this inspectable will be drawn at the specified index amongst the regular serialized fields instead of after them.</div>
+									<div>
+    If set, this inspectable will be drawn at the specified index amongst the regular serialized fields instead
+    of after them.
+    </div>
 											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute">Base<wbr>Inspectable<wbr>Attribute</a></em></small></div>
 								</td>
 							</tr>
@@ -295,7 +299,10 @@ public sealed class ButtonAttribute : BaseInspectableAttribute,
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/1BE38AF2">LabelContent</a></td>
 								<td>GUIContent</td>
 								<td>
-									<div>The <code class="cs">GUIContent</code> used for this inspectable's label, creates from the <code class="cs">InspectorGadgets.Attributes.BaseInspectableAttribute.Label</code> and <code class="cs">InspectorGadgets.Attributes.BaseInspectableAttribute.Tooltip</code>.</div>
+									<div>
+    The <code class="cs">GUIContent</code> used for this inspectable's label, creates from the <code class="cs">InspectorGadgets.Attributes.BaseInspectableAttribute.Label</code> and
+    <code class="cs">InspectorGadgets.Attributes.BaseInspectableAttribute.Tooltip</code>.
+    </div>
 											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute">Base<wbr>Inspectable<wbr>Attribute</a></em></small></div>
 								</td>
 							</tr>
@@ -322,7 +329,10 @@ public sealed class ButtonAttribute : BaseInspectableAttribute,
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ButtonAttribute/C668C9EF">SetDirty</a></td>
 								<td>bool</td>
 								<td>
-									<div>If true, clicking the button will automatically call <code class="cs">UnityEditor.EditorUtility.SetDirty</code> after invoking the method.</div>
+									<div>
+    If true, clicking the button will automatically call <code class="cs">UnityEditor.EditorUtility.SetDirty</code> after
+    invoking the method.
+    </div>
 								</td>
 							</tr>
 							<tr>
@@ -394,7 +404,7 @@ public sealed class ButtonAttribute : BaseInspectableAttribute,
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/24F9AC9C">OnGUI<wbr>(UnityEngine<wbr>.Object[])<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>Draw this inspectable using <code class="cs">GUILayout</code>.</div>
+									<div>Draws this inspectable using <code class="cs">GUILayout</code>.</div>
 											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute">Base<wbr>Inspectable<wbr>Attribute</a></em></small></div>
 								</td>
 							</tr>
@@ -402,9 +412,7 @@ public sealed class ButtonAttribute : BaseInspectableAttribute,
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute/51C60C60">PopulateContextMenu<wbr>(UnityEditor<wbr>.GenericMenu, <wbr>UnityEngine<wbr>.Object[])<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>
-    Adds various items to the `menu` relating to the `targets`.
-    </div>
+									<div>Adds various items to the `menu` relating to the `targets`.</div>
 											<div><small><em>Inherited from <a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute">Base<wbr>Inspectable<wbr>Attribute</a></em></small></div>
 								</td>
 							</tr>
