@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
+        <title>Inspector Gadgets - Inspector Gadgets v7</title>
+        <link href="/inspector-gadgets/assets/css/highlight.css" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/inspector-gadgets/assets/css/override.css" rel="stylesheet">
+        <script src="/inspector-gadgets/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/bootstrap.min.js"></script>        
+        <script src="/inspector-gadgets/assets/js/app.min.js"></script>         
+        <script src="/inspector-gadgets/assets/js/highlight.pack.js"></script>   
+        <script src="/inspector-gadgets/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/mermaid.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/inspector-gadgets/assets/js/html5shiv.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/inspector-gadgets/" class="logo">
+                            <span>Inspector Gadgets</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li class="active"><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
+        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v7.0</a></li>
+        <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
+        <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
+        <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
+        <li><a href="/inspector-gadgets/pro"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Buy</a></li>
+        <li><a href="https://kybernetik.com.au"><img src="/inspector-gadgets/images/kybernetik.png" height="20" style="position:relative; left:-2px; top:-1px;"> Other Assets</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#inspector-gadgets-v7.0">Inspector Gadgets v7.0</a></p>
+<p><a href="#features">Features</a></p>
+<p><a href="#improvements">Improvements</a></p>
+<p><a href="#fixes">Fixes</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    
+
+                    <ul class="sidebar-menu">
+                        
+
+                <li><a href="/inspector-gadgets/docs/features">Features</a></li>
+                <li><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
+                <li><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
+                <li class="treeview">
+                    <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/inspector-gadgets/docs/script-inspector/object-reference-fields">Object Reference Fields</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/script-field">Script Field</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/decorator-attributes">Decorator Attributes</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/inspectable-attributes">Inspectable Attributes</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/shader-attributes">Shader Attributes</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/event-messages">Event Messages</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/custom-inspectors">Custom Inspectors</a></li>
+                <li><a href="/inspector-gadgets/docs/script-inspector/missing-scripts">Missing Scripts</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview">
+                    <a href="/inspector-gadgets/docs/other">Other Features</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li><a href="/inspector-gadgets/docs/other/auto-hide-ui">Auto Hide UI</a></li>
+                <li><a href="/inspector-gadgets/docs/other/selection-history">Selection History</a></li>
+                <li><a href="/inspector-gadgets/docs/other/drag-and-drop-sub-assets">Drag &amp; Drop Sub-Assets</a></li>
+                <li><a href="/inspector-gadgets/docs/other/comments">Comments</a></li>
+                <li><a href="/inspector-gadgets/docs/other/auto-prefs">Auto Prefs</a></li>
+                <li><a href="/inspector-gadgets/docs/other/unity-modules">Unity Modules</a></li>
+
+                    </ul>
+                </li>
+                <li class="treeview active">
+                    <a href="/inspector-gadgets/docs/changes">Change Log</a> <a href="#" class="expand"></a>
+                    <ul class="treeview-menu">
+                        
+                <li class="selected"><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v7">Inspector Gadgets v7</a></li>
+                <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v6">Inspector Gadgets v6</a></li>
+                <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v5">Inspector Gadgets v5</a></li>
+                <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v4">Inspector Gadgets v4</a></li>
+                <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v3">Inspector Gadgets v3</a></li>
+                <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v2">Inspector Gadgets v2</a></li>
+                <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v1">Inspector Gadgets v1</a></li>
+
+                    </ul>
+                </li>
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+		<section class="content-header">
+			<h1>Inspector Gadgets v7</h1>
+		</section>
+	<section class="content">
+		<h1 id="inspector-gadgets-v7.0">Inspector Gadgets v7.0</h1>
+<ul>
+<li>Planned Release 2023-03-??</li>
+<li>Currently available for testing.</li>
+<li>Email your Invoice Number to <a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets">mail@kybernetik.com.au</a> if you would like to try it out.</li>
+<li>No more features are planned for this version beyond what's listed here, but I'll be working on some documentation improvements and a new trailer video before release.</li>
+</ul>
+<h1 id="features">Features</h1>
+<ul>
+<li>Added <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/EnhancedHierarchy">EnhancedHierarchy</a></code> system which shows object details to the Hierarchy:
+<ul>
+<li>It shows components, child count, tag, and layer.</li>
+<li>You can Alt + Click a component to enable/disable it. For the <code>Transform</code> component, it will activate/deactivate the whole <code>GameObject</code>.</li>
+<li>You can Drag and Drop components out of the Hierarchy. This is especially useful if you have multiple components of the same type and want to choose a specific one.</li>
+</ul>
+</li>
+</ul>
+<p><img src="enhanced-hierarchy.png" class="img-responsive"></p>
+<ul>
+<li>Added <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/AdvancedDragAndDrop">AdvancedDragAndDrop</a></code> system: hold Ctrl + Alt when you Drag and Drop external files into the Project window to show a window with options for how you want to handle those files.
+<ul>
+<li>Move or Copy.</li>
+<li>Overwrite existing files or ensure they have unique names to Create new ones.</li>
+</ul>
+</li>
+</ul>
+<p><img src="advanced-drag-and-drop.png" class="img-responsive"></p>
+<h1 id="improvements">Improvements</h1>
+<ul>
+<li>Moved everything from <em>Assets/Plugins/Inspector Gadgets</em> to <em>Packages/com.kybernetik.inspector-gadgets</em>:
+<ul>
+<li>Inside the Project window, the <em>Inspector Gadgets</em> folder will show up in the <em>Packages</em> section (below <em>Assets</em>).</li>
+<li>Reorganised everything to be divided between Editor and Runtime as separate assemblies.</li>
+</ul>
+</li>
+<li>Improved the <a href="../../transform-inspector">Transform Inspector</a>:
+<ul>
+<li>Changed the fields to display approximations for values that don't fit in the GUI. <a href="/animancer/docs/manual/transitions#approximations">This uses the same system as Animancer Transitions.</a>
+<ul>
+<li>Replaced the "Shrink Scientific Values" setting with "Show Approximations".</li>
+</ul>
+</li>
+<li>Changed the way dragging on the main labels works:
+<ul>
+<li>Dragging <code>Position</code> moves the object relative to the scene camera (or game camera in Play Mode). Scrolling moves it forward and back.</li>
+<li>Dragging <code>Rotation</code> rotates the object relative to the camera (as above). Scrolling rotates it around the camera forward.</li>
+<li>Dragging <code>Scale</code> scales the object relative to its scale when you started.</li>
+</ul>
+</li>
+<li>Fixed various minor GUI layout issues.</li>
+<li>Removed the "Emphasize Non-Default Fields" setting because it wasn't very useful and didn't look good.</li>
+<li>Removed the ability to Right Click the <code>S</code>nap button to open the Snap Settings because Unity no longer has a straightforward way to open it via script.</li>
+</ul>
+</li>
+<li>Improved the "Get" button in <a href="../../script-inspector/object-reference-fields">Object Reference Fields</a>:
+<ul>
+<li>Added the ability to hold Ctrl to search assets.</li>
+<li>Added support for non-component types, which will always search assets.</li>
+<li>Added a cancelable progress bar to <code>IGEditorUtils.FindAssetOfType</code> since it can take a very long time in large projects.</li>
+<li>Added a setting to determine whether the button should always be shown. Otherwise, it only shows if there is no reference or you hold Alt.</li>
+</ul>
+</li>
+<li>Improved <a href="../../other/auto-hide-ui">Auto Hide UI</a>:
+<ul>
+<li>Added an option to have it only activate on children of a <code>Canvas</code>.</li>
+<li>Changed it to not activate if the <code>Canvas</code> is disabled.</li>
+</ul>
+</li>
+<li>Improved the <a href="../../transform-inspector#movement-guides">Movement Guides</a>:
+<ul>
+<li>Values are now clamped to 2 decimal places.</li>
+<li>The whole label is now on one line because Unity draws the wrong size background box if it has multiple lines.</li>
+<li>It now uses a monospaced font if available.</li>
+</ul>
+</li>
+<li>Added support for disabling several features with conditional compilation symbols (mostly in case of conflicts with other plugins):
+<ul>
+<li>Disable <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers/ObjectDrawer">ObjectDrawer</a></code> with <code>DISABLE_IG_OBJECT_DRAWER</code>.</li>
+<li>Disable <code>ComponentEditor</code> with <code>DISABLE_IG_COMPONENT_EDITOR</code>.</li>
+<li>Disable <code>ScriptableObjectEditor</code> with <code>DISABLE_IG_SCRIPTABLE_OBJECT_EDITOR</code>.</li>
+</ul>
+</li>
+</ul>
+<h1 id="fixes">Fixes</h1>
+<ul>
+<li>Fixed potential <code>NullReferenceException</code> in <code>SelectionHistory</code>.</li>
+<li>Fixed snap settings to use the "new" <code>EditorSnapSettings</code> instead of the old <code>EditorPrefs</code>.</li>
+<li>Fixed pasting values from the system clipboard to properly parse <code>-</code> symbols.</li>
+<li>Fixed the custom <code>Transform</code> gizmos to be disabled whenever a <code>ProBuilder</code> object is selected to avoid conflicting with the custom gizmos of that system.</li>
+<li>Fixed broken drag and drop into Inspector in Unity 2022.2.</li>
+</ul>
+
+	</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                Generated by <a href="https://wyam.io">Wyam</a>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>
