@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.9</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v7.0</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -79,6 +79,7 @@
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#ClassTypes">Class Types</a></p>
 <p><a href="#EnumTypes">Enum Types</a></p>
+<p><a href="#Namespaces">Namespaces</a></p>
 <hr class="infobar-hidden">
 </div>
 
@@ -143,8 +144,12 @@
 				<a href="/inspector-gadgets/api/InspectorGadgets">InspectorGadgets</a> <a href="#" class="expand"></a>
 				<ul class="treeview-menu">
 						<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes">InspectorGadgets<wbr>.Attributes</a></li>
-			<li class=" selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor">InspectorGadgets<wbr>.Editor</a></li>
-</ul></li>      
+
+				<li class="treeview active selected">
+				<a href="/inspector-gadgets/api/InspectorGadgets.Editor">InspectorGadgets<wbr>.Editor</a> <a href="#" class="expand"></a>
+				<ul class="treeview-menu">
+						<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers">InspectorGadgets<wbr>.Editor<wbr>.PropertyDrawers</a></li>
+</ul></li></ul></li>      
 
                     </ul>
                             
@@ -164,7 +169,7 @@
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">
+	<div class="lead">[Editor-Only]
     Stuff that only exists in the Unity Editor.
     </div>
 
@@ -181,6 +186,12 @@
 							</tr>
 						</thead>
 							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/AdvancedDragAndDrop">AdvancedDragAndDrop</a></td>
+									<td>[Editor-Only] [Pro-Only]
+    Shows a context menu with more advanced options when dropping things into the Project Window.
+    </td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/AutoHideUI">AutoHideUI</a></td>
 									<td>[Editor-Only]
      Automatically hides the UI layer inside the Editor so it doesn't get in the way of 3D objects in scene view.
@@ -191,8 +202,32 @@
      </td>
 							</tr>
 							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/AutoPrefs">AutoPrefs</a></td>
+									<td>[Editor-Only]
+    A collection of wrappers for EditorPrefs which simplify the way you can store and retrieve values.
+    </td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/CommentEditor">CommentEditor</a></td>
 									<td>[Editor-Only] Custom Inspector for <code class="cs">InspectorGadgets.IComment</code>s.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/CompactUnitConversionCache">Compact<wbr>Unit<wbr>Conversion<wbr>Cache</a></td>
+									<td>[Editor-Only]
+    A system for formatting floats as strings that fit into a limited area and storing the results so they can be
+    reused to minimise the need for garbage collection, particularly for string construction.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ConversionCache">ConversionCache</a></td>
+									<td>[Editor-Only] Utilities for <code class="cs">InspectorGadgets.Editor.ConversionCache`2</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ConversionCache_2">ConversionCache</a><wbr>&lt;<a href="/inspector-gadgets/api/InspectorGadgets.Editor/ConversionCache_2#typeparam-TKey">TKey</a>, <wbr><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ConversionCache_2#typeparam-TValue">TValue</a>&gt;<wbr></td>
+									<td>[Editor-Only]
+    A simple system for converting objects and storing the results so they can be reused to minimise the need for
+    garbage collection, particularly for string construction.
+    </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1">Editor</a><wbr>&lt;<a href="/inspector-gadgets/api/InspectorGadgets.Editor/Editor_1#typeparam-T">T</a>&gt;<wbr></td>
@@ -200,6 +235,14 @@
     Base class to derive custom editors from, with a bunch of additional features on top of Unity's base
     <code class="cs">UnityEditor.Editor</code> class.
     </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/EditorStrings">EditorStrings</a></td>
+									<td>[Editor-Only] String constants used throughout <code class="cs">InspectorGadgets</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/EnhancedHierarchy">EnhancedHierarchy</a></td>
+									<td>[Editor-Only] [Pro-Only] Improved GUI for the Hierarchy window.</td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/FloatVisualiserWindow">Float<wbr>Visualiser<wbr>Window</a></td>
@@ -227,18 +270,26 @@
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MissingScriptEditor">MissingScriptEditor</a></td>
 									<td>[Editor-Only]
-    A custom Inspector for <code class="cs">MonoBehaviour</code> but not its children, so it should only ever get used on
+    A custom Inspector for <code class="cs">UnityEngine.MonoBehaviour</code> but not its children, so it should only ever get used on
     missing scripts.
     </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ModifierKeysPref">ModifierKeysPref</a></td>
+									<td>[Editor-Only] An <code class="cs">InspectorGadgets.Editor.AutoPrefs.EditorInt</code> which wraps <code class="cs">InspectorGadgets.Editor.ModifierKey</code> flags.</td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PersistentValues">PersistentValues</a></td>
 									<td>[Pro-Only] [Editor-Only] Manages values that need to persist after leaving Play Mode.</td>
 							</tr>
 							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Preferences">Preferences</a></td>
+									<td>[Editor-Only] GUI for Inspector Gadgets settings.</td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/PropertyVisualiserWindow">Property<wbr>Visualiser<wbr>Window</a></td>
 									<td>[Editor-Only]
-    Base class for editor windows that help visualise the value of a <code class="cs">SerializedProperty</code>.
+    Base class for editor windows that help visualise the value of a <code class="cs">UnityEditor.SerializedProperty</code>.
     </td>
 							</tr>
 							<tr>
@@ -246,23 +297,27 @@
 									<td>[Editor-Only] Various serialization utilities.</td>
 							</tr>
 							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/TransformEditor">TransformEditor</a></td>
+									<td>[Editor-Only] A custom Inspector for <code class="cs">UnityEngine.Transform</code> components.</td>
+							</tr>
+							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Vector2VisualiserWindow">Vector2<wbr>Visualiser<wbr>Window</a></td>
 									<td>[Editor-Only]
-    The "Visualise" command in the context menu of a <code class="cs">Vector2</code> property can be used to open this window
+    The "Visualise" command in the context menu of a <code class="cs">UnityEngine.Vector2</code> property can be used to open this window
     which visualises the property's value in the scene.
     </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Vector3VisualiserWindow">Vector3<wbr>Visualiser<wbr>Window</a></td>
 									<td>[Editor-Only]
-    The "Visualise" command in the context menu of a <code class="cs">Vector3</code> property can be used to open this window
+    The "Visualise" command in the context menu of a <code class="cs">UnityEngine.Vector3</code> property can be used to open this window
     which visualises the property's value in the scene.
     </td>
 							</tr>
 							<tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/WatcherWindow">WatcherWindow</a></td>
-									<td>
-    An <code class="cs">EditorWindow</code> which draws various objects without needing to select them individually.
+									<td>[Editor-Only]
+    An <code class="cs">UnityEditor.EditorWindow</code> which draws various objects without needing to select them individually.
     </td>
 							</tr>
 					</tbody></table>
@@ -282,13 +337,37 @@
 						</thead>
 							<tbody><tr>
 								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/MenuFunctionState">MenuFunctionState</a></td>
-									<td>The possible states for a function in a <code class="cs">GenericMenu</code>.</td>
+									<td>[Editor-Only] The possible states for a function in a <code class="cs">UnityEditor.GenericMenu</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/ModifierKey">ModifierKey</a></td>
+									<td>[Editor-Only] Flags for a combination of Alt, Ctrl, and Shift.</td>
 							</tr>
 					</tbody></table>
 				</div>
 			</div>
 		
 
+			<h1 id="Namespaces">Namespaces</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Namespace</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers">InspectorGadgets<wbr>.Editor<wbr>.PropertyDrawers</a></td>
+									<td>[Editor-Only]
+    Classes that implement a custom GUI for Inspector fields.
+    </td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
 	
 </section>
                 
@@ -301,7 +380,53 @@
         </div>
         <div class="wrapper bottom-wrapper">
             <footer class="bottom-footer">
-                Generated by <a href="https://wyam.io">Wyam</a>
+                <strong><div style="text-align:left; display:flex">
+
+<div>
+<p>Documentation</p>
+<p><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></p>
+<p><a href="/inspector-gadgets/docs/enhanced-hierarchy">Enhanced Hierarchy</a></p>
+<p><a href="/inspector-gadgets/docs/asset-drag-and-drop">Asset Drag &amp; Drop</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Download</p>
+<p><a href="/inspector-gadgets/lite">Inspector Gadgets Lite</a></p>
+<p><a href="/inspector-gadgets/pro">Inspector Gadgets Pro</a></p>
+<p><a href="/inspector-gadgets/docs/changes">Change Log</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Contact</p>
+<p><a href="https://github.com/KybernetikGames/inspector-gadgets/issues">Github Issues</a></p>
+<p><a href="https://forum.unity.com/threads/691546">Unity Forum</a></p>
+<p><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets">Email</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Other Assets</p>
+<p><a href="/animancer">Animancer</a></p>
+<p><a href="/flexi-motion">FlexiMotion</a></p>
+<p><a href="/weaver">Weaver</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>&nbsp;</p>
+<p><a href="https://assetstore.unity.com/packages/vfx/shaders/simple-sun-shader-72042?aid=1100l8ah5">Simple Sun Shader</a></p>
+<p><a href="https://assetstore.unity.com/packages/tools/version-control/link-sync-229569?aid=1100l8ah5">Link &amp; Sync</a></p>
+<p><a href="/ultevents">UltEvents</a></p>
+</div>
+
+</div></strong>
+<script src="/inspector-gadgets/assets/js/pngif.js"></script>
             </footer>
         </div>
         <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>

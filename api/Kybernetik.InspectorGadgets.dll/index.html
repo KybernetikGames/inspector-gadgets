@@ -1,0 +1,554 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
+        <title>Inspector Gadgets - API - Kybernetik.InspectorGadgets.dll Assembly</title>
+        <link href="/inspector-gadgets/assets/css/highlight.css" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/inspector-gadgets/assets/css/override.css" rel="stylesheet">
+        <script src="/inspector-gadgets/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/bootstrap.min.js"></script>        
+        <script src="/inspector-gadgets/assets/js/app.min.js"></script>         
+        <script src="/inspector-gadgets/assets/js/highlight.pack.js"></script>   
+        <script src="/inspector-gadgets/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/mermaid.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/inspector-gadgets/assets/js/html5shiv.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/inspector-gadgets/" class="logo">
+                            <span>Inspector Gadgets</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
+        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v7.0</a></li>
+        <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
+        <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
+        <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
+        <li><a href="/inspector-gadgets/pro"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Buy</a></li>
+        <li><a href="https://kybernetik.com.au"><img src="/inspector-gadgets/images/kybernetik.png" height="20" style="position:relative; left:-2px; top:-1px;"> Other Assets</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#ClassTypes">Class Types</a></p>
+<p><a href="#EnumTypes">Enum Types</a></p>
+<p><a href="#InterfaceTypes">Interface Types</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    	
+	    <script src="/inspector-gadgets/assets/js/lunr.min.js"></script>
+    <script src="/inspector-gadgets/assets/js/searchIndex.js"></script>
+    <div class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div id="search-results">
+    </div>
+    <script>
+        function runSearch(query){
+            $("#search-results").empty();			
+            if( query.length < 2 ){
+                return;
+            }			
+            var results = searchModule.search("*" + query + "*");
+            var listHtml = "<ul class='sidebar-menu'>";	
+            listHtml += "<li class='header'>Type Results</li>";	
+            if(results.length == 0 ){
+                listHtml += "<li>No results found</li>";
+            } else {					
+                for(var i = 0; i < results.length; ++i){
+                    var res = results[i];
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
+                }				
+            }
+            listHtml += "</ul>";				
+            $("#search-results").append(listHtml);
+        }
+
+        $(document).ready(function(){
+            $("#search").on('input propertychange paste', function() {
+                runSearch($("#search").val());
+            });
+        });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
+    </script>
+	
+    <hr>
+
+                    <ul class="sidebar-menu">
+                        
+	<li class="header">Assemblies</li>   
+        <li class="selected"><a href="/inspector-gadgets/api/Kybernetik.InspectorGadgets.dll">Kybernetik<wbr>.InspectorGadgets<wbr>.dll</a></li>
+        <li><a href="/inspector-gadgets/api/Kybernetik.InspectorGadgets.Editor.dll">Kybernetik<wbr>.InspectorGadgets<wbr>.Editor<wbr>.dll</a></li>
+
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+<section class="content-header">
+	<h1>Kybernetik<wbr>.InspectorGadgets<wbr>.dll <small>Assembly</small></h1>
+</section>
+<section class="content">
+	
+	
+	
+
+			<h1 id="ClassTypes">Class Types</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Class</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/AutoPrefs">AutoPrefs</a></td>
+									<td>
+    A collection of wrappers for PlayerPrefs which simplify the way you can store and retrieve values.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/AutoPref_1">AutoPrefs<wbr>.AutoPref</a><wbr>&lt;<a href="/inspector-gadgets/api/InspectorGadgets/AutoPref_1#typeparam-T">T</a>&gt;<wbr></td>
+									<td>An object which encapsulates a pref value stored with a specific key.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/Bool">AutoPrefs<wbr>.Bool</a></td>
+									<td>
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs"><a href="/inspector-gadgets">bool</a></code> value stored in
+    <code class="cs">UnityEngine.PlayerPrefs</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/Float">AutoPrefs<wbr>.Float</a></td>
+									<td>
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs"><a href="/inspector-gadgets">float</a></code> value stored in
+    <code class="cs">UnityEngine.PlayerPrefs</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/Int">AutoPrefs<wbr>.Int</a></td>
+									<td>
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates an <code class="cs"><a href="/inspector-gadgets">int</a></code> value stored in
+    <code class="cs">UnityEngine.PlayerPrefs</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/Quaternion">AutoPrefs<wbr>.Quaternion</a></td>
+									<td>
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which <code class="cs">UnityEngine.Quaternion</code> value stored in
+    <code class="cs">UnityEngine.PlayerPrefs</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/String">AutoPrefs<wbr>.String</a></td>
+									<td>
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs"><a href="/inspector-gadgets">string</a></code> value stored in
+    <code class="cs">UnityEngine.PlayerPrefs</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/Vector2">AutoPrefs<wbr>.Vector2</a></td>
+									<td>
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs">UnityEngine.Vector2</code> value stored in
+    <code class="cs">UnityEngine.PlayerPrefs</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/Vector3">AutoPrefs<wbr>.Vector3</a></td>
+									<td>
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs">UnityEngine.Vector3</code> value stored in
+    <code class="cs">UnityEngine.PlayerPrefs</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/Vector4">AutoPrefs<wbr>.Vector4</a></td>
+									<td>
+    An <code class="cs">InspectorGadgets.AutoPrefs.AutoPref`1</code> which encapsulates a <code class="cs">UnityEngine.Vector4</code> value stored in
+    <code class="cs">UnityEngine.PlayerPrefs</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/BaseInspectableAttribute">Base<wbr>Inspectable<wbr>Attribute</a></td>
+									<td>[Pro-Only]
+    <code class="cs">Editor.Editor&lt;T&gt;</code> uses these attributes to add extra elements to the inspector.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ButtonAttribute">ButtonAttribute</a></td>
+									<td>[Pro-Only]
+    <code class="cs">Editor.Editor&lt;T&gt;</code> uses this attribute to add a button at the bottom of the default inspector to
+    run the marked method.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute">ClampValueAttribute</a></td>
+									<td>[Pro-Only]
+    Specifies the range of values allowed by the attributed int or float field.
+    See also: <code class="cs">InspectorGadgets.Attributes.MinValueAttribute</code> and <code class="cs">InspectorGadgets.Attributes.MaxValueAttribute</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ColorAttribute">ColorAttribute</a></td>
+									<td>[Pro-Only]
+    Causes the attributed field to be drawn in a specific color.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/CommentAsset">CommentAsset</a></td>
+									<td>Holds a text comment as a <code class="cs">UnityEngine.ScriptableObject</code> asset which can be viewed and edited in the inspector.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/CommentComponent">CommentComponent</a></td>
+									<td>Holds a text comment for a <code class="cs">UnityEngine.GameObject</code> which can be viewed and edited in the inspector.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/EulerAttribute">EulerAttribute</a></td>
+									<td>[Pro-Only]
+    Causes the attributed <code class="cs">UnityEngine.Quaternion</code> field to be drawn as Euler Angles.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/HasComponentAttribute">Has<wbr>Component<wbr>Attribute</a></td>
+									<td>[Pro-Only]
+    When applied to a <code class="cs">UnityEngine.GameObject</code> field, any object assigned to that field must have a component of
+    the specified type.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils">IGUtils</a></td>
+									<td>Various utility methods used by <code class="cs">InspectorGadgets</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/InspectableAttribute">InspectableAttribute</a></td>
+									<td>[Pro-Only]
+    Adds the attributed field or property to the inspector as if it were serialized.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LabelAttribute">LabelAttribute</a></td>
+									<td>[Pro-Only]
+    Adds a label at the bottom of the default inspector to display the value of the marked property.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LabelledCollectionAttribute">Labelled<wbr>Collection<wbr>Attribute</a></td>
+									<td>[Pro-Only]
+    Provides labels for the elements of a collection field to use instead of just calling them "Element X".
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/LayerAttribute">LayerAttribute</a></td>
+									<td>Displays the attributed <code class="cs"><a href="/inspector-gadgets">int</a></code> field as a layer.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/MaxValueAttribute">MaxValueAttribute</a></td>
+									<td>[Pro-Only]
+    Specifies the maximum value allowed by the attributed int or float field.
+    See also: <code class="cs">InspectorGadgets.Attributes.MinValueAttribute</code> and <code class="cs">InspectorGadgets.Attributes.ClampValueAttribute</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/MinValueAttribute">MinValueAttribute</a></td>
+									<td>[Pro-Only]
+    Specifies the minimum value allowed by the attributed int or float field.
+    See also: <code class="cs">InspectorGadgets.Attributes.MaxValueAttribute</code> and <code class="cs">InspectorGadgets.Attributes.ClampValueAttribute</code>.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ReadonlyAttribute">ReadonlyAttribute</a></td>
+									<td>[Pro-Only]
+    Causes the attributed field to be greyed out and un-editable in the inspector.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/RequiredAttribute">RequiredAttribute</a></td>
+									<td>[Pro-Only]
+    When the attributed member is drawn in the inspector, it will be highlighted in red when it has the default
+    value.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/SceneAttribute">SceneAttribute</a></td>
+									<td>[Pro-Only]
+    Causes the attributed int or string field to be drawn as a dropdown box for selecting scenes from the build
+    settings.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ShowPreviewAttribute">ShowPreviewAttribute</a></td>
+									<td>[Pro-Only]
+    Causes the attributed <code class="cs">UnityEngine.Object</code> reference field to draw a preview of the target object.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/Strings">Strings</a></td>
+									<td>String constants used throughout <code class="cs">InspectorGadgets</code>.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ToolbarAttribute">ToolbarAttribute</a></td>
+									<td>[Pro-Only]
+    Causes a bool, string, or enum field to be drawn in the inspector as a series of toggle buttons rather than the
+    usual dropdown list or text field.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/UniqueCollectionAttribute">Unique<wbr>Collection<wbr>Attribute</a></td>
+									<td>[Pro-Only]
+    Shows a warning for any elements of the attributed collection which aren't unique.
+    </td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ValidatorAttribute">ValidatorAttribute</a></td>
+									<td>[Pro-Only]
+    Base class for attributes that apply some sort of validation to a field.
+    </td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+			<h1 id="EnumTypes">Enum Types</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Enum</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/EditorState">EditorState</a></td>
+									<td>Represents a Unity Editor state which can be used as a condition.</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+
+			<h1 id="InterfaceTypes">Interface Types</h1>
+			<div class="box">
+				<div class="box-body no-padding table-responsive">
+					<table class="table table-striped table-hover two-cols">
+						<thead>
+							<tr>
+								<th>Interface</th>
+									<th>Summary</th>
+							</tr>
+						</thead>
+							<tbody><tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IAutoPref">AutoPrefs<wbr>.IAutoPref</a></td>
+									<td>An object which encapsulates a pref value stored with a specific key.</td>
+							</tr>
+							<tr>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets/IComment">IComment</a></td>
+									<td>A common interface for objects which display a comment in the Inspector.</td>
+							</tr>
+					</tbody></table>
+				</div>
+			</div>
+		
+	
+</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                <strong><div style="text-align:left; display:flex">
+
+<div>
+<p>Documentation</p>
+<p><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></p>
+<p><a href="/inspector-gadgets/docs/enhanced-hierarchy">Enhanced Hierarchy</a></p>
+<p><a href="/inspector-gadgets/docs/asset-drag-and-drop">Asset Drag &amp; Drop</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Download</p>
+<p><a href="/inspector-gadgets/lite">Inspector Gadgets Lite</a></p>
+<p><a href="/inspector-gadgets/pro">Inspector Gadgets Pro</a></p>
+<p><a href="/inspector-gadgets/docs/changes">Change Log</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Contact</p>
+<p><a href="https://github.com/KybernetikGames/inspector-gadgets/issues">Github Issues</a></p>
+<p><a href="https://forum.unity.com/threads/691546">Unity Forum</a></p>
+<p><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets">Email</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Other Assets</p>
+<p><a href="/animancer">Animancer</a></p>
+<p><a href="/flexi-motion">FlexiMotion</a></p>
+<p><a href="/weaver">Weaver</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>&nbsp;</p>
+<p><a href="https://assetstore.unity.com/packages/vfx/shaders/simple-sun-shader-72042?aid=1100l8ah5">Simple Sun Shader</a></p>
+<p><a href="https://assetstore.unity.com/packages/tools/version-control/link-sync-229569?aid=1100l8ah5">Link &amp; Sync</a></p>
+<p><a href="/ultevents">UltEvents</a></p>
+</div>
+
+</div></strong>
+<script src="/inspector-gadgets/assets/js/pngif.js"></script>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>

@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html><html><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="description">
+        <meta name="keywords" content="static content generator,static site generator,static site,HTML,web development,.NET,C#,Razor,Markdown,YAML">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
+        <title>Inspector Gadgets - API - IGEditorUtils.GetSerializedPropertyContext(SerializedProperty) Method</title>
+        <link href="/inspector-gadgets/assets/css/highlight.css" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/theme/theme.css" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Roboto+Mono:400,700|Roboto:400,400i,700,700i" rel="stylesheet">
+        <link href="/inspector-gadgets/assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/inspector-gadgets/assets/css/override.css" rel="stylesheet">
+        <script src="/inspector-gadgets/assets/js/jquery-2.2.3.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/bootstrap.min.js"></script>        
+        <script src="/inspector-gadgets/assets/js/app.min.js"></script>         
+        <script src="/inspector-gadgets/assets/js/highlight.pack.js"></script>   
+        <script src="/inspector-gadgets/assets/js/jquery.slimscroll.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/jquery.sticky-kit.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/mermaid.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/svg-pan-zoom.min.js"></script>
+        <!--[if lt IE 9]>
+        <script src="/inspector-gadgets/assets/js/html5shiv.min.js"></script>
+        <script src="/inspector-gadgets/assets/js/respond.min.js"></script>
+        <![endif]-->  
+
+        
+    </head>
+    <body class="hold-transition wyam layout-boxed  ">    
+        <div class="top-banner"></div>
+        <div class="wrapper with-container">
+            <!-- Header -->
+            <header class="main-header">   
+                     
+                <a href="/inspector-gadgets/" class="logo">
+                            <span>Inspector Gadgets</span>
+                </a>   
+                         
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                        <a href="#" class="sidebar-toggle visible-xs-block" data-toggle="offcanvas" role="button">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-right"></i>
+                        </a>
+                                        
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle side menu</span>
+                            <i class="fa fa-chevron-circle-down"></i>
+                        </button>
+                    </div>
+            
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+                        <ul class="nav navbar-nav">                            
+                                    <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
+        <li class="active"><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v7.0</a></li>
+        <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
+        <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
+        <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
+        <li><a href="/inspector-gadgets/pro"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Buy</a></li>
+        <li><a href="https://kybernetik.com.au"><img src="/inspector-gadgets/images/kybernetik.png" height="20" style="position:relative; left:-2px; top:-1px;"> Other Assets</a></li>
+ 
+                        </ul>       
+                    </div>
+                    <!-- /.navbar-collapse -->
+                
+                    <!-- Navbar Right Menu -->
+                </nav>
+            </header>
+            
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="main-sidebar ">
+                <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
+                    	
+	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
+<p><a href="#Syntax">Syntax</a></p>
+<p><a href="#Parameters">Parameters</a></p>
+<p><a href="#ReturnValue">Return Value</a></p>
+<hr class="infobar-hidden">
+</div>
+
+                </section>
+                <section class="sidebar">    
+                                     
+                    	
+	    <script src="/inspector-gadgets/assets/js/lunr.min.js"></script>
+    <script src="/inspector-gadgets/assets/js/searchIndex.js"></script>
+    <div class="sidebar-form">
+        <div class="input-group">
+            <input type="text" name="search" id="search" class="form-control" placeholder="Search Types...">
+            <span class="input-group-btn">
+                <button class="btn btn-flat"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+    </div>
+    <div id="search-results">
+    </div>
+    <script>
+        function runSearch(query){
+            $("#search-results").empty();			
+            if( query.length < 2 ){
+                return;
+            }			
+            var results = searchModule.search("*" + query + "*");
+            var listHtml = "<ul class='sidebar-menu'>";	
+            listHtml += "<li class='header'>Type Results</li>";	
+            if(results.length == 0 ){
+                listHtml += "<li>No results found</li>";
+            } else {					
+                for(var i = 0; i < results.length; ++i){
+                    var res = results[i];
+                    listHtml += "<li><a href='" + res.url + "'>" + htmlEscape(res.title) + "</a></li>";
+                }				
+            }
+            listHtml += "</ul>";				
+            $("#search-results").append(listHtml);
+        }
+
+        $(document).ready(function(){
+            $("#search").on('input propertychange paste', function() {
+                runSearch($("#search").val());
+            });
+        });
+
+        function htmlEscape(html) {
+            return document.createElement('div')
+                .appendChild(document.createTextNode(html))
+                .parentNode
+                .innerHTML;
+        }
+    </script>
+	
+    <hr>
+
+                    <ul class="sidebar-menu">
+                        
+			<li class="header">Assembly</li>
+		<li><a href="/inspector-gadgets/api/Kybernetik.InspectorGadgets.Editor.dll">Kybernetik<wbr>.InspectorGadgets<wbr>.Editor<wbr>.dll</a></li>
+		<li class="header">Namespace</li>
+		<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor">InspectorGadgets<wbr>.Editor</a></li>
+		<li class="header">Type</li>
+		<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></li>
+		<li role="separator" class="divider"></li>
+			<li class="header">Field Members</li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/2CD9199E">AnyAccessBindings</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/6ECB6AD3">InstanceBindings</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/0A6BD413">StaticBindings</a></li>
+			<li class="header">Method Members</li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/70DE3D8D">AllBackslashes<wbr>(string)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/8C4DAA0B">AppendColorTag<wbr>(StringBuilder, <wbr>Color32, <wbr>string)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/CA2881CC">AppendColorToHex<wbr>(StringBuilder, <wbr>Color32)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/C02C590C">CalculateWidth<wbr>(GUIStyle, <wbr>GUIContent)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/32718D08">CalculateWidth<wbr>(GUIStyle, <wbr>string)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/59173186">ColorToHex<wbr>(Color32)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/DF672E1F">DoDelegateGUI<wbr>(Rect, <wbr>Delegate)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/0D2150B3">DoInspectableGUI<wbr>(Object[])<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/1F67A137">DoLayerMaskField<wbr>(Rect, <wbr>GUIContent, <wbr>int)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/D1583E96">FindAssetGuidsOfType<wbr>(Type)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/295B83EC">FindAssetOfType<wbr>(Type, <wbr>string)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/DAB95207">ForEachProperty<wbr>(SerializedObject, <wbr>bool, <wbr>Action<wbr>&lt;<wbr>Serialized<wbr>Property&gt;<wbr>)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/C8893E4A">GetCachedStyle<wbr>(Func<wbr>&lt;GUIStyle&gt;<wbr>)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/AE220712">Get<wbr>Current<wbr>Camera<wbr>Transform<wbr>(Vector3, <wbr>Quaternion)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/D9D090C3">Get<wbr>Current<wbr>Camera<wbr>Transform<wbr>()<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/CFF8A27A">Get<wbr>Default<wbr>File<wbr>Extension<wbr>(Type)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/FF10387E">Get<wbr>Scene<wbr>Camera<wbr>Transform<wbr>()<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/FED43223">Get<wbr>Scene<wbr>View<wbr>Camera<wbr>Transform<wbr>()<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/AF57A12F">GetSensitivity<wbr>(bool, <wbr>bool, <wbr>float)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/32D541E6">GetSensitivity<wbr>(Event, <wbr>float)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/C2C227B2">GetSensitivity<wbr>(float)<wbr></a></li>
+				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/DAA73952">Get<wbr>Serialized<wbr>Property<wbr>Context<wbr>(SerializedProperty)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/6C1193E8">GroupedInvoke<wbr>(MenuCommand, <wbr>Action<wbr>&lt;List<wbr>&lt;Object&gt;<wbr>&gt;<wbr>)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/9A4F0005">IsNow<wbr>(EditorState)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/F0F8213C">IsSnapped<wbr>(float, <wbr>float)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/7465B134">OnSceneGUI<wbr>(Action, <wbr>bool)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/CD20F462">OnSceneGUI<wbr>(Action, <wbr>Object, <wbr>bool)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/57730837">OnSceneGUI<wbr>(Action, <wbr>Func<wbr>&lt;bool&gt;<wbr>, <wbr>bool)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/87CB697B">Snap<wbr>(float, <wbr>float)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/C3DE4061">SnapPosition<wbr>(Vector3)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/D390A442">SnapPosition<wbr>(Vector3, <wbr>int)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/B107B320">SnapRotation<wbr>(Vector3)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/923B4038">SnapRotation<wbr>(Vector3, <wbr>int)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/58DB3703">SnapRotation<wbr>(Quaternion)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/9048A82B">SnapRotation<wbr>(Quaternion, <wbr>int)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/1F96F7B6">SnapScale<wbr>(Vector3)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/7005EC8C">SnapScale<wbr>(Vector3, <wbr>int)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/EA49E8C8">StealFromLeft<wbr>(Rect, <wbr>float)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/18560467">StealFromLeft<wbr>(Rect, <wbr>float, <wbr>RectOffset)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/13F3D9C0">StealFromRight<wbr>(Rect, <wbr>float)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/BB4ABCD6">StealFromRight<wbr>(Rect, <wbr>float, <wbr>RectOffset)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/127BCCDC">TempContent<wbr>(string, <wbr>string)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/952F7AC5">ValueOrDefault<wbr>(Nullable<wbr>&lt;EditorState&gt;<wbr>)<wbr></a></li>
+			<li class="header">Property Members</li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/97E15A5E">DefaultEditorState</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/FE6ABE6F">DontExpandWidth</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/D4FAAE96">IndentSize</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/11F3F6FA">MoveSnapVector</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/3A36C5E8">RotationSnap</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/ACBB2071">RotationSnapVector</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/1B3A6E31">ScaleSnap</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/85101260">ScaleSnapVector</a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils/13D51816">Spacing</a></li>
+
+
+                    </ul>
+                            
+                </section>                
+            </aside>
+            
+            <!-- Content Wrapper. Contains page content -->
+            <div class="content-wrapper">
+                
+
+
+
+<section class="content-header">
+			<h3><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a>.</h3>
+	<h1>Get<wbr>Serialized<wbr>Property<wbr>Context<wbr>(SerializedProperty)<wbr> <small>Method</small></h1>
+</section>
+<section class="content">
+	
+	
+		<h1 id="Summary">Summary</h1>
+	<div class="lead">
+    Returns a disposable context that will allow copy and paste commands to be executed on the `property`.
+    </div>
+
+		<div class="panel panel-default">
+  			<div class="panel-body">	
+				<dl class="dl-horizontal">	
+						<dt>Assembly</dt>
+						<dd><a href="/inspector-gadgets/api/Kybernetik.InspectorGadgets.Editor.dll">Kybernetik<wbr>.InspectorGadgets<wbr>.Editor<wbr>.dll</a></dd>
+						
+						<dt>Namespace</dt>
+						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Editor">InspectorGadgets<wbr>.Editor</a></dd>
+					
+						<dt>Containing Type</dt>
+						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Editor/IGEditorUtils">IGEditorUtils</a></dd>		
+					
+				</dl>
+  			</div>
+		</div>
+
+	<h1 id="Syntax">Syntax</h1>
+	<pre><code>public static IDisposable GetSerializedPropertyContext(SerializedProperty property)</code></pre>
+
+
+
+
+
+	<h1 id="Parameters">Parameters</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover three-cols">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+					<tbody><tr>
+						<td>property</td>
+						<td>SerializedProperty</td>
+						<td></td>
+					</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+	<h1 id="ReturnValue">Return Value</h1>
+	<div class="box">
+		<div class="box-body no-padding table-responsive">
+			<table class="table table-striped table-hover two-cols">
+				<thead>
+					<tr>
+						<th>Type</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody><tr>
+					<td>IDisposable</td>
+					<td></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>	
+
+
+	
+</section>
+                
+            </div>           
+            
+            <!-- Footer -->
+            <footer class="main-footer">
+            </footer>
+            
+        </div>
+        <div class="wrapper bottom-wrapper">
+            <footer class="bottom-footer">
+                <strong><div style="text-align:left; display:flex">
+
+<div>
+<p>Documentation</p>
+<p><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></p>
+<p><a href="/inspector-gadgets/docs/enhanced-hierarchy">Enhanced Hierarchy</a></p>
+<p><a href="/inspector-gadgets/docs/asset-drag-and-drop">Asset Drag &amp; Drop</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Download</p>
+<p><a href="/inspector-gadgets/lite">Inspector Gadgets Lite</a></p>
+<p><a href="/inspector-gadgets/pro">Inspector Gadgets Pro</a></p>
+<p><a href="/inspector-gadgets/docs/changes">Change Log</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Contact</p>
+<p><a href="https://github.com/KybernetikGames/inspector-gadgets/issues">Github Issues</a></p>
+<p><a href="https://forum.unity.com/threads/691546">Unity Forum</a></p>
+<p><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets">Email</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Other Assets</p>
+<p><a href="/animancer">Animancer</a></p>
+<p><a href="/flexi-motion">FlexiMotion</a></p>
+<p><a href="/weaver">Weaver</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>&nbsp;</p>
+<p><a href="https://assetstore.unity.com/packages/vfx/shaders/simple-sun-shader-72042?aid=1100l8ah5">Simple Sun Shader</a></p>
+<p><a href="https://assetstore.unity.com/packages/tools/version-control/link-sync-229569?aid=1100l8ah5">Link &amp; Sync</a></p>
+<p><a href="/ultevents">UltEvents</a></p>
+</div>
+
+</div></strong>
+<script src="/inspector-gadgets/assets/js/pngif.js"></script>
+            </footer>
+        </div>
+        <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+        
+        <script>           
+            // Close the sidebar if we select an anchor link
+            $(".main-sidebar a[href^='#']:not('.expand')").click(function(){
+                $(document.body).removeClass('sidebar-open');
+            });
+            
+            $(document).ready(function() {
+                mermaid.initialize(
+                {
+                    flowchart:
+                    {
+                        useMaxWidth: false
+                    },
+					startOnLoad: false,
+					cloneCssStyles: false
+                });     
+                mermaid.init(undefined, ".mermaid");
+
+                // Remove the max-width setting that Mermaid sets
+                var mermaidSvg = $('.mermaid svg');
+                mermaidSvg.addClass('img-responsive');
+                mermaidSvg.css('max-width', '');
+
+                // Make it scrollable
+				var target = document.querySelector(".mermaid svg");
+				if(target !== null)
+				{
+					var panZoom = window.panZoom = svgPanZoom(target, {
+						zoomEnabled: true,
+						controlIconsEnabled: true,
+						fit: true,
+						center: true,
+                        maxZoom: 20,
+                        zoomScaleSensitivity: 0.6
+					});			                          
+
+                    // Do the reset once right away to fit the diagram
+                    panZoom.resize();
+                    panZoom.fit();
+                    panZoom.center();
+                    
+                    $(window).resize(function(){
+                        panZoom.resize();
+                        panZoom.fit();
+                        panZoom.center();
+                    });
+				}
+                
+                $('pre code').each(function(i, block) {
+                    hljs.highlightBlock(block);
+                });  
+            });
+
+            hljs.initHighlightingOnLoad();
+
+            // Back to top
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(1000);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(1000);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function() {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop : 0                       // Scroll to top of body
+                }, 500);
+            });
+        </script>
+    
+</body></html>

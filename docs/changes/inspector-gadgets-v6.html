@@ -57,7 +57,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li class="active"><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"> Docs</a></li>
-        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v6.9</a></li>
+        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"> API v7.0</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"> Try</a></li>
@@ -99,6 +99,8 @@
 
                 <li><a href="/inspector-gadgets/docs/features">Features</a></li>
                 <li><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
+                <li><a href="/inspector-gadgets/docs/hierarchy">Enhanced Hierarchy</a></li>
+                <li><a href="/inspector-gadgets/docs/asset-drag-and-drop">Asset Drag &amp; Drop</a></li>
                 <li><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
                 <li class="treeview">
                     <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
@@ -121,9 +123,9 @@
                         
                 <li><a href="/inspector-gadgets/docs/other/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/other/selection-history">Selection History</a></li>
-                <li><a href="/inspector-gadgets/docs/other/drag-and-drop-sub-assets">Drag &amp; Drop Sub-Assets</a></li>
                 <li><a href="/inspector-gadgets/docs/other/comments">Comments</a></li>
                 <li><a href="/inspector-gadgets/docs/other/auto-prefs">Auto Prefs</a></li>
+                <li><a href="/inspector-gadgets/docs/other/preferences">Preferences</a></li>
                 <li><a href="/inspector-gadgets/docs/other/unity-modules">Unity Modules</a></li>
 
                     </ul>
@@ -132,6 +134,7 @@
                     <a href="/inspector-gadgets/docs/changes">Change Log</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v7">Inspector Gadgets v7</a></li>
                 <li class="selected"><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v6">Inspector Gadgets v6</a></li>
                 <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v5">Inspector Gadgets v5</a></li>
                 <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v4">Inspector Gadgets v4</a></li>
@@ -183,7 +186,7 @@
 <li><code>DragAndDropSubAssets</code> now allows sub-assets to be extracted by dropping them on their root asset instead of needing to target a folder.</li>
 <li>Added Context Menu Functions to set the type of a <code>[SerializeReference]</code> field.</li>
 <li>Added <code>[Layer]</code> attribute for drawing <code>int</code> fields as a dropdown menu to select a layer.</li>
-<li>Added <code><a href="/inspector-gadgets/api/InspectorGadgets/IGUtils/B9583F9B">IGUtils.DefaultEditorState</a></code> which can be set in the <em>Edit/Preferences...</em> window. Inspectable attributes will now use that value unless specified otherwise in their constructor.</li>
+<li>Added <code>IGUtils.DefaultEditorState</code> which can be set in the <a href="../other/preferences">Edit/Preferences</a> window. Inspectable attributes will now use that value unless specified otherwise in their constructor.</li>
 <li>Improved the <code>Paste</code> Context Menu Function to trim prefixes and suffixes from the numbers.</li>
 <li>Optimized <code>Editor</code> to not cause <code>OnValidate</code> and <code>ISerializationCallbackReceiver.OnAfterDeserialize</code> to be called continuously on all components shown in the Inspector (even though Unity's default Inspector does that).</li>
 <li>Changed usage of <code>SelectionMode.OnlyUserModifiable</code> to <code>Editable</code> since the former is obsolete (and the latter is identical).</li>
@@ -213,8 +216,8 @@
 <li>Added #ifs to allow certain <a href="../other/unity-modules">Unity Modules</a> to be disabled.</li>
 <li>Changed default <code><a href="/inspector-gadgets/api/InspectorGadgets/EditorState">EditorState</a></code> back to <code>Always</code> (reverting the change from <a href="#inspector-gadgets-v6.4">Inspector Gadgets v6.4</a>).</li>
 <li>Fixed the code obfuscation used in the Inspector Gadgets Lite DLLs to prevent them from causing errors in IL2CPP builds.</li>
-<li>Fixed <code>ObjectDrawer</code> to properly disable nesting when appropriate.</li>
-<li>Fixed <code>ObjectDrawer</code> label to be correctly indented when <code>EditorGUIUtility.hierarchyMode</code> is false.</li>
+<li>Fixed <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers/ObjectDrawer">ObjectDrawer</a></code> to properly disable nesting when appropriate.</li>
+<li>Fixed <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers/ObjectDrawer">ObjectDrawer</a></code> label to be correctly indented when <code>EditorGUIUtility.hierarchyMode</code> is false.</li>
 <li>Fixed potential <code>NullReferenceException</code> in <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/WatcherWindow">WatcherWindow</a></code> after leaving Play Mode.</li>
 <li>Fixed potential error when parsing clipboard text to find an object to paste into an object reference field.</li>
 <li>Fixed <code>SerializedPropertyContextMenu</code> to disable all functions that modify the property when the GUI is disabled.</li>
@@ -249,7 +252,7 @@
 <ul>
 <li>Released 2020-09-10</li>
 <li>The Minimum Unity Version is now 2018.4 and it requires the .NET 4.x scripting runtime (the default for all new projects).</li>
-<li>Fields in the <code>Transform</code> Inspector now use a smaller font size while displaying scientific notation (this can be disabled via the <em>Edit/Preferences -&gt; Inspector Gadgets -&gt; Shrink Scientific Fields</em>).</li>
+<li>Fields in the <code>Transform</code> Inspector now use a smaller font size while displaying scientific notation (this can be disabled via the <a href="../other/preferences">Edit/Preferences</a> window.</li>
 <li>Added <a href="../other/drag-and-drop-sub-assets">Drag &amp; Drop Sub-Assets</a> system.</li>
 <li>Improved <a href="../script-inspector/object-reference-fields">Object Reference Fields</a>:
 <ul>
@@ -266,7 +269,7 @@
 <li>Added public API for adding objects and properties to the <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/WatcherWindow">WatcherWindow</a></code>.</li>
 <li>Changed the default keyboard shortcuts for <code>Reset Selected Transforms</code> and <code>Snap to Grid</code> to use <code>Alt</code> instead of <code>Shift</code>.</li>
 <li>Changed <code>IGUtils.ProgressiveSearch</code> to include inactive objects.</li>
-<li>Changed <code>Preferences</code> to use the new <code>SettingsProvider</code> class introduced in Unity 2018.3.</li>
+<li>Changed <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Preferences">Preferences</a></code> to use the new <code>SettingsProvider</code> class introduced in Unity 2018.3.</li>
 <li>Changed <code>ScriptableObjectEditor</code> to display its message about changes being undone when exiting Play Mode as a warning rather than info and only in Play Mode.</li>
 <li>Reorganised <code>SerializedPropertyAccessor</code> and related utilities into the <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Serialization">Serialization</a></code> namespace and improved their reliability.</li>
 <li>Fixed <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/AutoHideUI">AutoHideUI</a></code> to un-hide the UI layer if Inspector Gadgets is deleted.</li>
@@ -276,14 +279,14 @@
 <li>Fixed <code>TransformPropertyDrawer</code> mini buttons to apply to their corresponding property instead of the previously drawn one.</li>
 <li>Fixed <code>TransformPropertyDrawer</code> to use the correct menu function path for the Snap Settings in Unity 2019.3+.</li>
 <li>Fixed <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/WatcherWindow">WatcherWindow</a></code> to use the <code>ViewToolOrbit</code> icon in Unity 2019.3+ (since <code>UnityEditor.LookDevView</code> no longer exists).</li>
-<li>Fixed <code>ObjectDrawer</code> to always reset the font style after using italics for self-references.</li>
+<li>Fixed <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers/ObjectDrawer">ObjectDrawer</a></code> to always reset the font style after using italics for self-references.</li>
 <li>Fixed <code>NullReferenceException</code> in <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/CommentEditor">CommentEditor</a></code>.</li>
 </ul>
 <h1 id="inspector-gadgets-v6.1">Inspector Gadgets v6.1</h1>
 <ul>
 <li>Released 2019-07-08</li>
 <li>Fixed <code>Transform</code> Inspector mini buttons to be linked to the correct properties.</li>
-<li>Fixed <code>ObjectDrawer</code> <code>[H]</code> button to be drawn in the correct location.</li>
+<li>Fixed <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers/ObjectDrawer">ObjectDrawer</a></code> <code>[H]</code> button to be drawn in the correct location.</li>
 </ul>
 <h1 id="inspector-gadgets-v6.0">Inspector Gadgets v6.0</h1>
 <ul>
@@ -361,10 +364,10 @@
 <ul>
 <li>Fixed errors in Unity 2018.3+ caused by the obfuscation in the Lite DLLs. They were harmless and didn't actually stop anything from working, they were simply annoying.</li>
 <li>Fixed undoing a script type change to not cause GUI errors.</li>
-<li>Fixed <code>TransformEditor</code> layout when drawn outside the Inspector (such as in the <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/WatcherWindow">WatcherWindow</a></code> and nested object drawers).</li>
+<li>Fixed <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/TransformEditor">TransformEditor</a></code> layout when drawn outside the Inspector (such as in the <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/WatcherWindow">WatcherWindow</a></code> and nested object drawers).</li>
 <li>Fixed <code>[Inspectable]</code> attribute to catch exceptions while drawing.</li>
 <li>Fixed <code>TransformEditor.HandleOffset</code> to get a field instead of a property (as changed in Unity 2017.1).</li>
-<li>Fixed incorrect constructor parameters in <code><a href="/inspector-gadgets/api/InspectorGadgets/EditorVector2">AutoPrefs.EditorVector2</a></code>.</li>
+<li>Fixed incorrect constructor parameters in <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor/EditorVector2">AutoPrefs.EditorVector2</a></code>.</li>
 <li><code>ScriptyHunterEditor</code> can now destroy sub assets properly.</li>
 </ul>
 
@@ -379,7 +382,53 @@
         </div>
         <div class="wrapper bottom-wrapper">
             <footer class="bottom-footer">
-                Generated by <a href="https://wyam.io">Wyam</a>
+                <strong><div style="text-align:left; display:flex">
+
+<div>
+<p>Documentation</p>
+<p><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></p>
+<p><a href="/inspector-gadgets/docs/enhanced-hierarchy">Enhanced Hierarchy</a></p>
+<p><a href="/inspector-gadgets/docs/asset-drag-and-drop">Asset Drag &amp; Drop</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Download</p>
+<p><a href="/inspector-gadgets/lite">Inspector Gadgets Lite</a></p>
+<p><a href="/inspector-gadgets/pro">Inspector Gadgets Pro</a></p>
+<p><a href="/inspector-gadgets/docs/changes">Change Log</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Contact</p>
+<p><a href="https://github.com/KybernetikGames/inspector-gadgets/issues">Github Issues</a></p>
+<p><a href="https://forum.unity.com/threads/691546">Unity Forum</a></p>
+<p><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets">Email</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Other Assets</p>
+<p><a href="/animancer">Animancer</a></p>
+<p><a href="/flexi-motion">FlexiMotion</a></p>
+<p><a href="/weaver">Weaver</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>&nbsp;</p>
+<p><a href="https://assetstore.unity.com/packages/vfx/shaders/simple-sun-shader-72042?aid=1100l8ah5">Simple Sun Shader</a></p>
+<p><a href="https://assetstore.unity.com/packages/tools/version-control/link-sync-229569?aid=1100l8ah5">Link &amp; Sync</a></p>
+<p><a href="/ultevents">UltEvents</a></p>
+</div>
+
+</div></strong>
+<script src="/inspector-gadgets/assets/js/pngif.js"></script>
             </footer>
         </div>
         <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>

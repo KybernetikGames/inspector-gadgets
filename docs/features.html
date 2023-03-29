@@ -59,7 +59,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li class="active"><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"/> Docs</a></li>
-        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"/> API v6.9</a></li>
+        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"/> API v7.0</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"/> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"/> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"/> Try</a></li>
@@ -90,6 +90,8 @@
 
                 <li class="selected"><a href="/inspector-gadgets/docs/features">Features</a></li>
                 <li><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></li>
+                <li><a href="/inspector-gadgets/docs/hierarchy">Enhanced Hierarchy</a></li>
+                <li><a href="/inspector-gadgets/docs/asset-drag-and-drop">Asset Drag &amp; Drop</a></li>
                 <li><a href="/inspector-gadgets/docs/context-menu-functions">Context Menu Functions</a></li>
                 <li class="treeview">
                     <a href="/inspector-gadgets/docs/script-inspector">Script Inspector</a> <a href="#" class="expand"></a>
@@ -112,9 +114,9 @@
                         
                 <li><a href="/inspector-gadgets/docs/other/auto-hide-ui">Auto Hide UI</a></li>
                 <li><a href="/inspector-gadgets/docs/other/selection-history">Selection History</a></li>
-                <li><a href="/inspector-gadgets/docs/other/drag-and-drop-sub-assets">Drag &amp; Drop Sub-Assets</a></li>
                 <li><a href="/inspector-gadgets/docs/other/comments">Comments</a></li>
                 <li><a href="/inspector-gadgets/docs/other/auto-prefs">Auto Prefs</a></li>
+                <li><a href="/inspector-gadgets/docs/other/preferences">Preferences</a></li>
                 <li><a href="/inspector-gadgets/docs/other/unity-modules">Unity Modules</a></li>
 
                     </ul>
@@ -123,6 +125,7 @@
                     <a href="/inspector-gadgets/docs/changes">Change Log</a> <a href="#" class="expand"></a>
                     <ul class="treeview-menu">
                         
+                <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v7">Inspector Gadgets v7</a></li>
                 <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v6">Inspector Gadgets v6</a></li>
                 <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v5">Inspector Gadgets v5</a></li>
                 <li><a href="/inspector-gadgets/docs/changes/inspector-gadgets-v4">Inspector Gadgets v4</a></li>
@@ -194,9 +197,9 @@ summary
   </tr></thead>
   
   <tbody>
-  <tr><td>The full <strong>Source Code</strong> is included in <a href="https://assetstore.unity.com/packages/tools/gui/inspector-gadgets-pro-83013?aid=1100l8ah5">Inspector Gadgets Pro</a> as regular C# scripts. The <code>InspectorGadgets.Lite.dll</code>s in the package contain no code, they are simply there to allow seamless upgrades from the Lite version.</td><td class="m"/><td class="y"/></tr>
-  <tr><td>Customise settings in the <code>Edit/Preferences</code> window.</td><td class="n"/><td class="y"/></tr>
-  <tr class="section"><td colspan="3"><a href="transform-inspector">Enhanced Transform Inspector</a></td></tr>
+  <tr><td>The full <strong>Source Code</strong> is included in <a href="https://assetstore.unity.com/packages/tools/gui/inspector-gadgets-pro-83013?aid=1100l8ah5">Inspector Gadgets Pro</a> as regular C# scripts. The DLLs in the package contain no code, they are simply there to allow seamless upgrades from the Lite version.</td><td class="m"/><td class="y"/></tr>
+  <tr><td>Customise settings in the <a href="other/preferences">Edit/Preferences</a> window (most settings are Pro-Only).</td><td class="n"/><td class="y"/></tr>
+  <tr class="section"><td colspan="3"><a href="transform-inspector">Transform Inspector</a></td></tr>
   <tr><td>Toggle between <a href="transform-inspector#local-world">Local</a> and <a href="transform-inspector#local-world">World</a> values.</td><td class="y"/><td class="y"/></tr>
   <tr><td><a href="transform-inspector#freeze-children">Freeze Children</a> so that they won't be affected when you move the parent.</td><td class="y"/><td class="y"/></tr>
   <tr><td><a href="transform-inspector#draw-all-gizmos">Draw All Gizmos</a> so that you can move each selected object individually.</td><td class="y"/><td class="y"/></tr>
@@ -205,6 +208,21 @@ summary
   <tr><td><a href="transform-inspector#utility-buttons">Middle Click on any field to Reset it</a>.</td><td class="y"/><td class="y"/></tr>
   <tr><td><a href="transform-inspector#utility-buttons">Movement Guides</a> display the starting position and distance moved when moving objects in the Scene view.</td><td class="n"/><td class="y"/></tr>
   <tr><td><a href="transform-inspector#other-pro-only-features">Works with multiple objects selected at once.</a></td><td class="n"/><td class="y"/></tr>
+  <tr class="section"><td colspan="3"><a href="hierarchy">Enhanced Hierarchy</a></td></tr>
+  <tr><td>Shows <a href="https://docs.unity3d.com/Manual/Tags.html">Tags</a>.</td><td class="n"/><td class="y"/></tr>
+  <tr><td>Shows <a href="https://docs.unity3d.com/Manual/Layers.html">Layers</a>.</td><td class="n"/><td class="y"/></tr>
+  <tr><td>Shows the number of children an object has.</td><td class="n"/><td class="y"/></tr>
+  <tr><td>Shows the icons of components attached to each object.</td><td class="n"/><td class="y"/></tr>
+  <tr><td><code>Ctrl + Click</code> the component icons to enable/disable them.</td><td class="n"/><td class="y"/></tr>
+  <tr><td>Drag and drop the component icons into Inspector fields to assign a specific one if an object has multiple of the same type.</td><td class="n"/><td class="y"/></tr>
+  <tr><td>Drag and drop an object onto a <code>Transform</code> icon to show various Context Menu Functions.</td><td class="n"/><td class="y"/></tr>
+  <tr class="section"><td colspan="3"><a href="asset-drag-and-drop">Asset Drag & Drop</a></td></tr>
+  <tr><td>Hold <code>Ctrl + Alt</code> when you Drag and Drop files into the Project window to show advanced options for how to handle them.</td><td class="n"/><td class="y"/></tr>
+  <tr><td>Move or Copy.</td><td class="n"/><td class="y"/></tr>
+  <tr><td>Create or Overwrite.</td><td class="n"/><td class="y"/></tr>
+  <tr><td>Skip or Include Metadata.</td><td class="n"/><td class="y"/></tr>
+  <tr><td>Optionally clear the destination folder beforehand.</td><td class="n"/><td class="y"/></tr>
+  <tr><td><a href="asset-drag-and-drop#drag-and-drop-sub-assets">Drag and drop assets into each other to turn them into sub-assets.</a></td><td class="n"/><td class="y"/></tr>
   <tr class="section"><td colspan="3"><a href="context-menu-functions">Context Menu Functions</a></td></tr>
   <tr>
     <td>Various <a href="context-menu-functions">Context Menu Functions</a> are added to all Inspector fields depending on their type. Functions include <strong>Copy</strong>, <strong>Paste</strong>, <strong>Find</strong>, <a href="context-menu-functions#visualise">Visualise</a>, and <a href="context-menu-functions#watch">Watch</a>.</td>
@@ -225,7 +243,6 @@ summary
   <tr class="section"><td colspan="3"><a href="other">Other Features</a></td></tr>
   <tr><td><a href="other/auto-hide-ui">Automatically Hide UI</a> objects when you aren't working with them.</td><td class="y"/><td class="y"/></tr>
   <tr><td><a href="other/selection-history">Selection History</a> window keeps track of the objects you select so you can quickly go back to them.</td><td class="n"/><td class="y"/></tr>
-  <tr><td><a href="other/drag-and-drop-sub-assets">Drag and drop assets into each other to turn them into sub-assets.</a></td><td class="n"/><td class="y"/></tr>
   <tr><td>Leave <a href="other/comments">Comments</a> as components and assets.</td><td class="y"/><td class="y"/></tr>
   <tr><td><a href="other/auto-prefs">AutoPrefs</a> make it easy to work with <code>PlayerPrefs</code> and <code>EditorPrefs</code>.</td><td class="y"/><td class="y"/></tr>
   </tbody>
@@ -242,7 +259,53 @@ summary
         </div>
         <div class="wrapper bottom-wrapper">
             <footer class="bottom-footer">
-                Generated by <a href="https://wyam.io">Wyam</a>
+                <strong><div style="text-align:left; display:flex">
+
+<div>
+<p>Documentation</p>
+<p><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></p>
+<p><a href="/inspector-gadgets/docs/enhanced-hierarchy">Enhanced Hierarchy</a></p>
+<p><a href="/inspector-gadgets/docs/asset-drag-and-drop">Asset Drag & Drop</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Download</p>
+<p><a href="/inspector-gadgets/lite">Inspector Gadgets Lite</a></p>
+<p><a href="/inspector-gadgets/pro">Inspector Gadgets Pro</a></p>
+<p><a href="/inspector-gadgets/docs/changes">Change Log</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Contact</p>
+<p><a href="https://github.com/KybernetikGames/inspector-gadgets/issues">Github Issues</a></p>
+<p><a href="https://forum.unity.com/threads/691546">Unity Forum</a></p>
+<p><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets">Email</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Other Assets</p>
+<p><a href="/animancer">Animancer</a></p>
+<p><a href="/flexi-motion">FlexiMotion</a></p>
+<p><a href="/weaver">Weaver</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>&nbsp;</p>
+<p><a href="https://assetstore.unity.com/packages/vfx/shaders/simple-sun-shader-72042?aid=1100l8ah5">Simple Sun Shader</a></p>
+<p><a href="https://assetstore.unity.com/packages/tools/version-control/link-sync-229569?aid=1100l8ah5">Link & Sync</a></p>
+<p><a href="/ultevents">UltEvents</a></p>
+</div>
+
+</div></strong>
+<script src="/inspector-gadgets/assets/js/pngif.js"></script>
             </footer>
         </div>
         <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>

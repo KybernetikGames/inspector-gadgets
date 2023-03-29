@@ -55,7 +55,7 @@
                     <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
                         <ul class="nav navbar-nav">                            
                                     <li><a href="/inspector-gadgets/docs"><img src="/inspector-gadgets/images/docs.png" height="20" style="position:relative; left:-5px; top:-1px;"/> Docs</a></li>
-        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"/> API v6.9</a></li>
+        <li><a href="/inspector-gadgets/api/InspectorGadgets"><img src="/inspector-gadgets/images/api.png" height="20" style="position:relative; left:-3px; top:-1px;"/> API v7.0</a></li>
         <li><a href="https://forum.unity.com/threads/691546"><img src="/inspector-gadgets/images/forum.png" height="20" style="position:relative; left:-4px; top:-1px;"/> Forum</a></li>
         <li><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets"><img src="/inspector-gadgets/images/contact.png" height="20" style="position:relative; left:-4px; top:-1px;"/> Contact</a></li>
         <li><a href="/inspector-gadgets/lite"><img src="/inspector-gadgets/images/unity-logo.png" height="20" style="position:relative; left:-4px; top:-1px;"/> Try</a></li>
@@ -97,114 +97,158 @@
 
 
 <style>
-
-tr:nth-of-type(odd) { background-color: #def; }
-tr:nth-of-type(even) { background-color: #cdf; }
-
-td
+.content, .content-header, .content-wrapper, .wrapper
 {
-    padding: 1em;
-    font-size: 1.5em;
+    background: transparent;
 }
 
-h1
+.main-text
 {
+    padding: 0.5em;
+    font-size: 2em;
+}
+
+.space
+{
+    width: 2em;
+    height: 2em;
+}
+
+.flex-space
+{
+    flex-grow: 1;
+}
+
+.button-group h1
+{
+    text-align: center;
     margin: 0;
-    padding: 0;
-    top: 0;
+    padding-bottom: 0.4em;
+    line-height: 0.83em;
 }
 
+.button-group a
+{
+    width: 33%;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+}
+
+.button-group img
+{
+    width: 100%;
+    height: auto;
+}
+
+.swap-img
+{
+    position: relative;
+}
+
+.swap-img img
+{
+    top: 0;
+    left: 0;
+}
+
+.swap-img .hover-img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.swap-img:hover .hover-img
+{
+    display: inline;
+}
 </style>
 
 <img src="images/title.png" class="img-responsive" style="background-color:#36c">
 
-<table style="width:100%">
-    <tr><td>
-        <div class="img-right"><iframe width="200" height="113" src="https://www.youtube.com/embed/cXFcrmm2l6M?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <p>Inspector Gadgets is a <a href="https://unity3d.com">Unity</a> plugin which enhances various aspects of the Unity Editor to streamline your development workflow.</p>
-        <a href="https://assetstore.unity.com/packages/tools/gui/inspector-gadgets-lite-82896?aid=1100l8ah5">Download it for <strong>free</strong></a> and check out the <a href="docs">Documentation</a> to get started.
-    </td></tr>
+<div style="display:flex">
+<div style="padding: 1.5em 0.5em 1.5em 0"><iframe width="200" height="113" src="https://www.youtube.com/embed/cXFcrmm2l6M?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen title="Inspector Gadgets v4.2"></iframe></div>
+<div class="main-text">
+    <p><strong>Inspector Gadgets</strong> is a <a href="https://unity3d.com">Unity</a> plugin which enhances various aspects of the Unity Editor to streamline your development workflow.</p>
+    <a href="https://assetstore.unity.com/packages/tools/gui/inspector-gadgets-lite-82896?aid=1100l8ah5">Download it for <strong>free</strong></a> and check out the <a href="docs">Documentation</a> to get started.
+</div>
+</div>
 
+<div class="button-group">
+    <a href="docs/transform-inspector">
+        <h1>Transform Inspector</h1>
+        <p><strong>L</strong>ocal/<strong>W</strong>orld space, <strong>C</strong>opy/<strong>P</strong>aste/<strong>S</strong>nap, <strong>F</strong>reeze Child Transforms, and more.</p>
+        <div class="flex-space"></div>
+        <img src="images/tiles/transform-inspector.png">
+    </a>
+    <div class="space"></div>
+    <a href="docs/hierarchy">
+        <h1>Hierarchy</h1>
+        <p>See components, tags, layers, and child counts of each object in the Hierarchy.</p>
+        <div class="flex-space"></div>
+        <img src="images/tiles/enhanced-hierarchy.png">
+    </a>
+    <div class="space"></div>
+    <a href="docs/context-menu-functions#persist-after-play-mode">
+        <h1>Persist After Play Mode</h1>
+        <p>Change things in Play Mode and keep the changes when you return to Edit Mode.</p>
+        <div class="flex-space"></div>
+        <img src="images/tiles/persist-after-play-mode.png">
+    </a>
+</div>
 
+<div class="space"></div>
 
-    <tr><td>
-        <a href="docs/transform-inspector"><img src="docs/transform-inspector/transform-inspector-labelled.png" class="img-responsive img-right">
-        <p><h1>Enhanced Transform Inspector</h1></p></a>
-        <p>The Inspector for the <code>Transform</code> component has been improved with the ability to <strong>C</strong>opy, <strong>P</strong>aste, and <strong>S</strong>nap individual properties, toggle between <strong>L</strong>ocal or <strong>W</strong>orld space, adjust the scale on all axes at once, and more.</p>
-    </td></tr>
+<div class="button-group">
+    <a href="docs/asset-drag-and-drop">
+        <h1>Drag & Drop</h1>
+        <p>Advanced options for handling files dropped into Unity such as overwriting existing assets instead of creating new ones.</p>
+        <div class="flex-space"></div>
+        <img src="images/tiles/drag-and-drop.png">
+    </a>
+    <div class="space"></div>
+    <a href="docs/script-inspector/decorator-attributes">
+        <h1>Decorator Attributes</h1>
+        <p>Various attributes allow you to customise the way fields are drawn in the Inspector and even add things like buttons.</p>
+        <div class="flex-space"></div>
+        <img src="images/tiles/decorator-attributes.png">
+    </a>
+    <div class="space"></div>
+    <a href="docs/script-inspector/object-reference-fields">
+        <h1>Object Reference Fields</h1>
+        <p>Quick find button, see the referenced object's Inspector, enhanced Drag & Drop support, and more.</p>
+        <div class="flex-space"></div>
+        <img src="images/tiles/object-reference-fields.png">
+    </a>
+</div>
 
+<div class="space"></div>
 
-
-    <tr><td>
-        <p><h1><a href="docs/transform-inspector#freeze-children">Freeze Children</a></h1></p>
-        <p>Prevent changes you make to a parent object from affecting its children.</p>
-        <a href="docs/transform-inspector#freeze-children"><img src="docs/transform-inspector/freeze-children.gif" class="img-responsive"></a>
-    </td></tr>
-
-
-
-    <tr><td>
-        <p><h1><a href="docs/transform-inspector#draw-all-gizmos">Draw All Gizmos [Pro-Only]</a></h1></p>
-        <p>Show scene gizmos for every selected object individually instead of using a single gizmo to move them all at once.</p>
-        <a href="docs/transform-inspector#draw-all-gizmos"><img src="docs/transform-inspector/draw-all-gizmos.gif" class="img-responsive"></a>
-    </td></tr>
-
-
-
-    <tr><td><a href="docs/other/drag-and-drop-sub-assets"><img src="docs/other/drag-and-drop-sub-assets/drag-and-drop-sub-assets.gif" class="img-responsive img-right"></a>
-        <p><h1><a href="docs/other/drag-and-drop-sub-assets">Drag and Drop Sub-Assets [Pro-Only]</a></h1></p>
-        <p>Drag and drop assets in the project window onto each other to group them as sub-assets.</p>
-    </td></tr>
-
-
-
-    <tr><td>
-        <a href="docs/other/auto-hide-ui"><p><h1>Auto Hide UI</h1></p></a>
-        <p>Instead of having UI objects block a massive part of your Scene view, Inspector Gadgets can hide them when you aren't working with them and automatically focus the camera on them when you are.</p>
-        <a href="docs/other/auto-hide-ui"><img src="docs/other/auto-hide-ui/auto-hide-ui.gif" class="img-responsive"></a>
-    </td></tr>
-
-
-
-    <tr><td>
-        <a href="docs/context-menu-functions"><p><h1>Context Menu Functions</h1></p></a>
+<div class="button-group">
+    <a href="docs/context-menu-functions">
+        <h1>Context Menus</h1>
         <p>Dozens of useful functions are added to the context menu (right click menu) of each field in the Inspector based on its type.</p>
-        <a href="docs/context-menu-functions"><img src="images/context-menu-functions.png" class="img-responsive"></a>
-    </td></tr>
-
-
-
-    <tr><td>
-        <a href="docs/context-menu-functions#persist-after-play-mode"><p><h1>Persist After Play Mode [Pro-Only]</h1></p></a>
-        <p>This is the main new feature added in Inspector Gadgets v6.0.</p>
-        <p>While in Play Mode, you can Right Click on any <code>Component</code> or Inspector field and use the <code>Persist After Play Mode</code> function to allow their values to be retained once you leave Play Mode instead of being reset to their previous value.</p>
-        <a href="docs/context-menu-functions#persist-after-play-mode"><img src="docs/context-menu-functions/persist-after-play-mode.gif" class="img-responsive"></a>
-    </td></tr>
-
-
-
-    <tr><td>
-        <a href="docs/script-inspector/object-reference-fields"><img src="docs/script-inspector/object-reference-fields/nesting.gif" class="img-responsive img-right"><p><h1>Object Reference Fields [Pro-Only]</h1></p></a>
-        References to <code>UnityEngine.Object</code>s (such as any reference to a <code>GameObject</code>, <code>Component</code>, or any asset) automatically draw buttons to find a reference if they don't have one and can draw the Inspector of the referenced object right beneath the field.
-    </td></tr>
-
-
-
-    <tr><td>
-        <a href="docs/script-inspector/decorator-attributes"><p><h1>Decorator Attributes [Pro-Only]</h1></p></a>
-        <p>Various attributes allow you to customise the way serialized fields are drawn in the Inspector and even add things like buttons.</p>
-        <a href="docs/script-inspector/decorator-attributes"><img src="images/decorator-attributes.png" class="img-responsive"></a>
-    </td></tr>
-
-
-
-    <tr><td>
-        <a href="docs/script-inspector/missing-scripts"><p><h1>Missing Scripts</h1></p></a>
-        <p>If you have any missing scripts, Inspector Gadgets makes it easy to find and fix them.</p>
-        <a href="docs/script-inspector/missing-scripts"><img src="docs/script-inspector/missing-scripts/missing-script.png" class="img-responsive"></a>
-    </td></tr>
-
-</table>                
+        <div class="flex-space"></div>
+        <img src="images/tiles/context-menus.png">
+    </a>
+    <div class="space"></div>
+    <a href="docs/other/auto-hide-ui">
+        <h1>Auto Hide UI</h1>
+        <p>UI objects are hidden when you aren't working with them and the camera will focus on them when you select one.</p>
+        <div class="flex-space"></div>
+        <img src="images/tiles/auto-hide-ui.png">
+    </a>
+    <div class="space"></div>
+    <a href="docs/script-inspector/missing-scripts">
+        <h1>Missing Scripts</h1>
+        <p>Find missing scripts in all scenes and assets in your project so you can go through and fix them.</p>
+        <div class="flex-space"></div>
+        <img src="images/tiles/missing-scripts.png">
+    </a>
+</div>                
             </div>           
             
             <!-- Footer -->
@@ -214,7 +258,53 @@ h1
         </div>
         <div class="wrapper bottom-wrapper">
             <footer class="bottom-footer">
-                Generated by <a href="https://wyam.io">Wyam</a>
+                <strong><div style="text-align:left; display:flex">
+
+<div>
+<p>Documentation</p>
+<p><a href="/inspector-gadgets/docs/transform-inspector">Transform Inspector</a></p>
+<p><a href="/inspector-gadgets/docs/enhanced-hierarchy">Enhanced Hierarchy</a></p>
+<p><a href="/inspector-gadgets/docs/asset-drag-and-drop">Asset Drag & Drop</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Download</p>
+<p><a href="/inspector-gadgets/lite">Inspector Gadgets Lite</a></p>
+<p><a href="/inspector-gadgets/pro">Inspector Gadgets Pro</a></p>
+<p><a href="/inspector-gadgets/docs/changes">Change Log</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Contact</p>
+<p><a href="https://github.com/KybernetikGames/inspector-gadgets/issues">Github Issues</a></p>
+<p><a href="https://forum.unity.com/threads/691546">Unity Forum</a></p>
+<p><a href="mailto:mail@kybernetik.com.au?subject=InspectorGadgets">Email</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>Other Assets</p>
+<p><a href="/animancer">Animancer</a></p>
+<p><a href="/flexi-motion">FlexiMotion</a></p>
+<p><a href="/weaver">Weaver</a></p>
+</div>
+
+<div style="width:10%"></div>
+
+<div>
+<p>&nbsp;</p>
+<p><a href="https://assetstore.unity.com/packages/vfx/shaders/simple-sun-shader-72042?aid=1100l8ah5">Simple Sun Shader</a></p>
+<p><a href="https://assetstore.unity.com/packages/tools/version-control/link-sync-229569?aid=1100l8ah5">Link & Sync</a></p>
+<p><a href="/ultevents">UltEvents</a></p>
+</div>
+
+</div></strong>
+<script src="/inspector-gadgets/assets/js/pngif.js"></script>
             </footer>
         </div>
         <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>

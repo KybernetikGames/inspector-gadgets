@@ -620,6 +620,33 @@ a:active,
 a:focus {
   border-bottom: 1px dashed #000000;
 }
+.button-group {
+  display: flex;
+}
+.button-group a {
+  background-color: #36c;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 5px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+.button-group a:active,
+.button-group a:focus,
+.button-group a:hover {
+  background-color: #037;
+}
+.button-group img {
+  height: 1em;
+  position: relative;
+  top: -2px;
+}
+.button-group-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
 .navbar-nav a {
   border-bottom: none;
 }
