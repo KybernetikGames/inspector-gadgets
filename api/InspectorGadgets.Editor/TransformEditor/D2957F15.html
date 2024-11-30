@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
-        <title>Inspector Gadgets - API - ClampValueAttribute.TryValidate(double) Method</title>
+        <title>Inspector Gadgets - API - TransformEditor.OnSceneGUI() Method</title>
         <link href="/inspector-gadgets/assets/css/highlight.css" rel="stylesheet">
         <link href="/inspector-gadgets/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/inspector-gadgets/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -78,7 +78,6 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Parameters">Parameters</a></p>
 <p><a href="#ReturnValue">Return Value</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -139,26 +138,15 @@
                     <ul class="sidebar-menu">
                         
 			<li class="header">Assembly</li>
-		<li><a href="/inspector-gadgets/api/Kybernetik.InspectorGadgets.dll">Kybernetik<wbr>.InspectorGadgets<wbr>.dll</a></li>
+		<li><a href="/inspector-gadgets/api/Kybernetik.InspectorGadgets.Editor.dll">Kybernetik<wbr>.InspectorGadgets<wbr>.Editor<wbr>.dll</a></li>
 		<li class="header">Namespace</li>
-		<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes">InspectorGadgets<wbr>.Attributes</a></li>
+		<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor">InspectorGadgets<wbr>.Editor</a></li>
 		<li class="header">Type</li>
-		<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute">ClampValueAttribute</a></li>
+		<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/TransformEditor">TransformEditor</a></li>
 		<li role="separator" class="divider"></li>
-			<li class="header">Constructors</li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/3D20AD4E">ClampValueAttribute<wbr>(int, <wbr>int)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/B44C9F46">ClampValueAttribute<wbr>(long, <wbr>long)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/B73F3556">ClampValueAttribute<wbr>(float, <wbr>float)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/EBE094F9">ClampValueAttribute<wbr>(double, <wbr>double)<wbr></a></li>
-			<li class="header">Field Members</li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/D4F97BBD">MaxDouble</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/C3521A7E">MaxLong</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/954B906A">MinDouble</a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/8CB2E97D">MinLong</a></li>
 			<li class="header">Method Members</li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/86C6B214">TryValidate<wbr>(long)<wbr></a></li>
-				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute/5134C22B">TryValidate<wbr>(double)<wbr></a></li>
-				<li><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ValidatorAttribute/8A1425B4">TryValidate<wbr>(Object)<wbr></a></li>
+				<li><a href="/inspector-gadgets/api/InspectorGadgets.Editor/TransformEditor/DEC71E35">OnInspectorGUI<wbr>()<wbr></a></li>
+				<li class="selected"><a href="/inspector-gadgets/api/InspectorGadgets.Editor/TransformEditor/D2957F15">OnSceneGUI<wbr>()<wbr></a></li>
 
 
                     </ul>
@@ -173,57 +161,38 @@
 
 
 <section class="content-header">
-			<h3><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute">ClampValueAttribute</a>.</h3>
-	<h1>TryValidate<wbr>(double)<wbr> <small>Method</small></h1>
+			<h3><a href="/inspector-gadgets/api/InspectorGadgets.Editor/TransformEditor">TransformEditor</a>.</h3>
+	<h1>OnSceneGUI<wbr>()<wbr> <small>Method</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">Validates a <code class="cs">System.Double</code> value or returns false to revert to the previous value.</div>
+	<div class="lead">Draws custom Scene View controls.</div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">	
 				<dl class="dl-horizontal">	
 						<dt>Assembly</dt>
-						<dd><a href="/inspector-gadgets/api/Kybernetik.InspectorGadgets.dll">Kybernetik<wbr>.InspectorGadgets<wbr>.dll</a></dd>
+						<dd><a href="/inspector-gadgets/api/Kybernetik.InspectorGadgets.Editor.dll">Kybernetik<wbr>.InspectorGadgets<wbr>.Editor<wbr>.dll</a></dd>
 						
 						<dt>Namespace</dt>
-						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Attributes">InspectorGadgets<wbr>.Attributes</a></dd>
+						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Editor">InspectorGadgets<wbr>.Editor</a></dd>
 					
 						<dt>Containing Type</dt>
-						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Attributes/ClampValueAttribute">ClampValueAttribute</a></dd>		
+						<dd><a href="/inspector-gadgets/api/InspectorGadgets.Editor/TransformEditor">TransformEditor</a></dd>		
 					
 				</dl>
   			</div>
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public override bool TryValidate(ref double value)</code></pre>
+	<pre><code>protected virtual void OnSceneGUI()</code></pre>
 
 
 
 
 
-	<h1 id="Parameters">Parameters</h1>
-	<div class="box">
-		<div class="box-body no-padding table-responsive">
-			<table class="table table-striped table-hover three-cols">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>Type</th>
-						<th>Description</th>
-					</tr>
-				</thead>
-					<tbody><tr>
-						<td>value</td>
-						<td>double</td>
-						<td></td>
-					</tr>
-			</tbody></table>
-		</div>
-	</div>	
 
 	<h1 id="ReturnValue">Return Value</h1>
 	<div class="box">
@@ -236,7 +205,7 @@
 					</tr>
 				</thead>
 				<tbody><tr>
-					<td>bool</td>
+					<td>void</td>
 					<td></td>
 				</tr>
 			</tbody></table>

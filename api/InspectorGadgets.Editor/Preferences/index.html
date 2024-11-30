@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/inspector-gadgets/assets/img/favicon.ico" type="image/x-icon">
-        <title>Inspector Gadgets - API - Preferences Class</title>
+        <title>Inspector Gadgets - API - EnhancedHierarchy.EnhancedHierarchy.Preferences Class</title>
         <link href="/inspector-gadgets/assets/css/highlight.css" rel="stylesheet">
         <link href="/inspector-gadgets/assets/css/bootstrap/bootstrap.css" rel="stylesheet">
         <link href="/inspector-gadgets/assets/css/adminlte/AdminLTE.css" rel="stylesheet">
@@ -78,8 +78,7 @@
                     	
 	<div id="infobar-headings"><h6>On This Page</h6><p><a href="#Summary">Summary</a></p>
 <p><a href="#Syntax">Syntax</a></p>
-<p><a href="#Remarks">Remarks</a></p>
-<p><a href="#Events">Events</a></p>
+<p><a href="#fields">Fields</a></p>
 <p><a href="#Methods">Methods</a></p>
 <hr class="infobar-hidden">
 </div>
@@ -189,13 +188,14 @@
 
 
 <section class="content-header">
-	<h1>Preferences <small>Class</small></h1>
+			<h3><a href="/inspector-gadgets/api/InspectorGadgets.Editor/EnhancedHierarchy">EnhancedHierarchy</a>.</h3>
+	<h1>EnhancedHierarchy<wbr>.Preferences <small>Class</small></h1>
 </section>
 <section class="content">
 	
 	
 		<h1 id="Summary">Summary</h1>
-	<div class="lead">[Editor-Only] GUI for Inspector Gadgets settings.</div>
+	<div class="lead">Editor GUI to display the <code class="cs">InspectorGadgets.Editor.EnhancedHierarchy</code> preferences.</div>
 
 		<div class="panel panel-default">
   			<div class="panel-body">
@@ -223,7 +223,7 @@
 						<div class="mermaid">
 							graph BT
 	Type--&gt;Base0["Object"]
-	Type["Preferences"]
+	Type["EnhancedHierarchy.Preferences"]
 class Type type-node
 
 						</div>
@@ -233,33 +233,32 @@ class Type type-node
 		</div>
 
 	<h1 id="Syntax">Syntax</h1>
-	<pre><code>public static class Preferences</code></pre>
-
-
-	<h1 id="Remarks">Remarks</h1>
-	<div>These settings are accessible via <code class="cs">Edit/Preferences/Inspector Gadgets</code>.</div>
+	<pre><code>public static class EnhancedHierarchy.Preferences</code></pre>
 
 
 
 
 
 
-			<h1 id="Events">Events</h1>
+
+
+
+			<h1 id="fields">Fields</h1>
 			<div class="box">
 				<div class="box-body no-padding table-responsive">
 					<table class="table table-striped table-hover three-cols">
 						<thead>
 							<tr>
 								<th>Name</th>
-								<th>Type</th>
+								<th>Constant Value</th>
 								<th>Summary</th>
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Preferences/2D7F659B">Do<wbr>Scene<wbr>View<wbr>Object<wbr>Picker<wbr>Window<wbr>G<wbr>U<wbr>I</a></td>
-								<td>Action</td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Preferences/B4158F84">Headding</a></td>
+								<td>Enhanced Hierarchy</td>
 								<td>
-									<div>Callback for drawing the <code class="cs">SceneViewObjectPickerWindow</code> preferences.</div>
+									<div>The headding of this section.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>
@@ -267,7 +266,6 @@ class Type type-node
 				</div>
 			</div>
 		
-
 
 
 			<h1 id="Methods">Methods</h1>
@@ -282,26 +280,10 @@ class Type type-node
 							</tr>
 						</thead>
 							<tbody><tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Preferences/E29CA117">Create<wbr>My<wbr>Custom<wbr>Settings<wbr>Provider<wbr>()<wbr></a></td>
-								<td>SettingsProvider</td>
-								<td>
-									<div>Creates this preferences page.</div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Preferences/A8280166">Do<wbr>Pro<wbr>Only<wbr>Group<wbr>Enabled<wbr>Pref<wbr>(AutoPrefs<wbr>.Bool, <wbr>GUIContent)<wbr></a></td>
+								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Preferences/BD09CBC6">DoGUI<wbr>()<wbr></a></td>
 								<td>void</td>
 								<td>
-									<div>Draws a pref which enables the following GUI group and which is Pro-Only.</div>
-											<div><small><em>static</em></small></div>
-								</td>
-							</tr>
-							<tr>
-								<td><a href="/inspector-gadgets/api/InspectorGadgets.Editor/Preferences/C79FFB7A">DoSectionHeader<wbr>(string)<wbr></a></td>
-								<td>void</td>
-								<td>
-									<div>Enables the GUI and draws a space and label.</div>
+									<div>Draws the preferences GUI.</div>
 											<div><small><em>static</em></small></div>
 								</td>
 							</tr>

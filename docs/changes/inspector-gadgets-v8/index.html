@@ -76,7 +76,9 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#features">Features</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#inspector-gadgets-v8.0.0">Inspector Gadgets v8.0.0</a></p>
+<p><a href="#inspector-gadgets-v8.0.0-1">Inspector Gadgets v8.0.0</a></p>
+<p><a href="#features">Features</a></p>
 <p><a href="#improvements">Improvements</a></p>
 <p><a href="#fixes">Fixes</a></p>
 <hr class="infobar-hidden">
@@ -156,7 +158,20 @@
 			<h1>Inspector Gadgets v8</h1>
 		</section>
 	<section class="content">
-		<ul>
+		<h1 id="inspector-gadgets-v8.0.0">Inspector Gadgets v8.0.0</h1>
+<ul>
+<li>Released 2024-11-30</li>
+<li>Improved <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers/ObjectDrawer">ObjectDrawer</a></code> drag and drop handling:
+<ul>
+<li>Dropping into a <code>Component</code> field will now list valid components on child and parent objects in the context menu. When dropping an object with a single valid component which would normally be assigned directly, you can force the context menu to show by holding Alt.</li>
+<li>Dropping a <code>GameObject</code> from the Hierarchy window into an <code>Object</code> field will now give you a context menu to let you assign that <code>GameObject</code> or any of its <code>Component</code>s (instead of immediately assigning the <code>GameObject</code> with no easy way to assign the <code>Component</code>s).</li>
+</ul>
+</li>
+<li>Fixed the custom Transform Gizmo features like Freeze Child Transforms to work properly.</li>
+<li>Fixed various API usages to not trigger the script updater in Unity 6.</li>
+</ul>
+<h1 id="inspector-gadgets-v8.0.0-1">Inspector Gadgets v8.0.0</h1>
+<ul>
 <li>Released 2024-11-04</li>
 </ul>
 <h1 id="features">Features</h1>
