@@ -76,7 +76,8 @@
             <aside class="main-sidebar ">
                 <section class="infobar" data-spy="affix" data-offset-top="60" data-offset-bottom="200"> 
                     	
-    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#inspector-gadgets-v8.0.1">Inspector Gadgets v8.0.1</a></p>
+    <div id="infobar-headings"><h6>On This Page</h6><p><a href="#inspector-gadgets-v8.0.2">Inspector Gadgets v8.0.2</a></p>
+<p><a href="#inspector-gadgets-v8.0.1">Inspector Gadgets v8.0.1</a></p>
 <p><a href="#inspector-gadgets-v8.0.0">Inspector Gadgets v8.0.0</a></p>
 <p><a href="#features">Features</a></p>
 <p><a href="#improvements">Improvements</a></p>
@@ -158,7 +159,14 @@
 			<h1>Inspector Gadgets v8</h1>
 		</section>
 	<section class="content">
-		<h1 id="inspector-gadgets-v8.0.1">Inspector Gadgets v8.0.1</h1>
+		<h1 id="inspector-gadgets-v8.0.2">Inspector Gadgets v8.0.2</h1>
+<ul>
+<li>Released 2025-04-12</li>
+<li>Added <code>UnityEngine.Splines.SplineContainer</code> to the default Standard Gizmo Components list.</li>
+<li>Changed <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers/ObjectDrawer">ObjectDrawer</a></code> to not show the Get button on base <code>Object</code> fields because it would search through everything which would be very slow and unlikely to get a useful result.</li>
+<li>Fixed inspectables to not be gathered multiple times when inherited.</li>
+</ul>
+<h1 id="inspector-gadgets-v8.0.1">Inspector Gadgets v8.0.1</h1>
 <ul>
 <li>Released 2024-11-30</li>
 <li>Improved <code><a href="/inspector-gadgets/api/InspectorGadgets.Editor.PropertyDrawers/ObjectDrawer">ObjectDrawer</a></code> drag and drop handling:
